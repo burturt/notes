@@ -4,10 +4,10 @@
 					<head>
 						<meta charset="UTF-8">
 						
-						<title>5. Starting/Stopping kali services</title>
+						<title>6. Installing and updating tools (debian-based)</title>
 					</head>
 					<body>
-						<div class="exported-note"><div class="exported-note-title">5. Starting/Stopping kali services</div>
+						<div class="exported-note"><div class="exported-note-title">6. Installing and updating tools (debian-based)</div>
 
 <style>
 		/* https://necolas.github.io/normalize.css/ */
@@ -358,19 +358,13 @@
 				height: auto !important;
 			}
 		}
-	</style><div id="rendered-md"><p>Service: web server, FTP server, ssh server, etc<br>
-<code class="inline-code">service SERVER start</code></p>
-<ul>
-<li>Start a service, for instance <code class="inline-code">service apache2 start</code></li>
-</ul>
-<h3 id="serving-files-via-web-server">Serving files via web server:</h3>
-<ul>
-<li>Python 2: <code class="inline-code">python -m SimpleHTTPServer PORT</code></li>
-<li>Python 3: <code class="inline-code">python3 -m http.server PORT</code><br>
-Starts the server up with the file system in the current directory listed<br>
-PORT optional, use ifconfig to get IP. You may need to use sudo/admin prompt if port is under 1024</li>
-<li><code class="inline-code">systemctl enable/disable PROGRAM</code><br>
-Starts a server at bootup. <code class="inline-code">systemctl enable postgresql</code> ex</li>
+	</style><div id="rendered-md"><ul>
+<li><code class="inline-code">sudo apt update &amp;&amp; apt upgrade</code><br>
+Updates all packages</li>
+<li><code class="inline-code">sudo apt install PACKAGENAME</code><br>
+Installs a program</li>
+<li><code class="inline-code">git clone GITURL</code><br>
+Downloads a package from a git server like github. Recommended to run in /opt/</li>
 </ul>
 </div></div>
 					</body>
