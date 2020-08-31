@@ -1,1 +1,0 @@
-I've looked at the statistics of the traffic to this repository and determinted that basically no one uses the html directory (not really), so I'm not going to update the HTML directory anymore.
