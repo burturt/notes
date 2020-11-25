@@ -116,8 +116,8 @@ padding on all sides of the box */
 }
 ```
 
-	- Relative lengths are relative to the width of the parent element
-	- Apply to a single side using `padding-bottom/left/right/top`, accepts single value
+- Relative lengths are relative to the width of the parent element
+- Apply to a single side using `padding-bottom/left/right/top`, accepts single value
 
 #### Borders
 - `border: width style color;`
@@ -181,3 +181,7 @@ padding on all sides of the box */
 	- `em`: equivalent of one font-size of element's parent
 	- `rem`: equivalent of one font-size of the **root element** of the entire html document
 		- Easier to use, `em` can get complicated to find reference point
+
+## Spacing:
+- `line-height` property to set high of a line of text
+	- Adds space above and below text lines
