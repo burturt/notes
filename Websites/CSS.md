@@ -77,6 +77,10 @@ Properties:
 - Every HTML element is just a box!
 - Margin --> border --> padding --> content
 	- Content innermost, this is what width and height controls
+
+![boxmodel.gif](../_resources/3054d424433545faa35617e639da5049.gif)
+
+
 - Relative vs Absolute:
 	- Percentages are relative, and take a percent of the area of the element one above
 	- \_px are absolute and are a fixed pixel width
