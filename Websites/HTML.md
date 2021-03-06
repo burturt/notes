@@ -1,5 +1,7 @@
 HTML
 
+HTML
+
 # HTML Notes:
 - HTML is a **markup** language. It simply states how something is rendered.
 - HTML is made up of tags. There are 2 types of tags:
