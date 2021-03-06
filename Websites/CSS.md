@@ -1,5 +1,7 @@
 CSS
 
+CSS
+
 # CSS Notes:
 - Cascading Style Sheets!
   - CSS basically allows you to mass add attributes to html tags
@@ -78,7 +80,7 @@ Properties:
 - Margin --> border --> padding --> content
 	- Content innermost, this is what width and height controls
 
-![boxmodel.gif](../_resources/3054d424433545faa35617e639da5049.gif)
+![boxmodel.gif](../_resources/61418f4340254342b3aa5dcf8bac40ff.gif)
 
 
 - Relative vs Absolute:

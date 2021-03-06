@@ -1,5 +1,7 @@
 Javascript
 
+Javascript
+
 ### Functions
 ```javascript
 var test = function(x, y) {
