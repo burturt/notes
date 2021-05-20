@@ -1,0 +1,13 @@
+Unit 11 - The Age of Limits to the Present
+
+**Unit Overview**:  The election of Ronald Reagan in 1980 signaled the closing of the chapter on the postwar era, and the emergence of a decidedly more conservative political era. The decline of faith in the federal government’s ability to solve social and economic problems, the championing of unregulated markets by American corporations and the growth of religious fundamentalism combined to give conservatives new life. The demographic growth of the Sunbelt and the shift of Southern white conservative voters to the Republican party also helped create an electoral majority. Conservatives achieved some of their goals, but the enduring popularity of government programs such as Social Security and Medicare limited the amount of actual change.
+    The Reagan administration pursued an aggressive anti-communist foreign policy, but the end of the Cold War took away the forty-five-year focus of U.S. foreign policy. After the terrorists’ attacks of September 11, 2001, the United States quickly became involved in wars in Afghanistan and Iraq with a new focus on homeland security.
+    The Great Recession of 2008 and demographic and cultures changes deepened the political divide in the nation, between an older white population who dominated the Tea Party movement and a younger multicultural society who represented the new emerging majority. The election of Donald Trump in 2016 highlighted the divide between the coastal population and that of what is known a “flyover’ states, as many of working class in the typically Democrat strongholds of the midwest were affected by globalization and the outsourcing of American jobs.
+
+**Essential Question**: How did a new conservatism rise to prominence in the late 20th century and how did it set the stage the new challenges of the 21st century?
+
+**Key Concept 9**:
+As the United States transitioned to a new century filled with challenges and possibilities, it experienced renewed ideological and cultural debates, sought to redefine its foreign policy, and adapted to economic globalization and revolutionary changes in science and technology.
+- 9.1 A new conservatism grew to prominence in U.S. culture and politics, defending traditional social values and rejecting liberal views about the role of government.
+- 9.2 The end of the Cold War and new challenges to U.S. leadership in the world forced the nation to redefine its foreign policy and global role.
+- 9.3 Moving into the 21st century, the nation continued to experience challenges stemming from social, economic, and demographic changes.
