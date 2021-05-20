@@ -1,0 +1,169 @@
+Unit 7 - Imperialism, Progressivism, and War
+
+**Unit Overview**:  As the United States industrialized in the late 19th century, it also intensified its foreign involvement, partly because it wanted both sources of raw materials for manufacturing and worldwide markets for its growing quantity if industrial and agricultural products. A principal target of American imperialism was the nearby Caribbean area. Expansionists from the South had coveted Cuba as early as the 1850’s. Now in the 1890’s, large American investments in Cuban sugar, Spanish misrule of Cuba, and the Monroe Doctrine all provided justification for U.S. intervention in the Caribbean’s largest island.
+            By the turn of the century, a reform movement had developed that included a wide range of groups and individuals with a common desire to improve life in the industrial age. Their ideas and work became known as progressivism, because they wanted to build on the existing society, making moderate political changes and social improvements through government action. This progressive movement was complicated, however, by a growing European war that threatened U.S. involvement. During a relatively short period (1914-1919),the United States and its people rapidly moved through a wide range of roles; first as a contented neutral country, next as a country waging a war for peace, then as a victorious world power, and finally, as an alienated and isolationist nation.
+
+**Essential Question**: How did America become a world power and what domestic and international challenges did industrialization and America’s role in the world present?
+
+**Key Concept 7**: An increasingly pluralistic United States faced profound domestic and global challenges, debated the proper degree of government activism, and sought to define its international role.
+- 7.3   Global conflicts over resources, territories, and ideologies renewed debates over the nation’s values and its role in the world while simultaneously propelling the United States into a dominant international military, political, cultural, and economic position.
+- 7.1   Governmental, political, and social organizations struggled to address the effects of large scale industrialization, economic uncertainty, and related social changes such as urbanization and mass migration.
+
+# 3. What were the factors that encouraged U.S. expansion?
+- Imperialism: expansion of US empire
+	- Manifest Destiny always part of US identy
+		- Eventually expanded all the way coast-to-coast, still wanted to expand
+			- Frederick Jackson Turner: signifigance of western frontier in american democracy
+			- 1890 Census Burean announced frontier had closed
+- Taste of expansion: Alaska
+	- Bought Alaska from Russia
+	- Critisized "Seward's Folly"
+- Arguments for:
+	- More sources for raw materials
+	- More markets to sell
+	- Social Darwinism:
+		- Expand US and show US is powerful and best
+		- Lots of racism
+			- Josiah Strong: *Our Country* book
+				- Argued Anglo-Saxon race best
+				- Christian duty to spread Christianity
+	- Alfred Thayer Mahan's *Influence of Sea*
+		- Any country to become world power must have strong navy
+		- Congress approved new navy ships
+- Arguments against:
+	- Self-determination belief
+	- US isolationism was already existing (Munroe Doctrine, Washington's Farewell address)
+- Spanish-American War:
+	- Backgound:
+		- Cuba important, Spanish territory
+		- Attempted uprising against Spanish, stopped by forces
+	- Yellow Journalists:
+		- Sensationalized events and Spanish atrocities
+			- Persuaded country to do something
+			- Blamed USS Maine explosion on Spanish (accident)
+	- Ultimatum To Spain by McKinley to cease fire
+		- Spain complied, still went to war
+		- America won: aquisition of Carribean territories like Puerto Rico
+	- Phillipines:
+		- Sent navy to Phillipines, destroyed Spanish fleet and overthrew Spainish with Filippino Nationalists in Phillipines
+		- US received land at end for 20 million
+			- Congress agreed
+			- Fillipinos angry, now fight US
+			- US granded independence later
+	- Hawaii:
+		- Argument 1898 to annex as center base
+			- queen liliuokalani overthrown 1893
+	- China
+		- John Hay's Open Door Policy:
+			- US no spheres of influence (exclusive trading)
+			- Allowed US to trade with China since US did not stake claims to trading rights earlier
+- Theodore Roosevelt
+	- Big Stick Diplomacy
+	- Panama Canal
+	- Roosevelt Collorary to the Monroe Doctrine
+		- Some Latin Countries defaulting on payments, EU countries sending ships to get repayment
+		- Collorary said US will send ships over to force payments instead
+
+# 7.  How did progressives respond to the social challenges of industrializing America? + How did W.E.B. DuBois and Booker T. Washington differ in their approach or reforms for African-Americans?
+- Concerns:
+	- Rising Power of big business
+	- Uncertainities in the economy
+	- Violence between labor groups and employers
+	- Influence of political Machines
+	- Jim Crow Segregation
+	- Rights of Women
+	- **American society was terrible, and only government intervention could right those wrongs**
+- Exposing Corruption
+	- Muckrakers - wrote books and spoke out by reveal inequities and dangers to public
+	- Ida Tarbell - corruption of Standard Oil
+	- Jacob Riis - photojournalist *How the Other Half Lives*
+	- Upton Sinclair *The Jungle* - unsafe conditions in meatpacking
+		- Lead to TR passing Pure Food and Drug Act
+			- Ensured safe, uncontaminated food
+		- Meat Inspection Act
+- Voting reforms:
+	- Secret Ballot
+	- Direct Election of Senators
+		- 17th Amendment: right to vote for Senators
+	- Initiatives, referendums, recall
+		- Initiative: Force legislature to consider a bill if ignoring a bill
+		- Referendum: Allow citizens to vote on bills directly, bylass legislature
+		- Recall: Allow citizens to remove from office corrupt oficers
+- Scientific Management
+	- Frederick Taylor
+- Civil Rights
+	- South Lynching and segregation
+	- Booker T Washington
+		- Blacks must self-help themselves first through education
+		- Once equal economically, then go politically
+	- W. E. B. DuBois
+		- Political equality first
+		- Niagra Movement: intellecutals to move for protesting
+	- NAACP
+		- Abolish all forms of segregation
+		- Expand education
+- Conservation
+	- TR heavy on conservation
+	- Forest Reserve Act of 1891
+		- Preserve millions of federal land
+	- Policies continued under Taft
+- Busting trust:
+	- Enforced Sherman Anti-trust act
+		- Roosevelt distinguished between good and bad trusts
+	- Taft and Wilson: more trust breaking up
+		- Clayton Antitrust Act strengthened Clayton antitrust act
+- Square Deal
+	- Anthracite Coal Miners Strike
+		- TR negotiated "square deal"
+		- fair negotiation
+- Economy
+	- Mostly Wilson
+	- Underwood Tariff lowered tariffs
+	- Wilson ended golden standard
+		- Federal Reserve Act
+- Temperance
+	- Lots of Women
+	- Anti-saloon league --> 18th Amendment prohibition
+		- Prohibition larely failed in later times
+	- Suffrage:
+		- Petition, protests, hunger strikes
+		- 19th amendments womens rights
+
+# 13. How did the U.S. mobilize for war (WWI) and what was the impact on the home front, including the violation of civil liberties? 
+- Background (start of WWI entry)
+	- Originally neutrality
+	- Lusitania Sunk
+		- German submarine attacked passanger ship
+		- Had Americans, angered US
+		- US threaten to sever diplomatic ties, Germany backs off
+			- However, 2 years later Germany continues submarines
+	- Unrestricted Submarine War
+	- Zimmerman Telegram:
+		- Mexico contacted to fight US to preoccupy the US
+		- Angered US, lead to US entering war (WIlson)
+- American Expeditionary Forces
+	- Sent to fight
+	- US took over Western Front later
+	- This tipped war in favor of France and Britain just entering the war
+- Agencies:
+	- Centralized controled in government
+	- Prices, raw materials, encouraged citizens to eat less meat and bread, railroads
+	- injection of money in industry = migration North for people looking for manufacturing jobs
+		- Black Southerns migrated North during this period
+		- The Great Migration
+- Restriction of Civil Liberties:
+	- Espionage Act of 1917
+		- Rebellion or stop draft = imprisoned
+		- Schenck v US: court ruled restriction of liberties if present danger posed by the speech
+	- Sedition Act of 1918
+		- No disloyal comments against government
+- Conclusion of war:
+	- Wilson's 14 points
+		- Freedom of Seas
+		- Self-determination
+		- League of Nations
+		- Senate refused to ratify due to League of Nations
+			- Could bring US into war without Congress
+			- Republicans annoyed only Democracts in negotiations
+	- 
+

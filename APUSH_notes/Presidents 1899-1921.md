@@ -1,0 +1,79 @@
+Presidents 1899-1921
+
+## Theodore Roosevelt
+- "First modern president"
+	- Brought power back to office
+	- Progressive Reforms
+		- Sent inspectors to factories
+		- Appointed VP, McKinley assasinated and became presz
+- Troubles: industrial revolution
+	- Huge power in gigantic trusts
+		- Forced prices up
+		- Low wages on dangerous jobs
+- Attempted to take on Captains of Industry:
+	- J. P. Morgan
+		- TR antitrust against railroad
+		- Hepburn Act
+			- Prevent discrimination against small shippers by railroads
+	- Went out publicly to call for public to help public
+		- Pioneer celebrity president
+		- Attracted the public
+		- Executive Orders used
+- **Conservation**
+	- Created national forest
+	- beginning of conservation movement
+- Angered Congress through act first, talk later
+- Grows US into a world power:
+	- Powerful navy and transporation
+	- Created Panama Canal:
+		- Columbia refused to sign land lease
+		- TR instead helped Panama revolution with Navy
+		- Allowed navy to quickly move from Pacific to Atlantic
+- Foreign Policy:
+	- Speak softly and carry a big stick
+	- Make statements with show of power, not words
+- Everything he did called "Square Deal"
+	- More disposable income:
+		- Cars, Cameras, Movies
+## 1908 William Howard Taft
+- TR's handpicked sucessor 
+- Did not really want president
+	- Jennings Bryan once again from Democrats, lost
+- Believed in federal intervention, but not to the same extent as TR
+- Antitrust against steel
+	- Angers TR, campaigns
+		- TR forms 3rd party
+		- Attempted assasination
+		- Gains huge popularity, split Republican party and gave election to Wilson
+## Wilson
+- Ethical US government with fair rules
+- Crisis:
+	- Industrial Revolution
+		- Bad conditions, pay
+		- Child Labor
+		- High Tariffs
+- SOTU in-person
+	- Brought agenda directly to Congress
+- Federal Reserve Act 1913
+	- Manage money supply
+	- Helped stabilize money and economy
+- Tariff reduction
+- Banking System
+- Break up Trusts
+- WW1
+	- Wilson not much foreign policy training
+	- Started with "Neutrality"
+		- UK could stop US from shipping to center powers
+			- Germany responded by sink US ships: Lisitania
+	- "We have the duty to make the world safe for democracy"
+	- Suspended Habeous Corpus
+		- Eugene V Debs thrown into jail
+	- Lever Fuel and Control Act:
+		- Coal, oil, food distribution and pricing controlled by prez
+- Wilson's 14 points
+	- Vision for new world order
+	- league of nations
+		- Republican Congress against because taking war making power away
+	- Wilson stroke during speach while campaigning for league of nations binding power
+		- Lost power, wife took over
+		- Ended Wilson's bid to pass Article X
