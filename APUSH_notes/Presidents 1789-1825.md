@@ -1,5 +1,3 @@
-Presidents 1789-1825
-
 ## 1789/George Washington + John Addams:
 - Entered with uncertainty on what presidency can do
 	- Big Experiment

@@ -1,5 +1,3 @@
-Conditionals_&_Loops_-_While_&_For
-
 Conditionals & Loops - While & For
 
 ### Review: Boolean

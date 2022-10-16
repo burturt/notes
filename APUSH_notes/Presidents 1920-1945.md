@@ -1,5 +1,3 @@
-Presidents 1920-1945
-
 ## Warren Harding
 - "Return to Normalcy"
 	- rejection of Progressivm

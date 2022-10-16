@@ -1,5 +1,3 @@
-Presidents 1865-1901
-
 ## Andrew Johnson
 - Not prepared to be leader after Lincoln's debt
 - Democrat leading Republican Congress:

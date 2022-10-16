@@ -1,7 +1,5 @@
 Exceptions
 
-Exceptions
-
 ### Definition
 **exception**: An object representing a runtime error.
 	- diving an int by 0

@@ -1,5 +1,3 @@
-Presidents 1899-1921
-
 ## Theodore Roosevelt
 - "First modern president"
 	- Brought power back to office

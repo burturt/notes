@@ -1,5 +1,3 @@
-Scanner_Slides
-
 Scanner Slides
 
 ### Java's Math Methods

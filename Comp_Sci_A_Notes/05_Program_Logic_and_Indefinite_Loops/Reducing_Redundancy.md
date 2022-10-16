@@ -1,5 +1,3 @@
-Reducing_Redundancy
-
 Reducing Redundancy
 
 ```java

@@ -1,11 +1,9 @@
-String_Objects
-
 String Objects
 
 - Primitives: "atoms" of variables - simplest type that programmers use. Made of no other data types, cannot be broken down any further.
 - Objects: "molecules" - built from primitives and other objects. Can be extremely complicated
 
-![Screen Shot 2020-10-08 at 10.42.46 AM.png](../../_resources/e4239ab9c8594449b89a7859628950da.png)
+![Screen Shot 2020-10-08 at 10.42.46 AM.png](../../_resources/77893374469548c0b8572b0ac931e086.png)
 
 
 ### Class vs Object

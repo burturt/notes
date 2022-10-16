@@ -1,7 +1,5 @@
 Algorithms
 
-Algorithms
-
 ### Algorithm: “a process or set of rules to be followed in calculations or other problem-solving operations”
 - Have a starting point
 - Have Input

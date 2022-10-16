@@ -1,5 +1,3 @@
-Has-a_and_Is-a_relationships
-
 Has-a and Is-a relationships
 
 - Has-a relationship: Something "has a" something

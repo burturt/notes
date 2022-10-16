@@ -1,5 +1,3 @@
-Cumulative_Algorithms
-
 Cumulative Algorithms
 
 ### Adding 16 numbers using pseudo code:

@@ -1,5 +1,3 @@
-Array_&_For_Each_Loop
-
 Array & For Each Loop
 
 ### Using for-each loop

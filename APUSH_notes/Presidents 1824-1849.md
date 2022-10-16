@@ -1,5 +1,3 @@
-Presidents 1824-1849
-
 ## Monroe:
 - Erie Canal built
 - Population huge growth

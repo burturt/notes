@@ -1,5 +1,3 @@
-Unit 4 - The Antebellum Period
-
 **Unit Overview**:  
 Several historic reform movements began during the Jacksonian era and in the following decades. This period before the Civil War, which started in 1861, was known as the antebellum period. During this time, a diverse mix of reformers dedicated themselves to such causes as establishing free (tax-supported) public schools, improving treatment of the mentally ill, controlling or abolishing the sale of alcohol, winning equal rights for women, and abolishing slavery. The enthusiasm for reform had many historic sources: the Puritan sense of mission, the Enlightenment belief in human goodness, the politics of Jacksonian democracy, and changing relationships among men and women, among social classes, and among ethnic groups. The most important source may have been religious beliefs. It was also during this time that a market economy emerged and people benefited from the addition of fertile land farther west and advances in industry and transportation everywhere.
 

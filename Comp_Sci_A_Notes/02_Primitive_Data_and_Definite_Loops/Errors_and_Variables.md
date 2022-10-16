@@ -1,5 +1,3 @@
-Errors_and_Variables
-
 Errors and Variables
 
 ### Class Header:

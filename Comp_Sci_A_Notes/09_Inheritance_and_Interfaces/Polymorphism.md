@@ -1,7 +1,5 @@
 Polymorphism
 
-Polymorphism
-
 ```md
 Doctor <---- FamilyDoctor
   ^

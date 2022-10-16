@@ -1,5 +1,3 @@
-Scope_and_Nesting
-
 Scope and Nesting
 
 # Scope

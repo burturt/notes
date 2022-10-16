@@ -1,5 +1,3 @@
-kubernetes
-
 `kubectl config current-context`
 `kubectl config use-context`
 

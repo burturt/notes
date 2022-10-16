@@ -1,5 +1,3 @@
-Conditionals_--_Lite
-
 Conditionals -- Lite
 
 ## What is a Boolean

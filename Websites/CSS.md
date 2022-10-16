@@ -1,7 +1,5 @@
 CSS
 
-CSS
-
 # CSS Notes:
 - Cascading Style Sheets!
   - CSS basically allows you to mass add attributes to html tags
@@ -71,8 +69,8 @@ Properties:
 - `color` - color of text like `white`
 - `font-family` - font of text, like `Arial`
 - `text-align` - align left, right, center.
-- `border: width type color;`
-- `font-size: 2em;`
+- `font-size: 20px;` Sets the font size
+- `font-weight: 200;` - Sets the boldness of the text
 
 
 # The box model
@@ -80,7 +78,7 @@ Properties:
 - Margin --> border --> padding --> content
 	- Content innermost, this is what width and height controls
 
-![boxmodel.gif](../_resources/61418f4340254342b3aa5dcf8bac40ff.gif)
+![boxmodel.gif](../_resources/3054d424433545faa35617e639da5049.gif)
 
 
 - Relative vs Absolute:
@@ -131,6 +129,7 @@ padding on all sides of the box */
 	- `border-style/color/width` expansion, also `border-top-width`, `border-left-color`, etc
 - `border-radius: size;` Round off corners of border
 	- `border-radius: size / size;` make elliptical corners
+- `box-shadow: x, y, blur, color;`: adds a drop shadow to the border
 #### Margins
 - `margin` very similar to padding
 	- Area is outside border, background does not cover margin area

@@ -1,5 +1,3 @@
-Towers of Hanoi
-
 Algorithm:
 
 Start with largest disk, src = rod 1. dst = rod 3, empty = rod 2

@@ -1,5 +1,3 @@
-Objects_and_Inheritance
-
 Objects and Inheritance
 
 ## Inheritance

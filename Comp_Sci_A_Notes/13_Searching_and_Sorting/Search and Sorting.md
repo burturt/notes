@@ -1,5 +1,3 @@
-Search and Sorting
-
 1. Audio
 2. Text
 3. Program files

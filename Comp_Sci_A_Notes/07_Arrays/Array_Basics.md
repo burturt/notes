@@ -1,5 +1,3 @@
-Array_Basics
-
 Array Basics
 
 ### What is an array?

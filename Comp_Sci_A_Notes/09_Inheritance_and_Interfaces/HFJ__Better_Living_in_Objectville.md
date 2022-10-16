@@ -1,5 +1,3 @@
-HFJ__Better_Living_in_Objectville
-
 HFJ: Better Living in Objectville
 
 - Inheritance allows code reuse between similar classes

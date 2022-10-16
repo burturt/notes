@@ -1,5 +1,3 @@
-Presidents 1849-1865
-
 ## 1848 Zachary Taylor
 - fought in Spanish-American war = war hero to North and South
 - Large slaveholder = South supported

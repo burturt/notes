@@ -1,5 +1,3 @@
-Arrays__Shifting_Elements
-
 Arrays: Shifting Elements
 
 | 5 | 4 | 3 | 2 | 1 |

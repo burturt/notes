@@ -1,5 +1,3 @@
-Inheriting_and_Overriding_Methods
-
 Inheriting and Overriding Methods
 
 - Overloading vs Overriding:

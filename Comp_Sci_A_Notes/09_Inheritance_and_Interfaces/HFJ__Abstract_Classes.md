@@ -1,5 +1,3 @@
-HFJ__Abstract_Classes
-
 HFJ: Abstract Classes
 
 Interface: a 100% abstract class

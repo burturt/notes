@@ -1,5 +1,3 @@
-CS_Vocabulary_and_Java_Basics
-
 CS Vocabulary and Java Basics
 
 ### Brief history:
@@ -26,7 +24,7 @@ CS Vocabulary and Java Basics
 	- Debugger to help track down and fix problems
 
 
-![Screen Shot 2020-08-31 at 10.52.01 AM.png](../../_resources/f2b9943d9a3d427ca476a43691515626.png)
+![Screen Shot 2020-08-31 at 10.52.01 AM.png](../../_resources/d6d5f2b2d40d425bbb9b1854b0b194b2.png)
 
 ### Identifiers:
 - Names of classes, methods, variables, etc
@@ -60,11 +58,11 @@ CS Vocabulary and Java Basics
 		- BOOKMARK THIS PAGE
 
 ### Method call:
-![Screen Shot 2020-08-31 at 11.28.37 AM.png](../../_resources/3d1b2a01470f4aff9195946bcfd1e102.png)
+![Screen Shot 2020-08-31 at 11.28.37 AM.png](../../_resources/a6bd91bede36434d912c97212b865a06.png)
 
 ### Actually writing java programs:
 
-![Screen Shot 2020-08-31 at 11.30.26 AM.png](../../_resources/660a01a49f8f49c1a4e1407528399fa8.png)
+![Screen Shot 2020-08-31 at 11.30.26 AM.png](../../_resources/2dc27300bab94a1baf0d6ebcb9b05458.png)
 
 - Every java program consists of one or more classes
 - At least one main method

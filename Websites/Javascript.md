@@ -1,7 +1,5 @@
 Javascript
 
-Javascript
-
 ### Functions
 ```javascript
 var test = function(x, y) {
@@ -31,5 +29,5 @@ array.push(2)
 var last_item = array.pop(); // removes last item
 var first_item = array.shift(); // removes first item
 
-array,unshift("Animal types"); // adds to beginning
+array.unshift("Animal types"); // adds to beginning
 ```

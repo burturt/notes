@@ -1,5 +1,3 @@
-OOP_slides
-
 OOP slides
 
 ### Point class -- an example

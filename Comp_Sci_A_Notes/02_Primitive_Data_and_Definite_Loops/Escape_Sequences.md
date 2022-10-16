@@ -1,5 +1,3 @@
-Escape_Sequences
-
 Escape Sequences
 
 ### Escape Sequences:
@@ -28,7 +26,7 @@ Escape Sequences
 
 - Pikachu:
 	- Write a full java program that prints out this:
-	![Screen Shot 2020-09-02 at 11.18.34 AM.png](../../_resources/72f3ae7130644e8792978cc7a78aaf91.png)
+	![Screen Shot 2020-09-02 at 11.18.34 AM.png](../../_resources/4190c8991ebe4ef3b2c2aae39c435944.png)
 	```java
 	public class PikachuWelcome {
 		public static void main(String[] args) {

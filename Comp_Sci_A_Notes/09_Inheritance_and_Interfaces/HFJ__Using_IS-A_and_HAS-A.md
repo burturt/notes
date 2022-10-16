@@ -1,5 +1,3 @@
-HFJ__Using_IS-A_and_HAS-A
-
 HFJ: Using IS-A and HAS-A
 
 - Is-a: a test for when something should extend another thing
