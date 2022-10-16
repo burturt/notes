@@ -17,7 +17,7 @@
 - Result: ![nothing-darkangel.png](../../_resources/nothing-darkangel.png)
 - Darn. So the thing is, applications can just *ignore* the system proxy settings, and that seems to be the case here. Instead, what we need is a way to force all traffic through the proxy. There are many ways to do this, including using a VPN, but the way I did it is through a [transparent proxy](https://en.wikipedia.org/wiki/Proxy_server#Transparent_proxy).
 - There are many ways to do a transparent proxy, but I just found [Win2Socks](https://win2socks.com/) on a quick google search, and it seems to have the features I needed. Installing it, setting up so that all traffic is proxied, and running the malware:
-- Result: ![Screen Shot 2022-10-16 at 2.09.07 PM.png](../../_resources/Screen Shot 2022-10-16 at 2.09.07 PM.png)
+- Result: ![final-result-darkangel-censored.png](../../_resources/final-result-darkangel-censored.png)
 - Success!
 # Original CTF Challenge
 An "Indicator or Compromise" (IoC) is a unique feature of a particular piece of malware. IoCs are often used to help virus scanners and network tools identify the malware so that it can be blocked.
