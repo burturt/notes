@@ -1,6 +1,6 @@
 # Solution
 - This actually requires a bit of OSINT: what is the format of a default netgear router?
-- Huh, look at what's on ghosttown: https://ghosttown.deadface.io/t/when-will-people-learn-about-defaults/79 ((web archive link)[https://web.archive.org/web/20221016010535/https://ghosttown.deadface.io/t/when-will-people-learn-about-defaults/79])
+- Huh, look at what's on ghosttown: https://ghosttown.deadface.io/t/when-will-people-learn-about-defaults/79 ([web archive link](https://web.archive.org/web/20221016010535/https://ghosttown.deadface.io/t/when-will-people-learn-about-defaults/79))
 - It leads to a thread https://hashcat.net/forum/thread-4463.html that indicates that the default password is formatted using adjective + noun + 3 decimal numbers. Unfortionately the link in the post for the wordlist is no longer active, so we'll have to build our own.
 - We need a list of nouns, adjectives, and numbers. Numbers is easy enough, a simple python script can do it: `for i in range(1000): print('%03d' % i)`
 	- Don't forget about leading zeros!
