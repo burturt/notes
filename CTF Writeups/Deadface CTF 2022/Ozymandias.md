@@ -8,6 +8,8 @@
 - [Ciphey](https://github.com/Ciphey/Ciphey) is like CyberChef magic but does significantly more analysis automatically. It can be slower since it goes into *much* further depth than cyberchef magic, but is a good tool to have.
 - [Follow the instructions here to install](https://github.com/Ciphey/Ciphey/wiki/Installation), them simply do `CIPHEY_COMMAND -t "text"` and wait. That's it! No need to remove spaces or anything
 	- Ciphey command will depend on your installation method
+	- Do NOT use the docker option on arm / M1 apple devices. It's suuuuuppppperrr slow.
+
 # Original CTF Challenge
 Ozymandias, by PERCY BYSSHE SHELLEY
 
