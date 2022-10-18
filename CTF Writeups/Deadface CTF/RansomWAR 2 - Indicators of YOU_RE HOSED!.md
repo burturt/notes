@@ -19,6 +19,7 @@
 - There are many ways to do a transparent proxy, but I just found [Win2Socks](https://win2socks.com/) on a quick google search, and it seems to have the features I needed. Installing it, setting up so that all traffic is proxied, and running the malware:
 - Result: ![final-result-darkangel-censored.png](../../_resources/final-result-darkangel-censored.png)
 - Success!
+- One note: If a program uses certificate pinning (embedding the HTTPS certificate in the application itself instead of letting the system handle all of the encryption) or some sort of custom encryption, this will fail, and then you're stuck with strategy #1, reverse engineering, unless you have the private key to the HTTPS certificate
 # Original CTF Challenge
 An "Indicator or Compromise" (IoC) is a unique feature of a particular piece of malware. IoCs are often used to help virus scanners and network tools identify the malware so that it can be blocked.
 
