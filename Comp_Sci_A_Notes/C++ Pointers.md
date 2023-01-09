@@ -2,6 +2,15 @@ A pointer is a variable that holds a memory address, rather than holding data li
 
 Typically, a pointer is initialized with another variable's address. The reference operator (&) obtains a variable's address. Ex: &someVar returns the memory address of variable someVar. When a pointer is initialized with another variable's address, the pointer "points to" the variable.
 
+- Pointers!
+	- Declare a pointer: add a `*` after the variable type
+		- Note: can also add `*` before variable name instead when declaring
+	- Get memory address of a variable: add a `&` to the beginning of the variable name
+	- Convert pointer memory address to literal variable: add `*` to beginning of pointer variable
+		- Can use to reference variable value instead of replacing pointer, i.e. `*valPointer = 5`
+	- `nullptr` is for a pointer that doesn't point to anything (yet)
+	- 
+
 ```c++
 
 

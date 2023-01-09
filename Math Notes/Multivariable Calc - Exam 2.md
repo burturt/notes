@@ -10,7 +10,7 @@
 		- Systems of equations, solve for f~x~ and f~Y~
 - Double integrals:
 	- double integral of f(x,y) over region R = 
-	- ![Screen Shot 2021-10-03 at 1.12.41 PM.png](../_resources/Screen Shot 2021-10-03 at 1.12.41 PM.png)
+	- ![Screen Shot 2021-10-03 at 1.12.41 PM.png](../_resources/Screen%20Shot%202021-10-03%20at%201.12.41%20PM.png)
 	- Note: R = [a, b] X [c, d] just means a <= x <= b and c <= y <= d
 - Projection:
 	- Project b onto a: (a dot b) / magnitude of a^2 * vector a

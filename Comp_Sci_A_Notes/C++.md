@@ -33,6 +33,9 @@ int main() {
 	meow.at(3) = 'u';
 	meow.size(); //length, can also use string.length()
 	meow.append("strings only"); //append **string** to end. Use push_back for char
+	meow.push_back(c) //Append CHARACTER to end of string
+	meow.insert(indx, substr) // insert string substr starting at index indx
+	meow.replace(indx, num, substr) // Replace characters at indices indx to indx+num-1 with a copy of subStr
 	meow.find('m'); //find index of character, returns string::npos if not found
 	meow.find('m', 2); //starts at index 2
 	meow.substr(index, length); //substring starting at index and with length
