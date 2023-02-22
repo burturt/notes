@@ -11,7 +11,7 @@
 - At this point, we have 2 options:
     1.  Look inwards into the binary to find where in the code it makes the web request and get the url(s) and/or useragent that way
     2.  Surround the binary and trick it into letting us decrypt its connections
-- Naturally, I went with 2 because I don't have much experience with 1 yet with something as complex as this
+- Naturally, I went with 2 because I don't have much experience with 1 yet with something as complex as this executable.
 
 ## Online malware analysis tools
 
@@ -27,7 +27,7 @@
 - There are many ways to do a transparent proxy, but I just found [Win2Socks](https://win2socks.com/) on a quick google search, and it seems to have the features I needed. Installing it, setting up so that all traffic is proxied, and running the malware:
 - Result: ![final-result-darkangel-censored.png](../../_resources/final-result-darkangel-censored.png)
 - Success!
-- One note: If a program uses certificate pinning (embedding the HTTPS certificate in the application itself instead of letting the system handle all of the encryption) or some sort of custom encryption, this will fail, and then you're stuck with strategy #1, reverse engineering, unless you have the private key to the HTTPS certificate
+- One note: If a program uses certificate pinning (embedding the HTTPS certificate in the application itself instead of letting the system handle all of the encryption) or some sort of custom encryption, this will fail, and then you're stuck with strategy #1, reverse engineering, unless you have (rare) the private key to the HTTPS certificate or (more commonly due to perfect forward security) the session ids
 
 # Original CTF Challenge
 
