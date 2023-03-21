@@ -1,0 +1,53 @@
+- Concept: push items with a priority, pop items in priority order
+	- "priority queue"
+- Complete data tree:
+	- Complete binary tree is a binary tree that is completely filled at every **level**, except possibly the deepest level
+	- Fill nodes left to right at lowest level
+	- Example: tree of 6 should have exactly one empty spot in the 3rd level down, right-most spot (right at all forks) (1 at top, 2 in middle, 3 3rd level)
+- Heap (maxheap): largest number on top
+	- "heap" is also used as in "heap memory", and is completely unrelated
+	- **A heap is a complete binary tree in which the value at every node is greater than the values of all the nodes in its subtrees**
+- Minheap: smallest number on top
+- Applied: usually represented as an array and NOT a tree:
+	- 0 is head
+	- 1 is left of head, 2 is right of head
+	- 3-6 is the row below, 3-4 under 1, 5-6 under 2, etc
+	- Given index i in array, $parent(i) = floor((i - 1)/ 2)$
+	- $children(j) = \{2 \times j + 1,2 \times j + 2\}$
+		- If the position child ends up being greater than max index, then it doesn't exist
+## operations for tree
+- Deletion/pop:
+	- O(log N)
+	- Return item at top/head
+	- Take the bottom right-most item, and place it top
+	- Put item in right place:
+		- promote largest of node, left, and right into top and swap
+		- Run algorithm of the "subnode" that was swapped, or if no swapping occurs, stop
+- Insertion:
+	- O(log N)
+	- Place item in location to make it a complete binary tree
+	- Start from item, bubble up:
+		- Compare against parent (NOT sibling), and if child larger than parent, swap
+		- Keep comparing up and eventually stop
+## operations for array
+- Deletion
+	- Take item at index 0
+	- Move item at largest index to index 0 (pop back and move)
+	- compare at index i, 2i + 1, 2i + 2, and swap largest of the 3 into i
+		- If swapped, run compare on child that swapped
+- Insertion
+	- Push back new item
+	- Bubble up:
+		- Compare parent at $floor( (i - 1) / 2)$, if parent smaller than item, swap, and bubble up on parent
+# Heap sort:
+- Make the array into a heap:
+	- Start at bottom, at last non-leaf node
+		- last non-leaf node is highest index/2
+		- Each step expanding:
+			- Take new item, and bubble down
+			- aka compare this node with children nodes, and swap with largest value if needed, repeat until at bottom
+- Repeatedly remove items from the heap
+	- swap index 0 and last item that is still part of heap
+	- Follow deletion bubbling, ignoring finished sorted items
+	- Optimization: once down to 2 items, just swap if in wrong order
+- O(n log n) always

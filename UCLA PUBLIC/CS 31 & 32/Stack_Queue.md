@@ -1,5 +1,7 @@
+empty, size, front/back for queues or top for stacks, push, pop, swap
 ## Stacks
 - ONLY add and remove from end
+- Last in first out
 - Operations:
 	- Create empty stack
 	- Push to end of stack
@@ -28,6 +30,7 @@ cout << s.size() << endl; // 1
 ```
 
 ## Queue
+- First in first out
 - 2 active ends:
 	- Head/tail or front/back
 	- Added to back
@@ -59,4 +62,3 @@ cout << q.back() << endl; // writes 20
 - Circular buffer:
 	- If length 100, let position after 99 be 0
 	- Note: if using pointers to keep track of start/end, be careful when empty/full!
-	- 

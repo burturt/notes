@@ -53,3 +53,43 @@ it is pretty clear that the nonce is random and not a place to exploit.
 ![Screen Shot 2023-02-19 at 11.57.41 PM.png](../_resources/Screen%20Shot%202023-02-19%20at%2011.57.41%20PM.png)
 	- Unfortionately, this does not work. Our injected HTML is loaded into the page by this very script, so once we load in the page and change the base url, the script tag has already executed.
 ### Actually digging around the code
+When digging through the short single javascript script on the page, the hashchange listener caught my eye:
+```js
+window.addEventListener('hashchange', async function(){
+    let search_query = JSON.parse(atob(location.hash.substring(1)));
+    search_name(search_query);
+});
+```
+This simply takes the hash value and searches for a note. In other words, we can force the admin bot to "search" for our note. In the search name portion:
+```js
+async function search_name(search_data){
+    let should_open = search_data['open']
+    let query = search_data['query']
+
+    let notes = await get_all_notes();
+
+    let found_note = notes.find((val) => val.note.toString().startsWith(query));
+    if(found_note == undefined){
+        document.body.search_result.href = '';
+        document.body.search_result.text = 'NOT FOUND'
+        document.body.search_result.innerHTML += '<br>'
+    }
+
+    document.body.search_result.href = `note/${found_note.name}`;
+    document.body.search_result.text = 'FOUND'
+    document.body.search_result.innerHTML += '<br>'
+    if(should_open)document.body.search_result.click();
+}
+```
+- So if we search and find a note and set "open" to true, then if a note is found, the page will redirect. If the note is not found, the page won't redirect. Hey, we could listen for this in an iframe!
+- This code above also confirmes that the search looks for a note with the content starting with the input is correct: `let found_note = notes.find((val) => val.note.toString().startsWith(query));`
+- One other observation: the admin bot DOESN'T require the url to be under the challenge domain, so we can have the admit bot visit our website!
+### Exploit attempt 3: iframe trickery
+- So with an iframe, while the parent can't retrieve the url of the iframe (except the initial url you set it to), you *can* listen for redirects. Since the event above only triggers on a hash **change**, we need to first create an iframe to the website, and then change the hash accordingly, see if it redirects, set back to the website base, change hash, and so on. If the page redirects, then we know that the payload starts with whatever search term we gave it.
+- My terrible code implementing this: 
+[test.html](../_resources/test.html)
+- This code worked in firefox (btw firefox > chrome), my default browser until I tried it in chrome..
+	- Turns out that Firefox deviates from the web specification and ALLOWS that behavior to occur. >:(
+	- Since the admin bot is a chrome admin bot, this won't work!
+### Exploit attempt 4:
+- After writing up all of that code just to find out it doesn't work, I looked around for other 
