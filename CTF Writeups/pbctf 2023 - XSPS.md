@@ -92,4 +92,5 @@ async function search_name(search_data){
 	- Turns out that Firefox deviates from the web specification and ALLOWS that behavior to occur. >:(
 	- Since the admin bot is a chrome admin bot, this won't work!
 ### Exploit attempt 4:
-- After writing up all of that code just to find out it doesn't work, I looked around for other 
+- After writing up all of that code just to find out it doesn't work, I looked around for other possible attack vectors and came across using `window.open` then modifying the window location attribute. Unfortionately, by this time, I had ran out of time but this would have been the correct full solution.
+- One issue I did run into: Due to cross-domain protections, you are unable to read `window.location.href`, but you *are* still allowed to assign a value to it: `window.location.href = "new url"`

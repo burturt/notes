@@ -1,14 +1,16 @@
 # Registers
-![Screen Shot 2022-11-16 at 3.39.50 PM.png](../_resources/Screen%20Shot%202022-11-16%20at%203.39.50%20PM.png)
+![1d4960680aec304030b3f8f540502365.png](../_resources/1d4960680aec304030b3f8f540502365.png)
 ## Setting Registers
-- `mov eax, 0x539` Think `eax = 0x539`
-- `mov rbx, rax` think `rbx = rax`
+- `movq 0x539, %eax` Think `eax = 0x539`
+- `movq %rax, %rbx` think `rbx = rax`
 - Can move between partial registers of the same size
 - Note: writing to 32 bit partial, will zero out the rest of the register
+### Size Letters
+- 'q' for qword (64bits), l' is for long (32bits), 'w' is for word (16bits), and 'b' is for byte (8bits).
 ### Extending Data
-- Extend signed data: use `movsx` to do a sign-extending move between different sized
-	- Prserve two's complement
-
+- Extend signed data: use `movs[SS]` to do a sign-extending move between different sized, where SS are 2 letters for the sizes to move between
+	- Preserve two's complement
+- NOTE: In att, the operators are swapped
 ![Screen Shot 2022-11-16 at 3.45.23 PM.png](../_resources/Screen%20Shot%202022-11-16%20at%203.45.23%20PM.png)
 - exch: swap registers
 ## Special registers are special
@@ -85,7 +87,7 @@ mov [rax], ebx
 mov rax, 0x12345
 mov bh, [rax]
 ```
-- Don't forget: changing 32-bit partials (e.g. by loading from memory) zeros out the whoel 64-bit register. Storing 32-bits to memory has no issues
+- Don't forget: changing 32-bit partials (e.g. by loading from memory) zeros out the whole 64-bit register. Storing 32-bits to memory has no issues
 ## Memory edianess
 - Data on most modern systems is stored *backwards*, in *little endian*
 ```asm
@@ -114,7 +116,10 @@ lea rbx, [rsp+rax*8] # rbx holds computed address for double-checking
 mov rbx, [rbx]
 ```
 - Address calculation has limits:
-- `reg + reg*(2, 4, or 8) + value`
+- `(Rb, Ri) = MemoryLocation[Rb + Ri]`
+- `D(Rb, Ri) = MemoryLocation[Rb + Ri + D]`
+- `(Rb, Ri, S) = MemoryLocation(Rb + S * Ri]`
+- `D(Rb, Ri, S) = MemoryLocation[Rb + S * Ri + D]`
 ## RIP-relative addressing
 - `lea` can directly address the rip register
 ```asm
@@ -203,7 +208,7 @@ EXIT:
 ```
 ## Calling Conventions
 - Agreements on argument passing
-	- x86: push arguments (in reverse order), then call, return value in eax
+	- x86: push arguments (in reverse order, e.g. you pop them in order from first to last), then call, return value in eax
 	- amd64: rdi, rsi, rdx, rcx, r8, r9, return value in rax
 		- function promises to return `rbx, rbp, r12, r13, r14, 15` back to original state if modified, and technically rsp
 		- "callee-saved"
@@ -301,67 +306,3 @@ _start:
 - `gdb` is your go-to debugging experience
 - `strace` lets you figure out how your program is interacting with the OS
 - `rappel` lets you explore the effects of instructions
-
-
-add reg1, reg2       <=>     reg1 += reg2
-sub reg1, reg2       <=>     reg1 -= reg2
-imul reg1, reg2      <=>     reg1 *= reg2
-- division:
-mov rax, reg1; div reg2
-Notice: to use this instruction you need to first load rax with the desired register
-you intended to be the divided. Then run div reg2, where reg2 is the divisor. This
-results in:
-rax = rdi / rsi; rdx = remainder
-The quotient is placed in rax, the remainder is placed in rdx.
-
-shl reg1, reg2       <=>     Shift reg1 left by the amount in reg2
-shr reg1, reg2       <=>     Shift reg1 right by the amount in reg2
-Note: all 'regX' can be replaced by a constant or memory location
-
-A function is a callable segment of code that does not destory control flow.
-Functions use the instructions "call" and "ret".
-
-The "call" instruction pushes the memory address of the next instruction onto
-the stack and then jumps to the value stored in the first argument.
-
-Let's use the following instructions as an example:
-0x1021 mov rax, 0x400000
-0x1028 call rax
-0x102a mov [rsi], rax
-
-1. call pushes 0x102a, the address of the next instruction, onto the stack.
-2. call jumps to 0x400000, the value stored in rax.
-The "ret" instruction is the opposite of "call". ret pops the top value off of
-the stack and jumps to it.
-Let's use the following instructions and stack as an example:
-                            Stack ADDR  VALUE
-0x103f mov rax, rdx         RSP + 0x8   0xdeadbeef
-0x1042 ret                  RSP + 0x0   0x0000102a
-ret will jump to 0x102a
-
-rdx = rax for function
-rbx = src_addr
-rcx = foo address, `call rcx`
-
-mov rdx, 0
-mov rcx, 0x403000
-mov rbx, rdi
-cmp rbx, 0
-je END
-LOOP:
-cmp [rbx], 0
-je END
-cmp BYTE PTR [rbx], 0x5a
-jg LOOPCONT
-mov dil, BYTE PTR [rbx]
-call rcx
-mov BYTE PTR [rbx], al
-add rdx, 0x1
-LOOPCONT:
-add rbx, 0x1
-jmp LOOP
-
-END:
-mov rax, rdx
-ret
-
