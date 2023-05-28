@@ -1,5 +1,31 @@
+# Data lab stuff
+How do programs actually work? 
+hello.c (source, text) → preprocessor (cpp)
+hello.i (modified source, text) → compiler (cc1)
+hello.s (assembly, text) → assembler (as)
+hello.o/printf.o (object programs/binaries) → linker (ld)
+hello (executable) 
+```c
+int isEqual(int x, int y) {
+return !(x ^ y);
+}
+int negate(int x) {
+return ~x + 1;
+}
+```
+```
+x & y = ~(~x | ~y)
+x | y = ~(~x & ~y)
+```
+UMax = 0, UMax = 2^w-1^
+TMin = -2^w-1^, TMax = 2^w-1^ - 1
 # Registers
 ![1d4960680aec304030b3f8f540502365.png](../_resources/1d4960680aec304030b3f8f540502365.png)
+Condition Codes
+- CF (carry): set when unsigned overflow
+- ZF (zero): set when result = 0
+- SF (sign): set when result < 0 (signed)
+- OF (overflow): set when signed overflow
 ## Setting Registers
 - `movq 0x539, %eax` Think `eax = 0x539`
 - `movq %rax, %rbx` think `rbx = rax`
@@ -10,44 +36,27 @@
 ### Extending Data
 - Extend signed data: use `movs[SS]` to do a sign-extending move between different sized, where SS are 2 letters for the sizes to move between
 	- Preserve two's complement
-- NOTE: In att, the operators are swapped
-![Screen Shot 2022-11-16 at 3.45.23 PM.png](../_resources/Screen%20Shot%202022-11-16%20at%203.45.23%20PM.png)
+
+![Screen Shot 2023-05-07 at 1.05.52 PM.png](../_resources/Screen%20Shot%202023-05-07%20at%201.05.52%20PM.png)
 - exch: swap registers
 ## Special registers are special
-- You cannot directly read from or write to `rip`
-	- ip = instruction pointer
-- Be careful with rsp
-	- Contains sp = stack pointers
-- Some other registers are, by convention, used for certain things
-## Other registers!
-- Modern x86 processors have a lot of other registers
-- Registers for us by OS itself
-- Registers for floating point computations
-- registers for crunching large data fast (32 512-bit "zmm" registers)
-# Memory
-- Registers are expensive, and limited number
-- Memory: store lots of data and have *fairly fast* access
-- Process memory is addressed linearly
-	- from `0x10000 to 0x7fffffffffff`
-	- Each memory address references **one byte** in memory
-	- means 127 terabytes of addressable RAM!
-- Memory is virtual!
-	- Process' memory starts out partially filled in by OS
-	- Process can ask for mre memory from OS later
+- `rip` = address of next instruction to execute
+- `rsp` = top of the stack
+- `rbp` = often used as bottom of stack frame
 ## Memory Stack (temporary data storage)
 - Stack has several uses
 - Registers and immediates can be **push**ed onto the stack to save values:
 ```asm
-mov rax, 0xc001ca75
-push rax
-push 0xb0bacafe # note: can only push 32-bit immediates, to push 64-bit much push from register
-push rax
+movq $0xc001ca75, %rax
+pushq %rax
+pushq $0xb0bacafe # note: can only push 32-bit immediates, to push 64-bit must push from register
+pushq rax
 ```
 - Stack: c001ca75, b0bacafe, c001ca75
 - Values can be **pop**ped back off of the stack to any register in reverse order:
 ```asm
-pop rbx # rbx set to 0xc00lca75
-pop rcx # rcx set to b0bacafe
+popq %rbx # rbx set to 0xc00lca75
+popq %rcx # rcx set to 0xb0bacafe
 ```
 - Each entry is width of architectures
 	- Note: pop technically doesn't remove bytes from stack, just moves stack pointer
@@ -58,36 +67,21 @@ pop rcx # rcx set to b0bacafe
 - You can also move data between registers and memory with mov
 - Load 64-bit value stored at memory address 0x12345:
 ```asm
-mov rax, 0x12345
-mov rbx, [rax]
+movq $0x12345, %rax
+movq (rax), %rbx
 ```
 - Store 64-bit value in rbx intro memorty at address 0x133337:
 ```asm
-mov rax, 0x133337
-mov [rax], rbx
+movq 0x133337, %rax
+movq %rbx, (%rax)
 ```
-- Equivalent to `push rcx`:
+- Equivalent to `pushq %rcx`:
 ```asm
-sub rsp, 8
-mov [rsp], rcx
+subq $8, %rsp
+movq %rcx, (%rsp)
 ```
 - Each addressed memory location contains one byte 
 	- 8-byte (64-bit) address write at 0x133337 will write to addresses 0x133337 through 0x13333f
-### Controlling write sizes
-- Use partials to store/load fewer bits!
-- Load 64 bits from addr 0x12345 and store the lower 32 bits to 0x133337
-```asm
-mov rax, 0x12345
-mov rbx, [rax]
-mov rax, 0x133337
-mov [rax], ebx
-```
-- Load 8 bits from ah to addr 0x12345
-```asm
-mov rax, 0x12345
-mov bh, [rax]
-```
-- Don't forget: changing 32-bit partials (e.g. by loading from memory) zeros out the whole 64-bit register. Storing 32-bits to memory has no issues
 ## Memory edianess
 - Data on most modern systems is stored *backwards*, in *little endian*
 ```asm
@@ -101,48 +95,25 @@ mov bh, [rcx] # reads 0x75
 	- Writes to the stack w/ push/pops behave just like any other write to memory
 ## Address Calculation
 - You can do some limited calculation for memory addresses
-- Use `rax` as an offset off some base address (in this case, the stack)
-```asm
-mov rax, 0
-mov rbx, [rsp + rax*8] # read qword right at stack pointer
-mov rax, 1
-mov rcx, [rsp + rax*8] # read the qword to the right of previous one
-```
 - Get calculated address with Load Effective Address (lea)
-```asm
-mov rax, 1
-pop rcx
-lea rbx, [rsp+rax*8] # rbx holds computed address for double-checking
-mov rbx, [rbx]
-```
-- Address calculation has limits:
+	- Does calculation for which memory address to retrieve but then stores the memory address rather than deferencing it
 - `(Rb, Ri) = MemoryLocation[Rb + Ri]`
 - `D(Rb, Ri) = MemoryLocation[Rb + Ri + D]`
 - `(Rb, Ri, S) = MemoryLocation(Rb + S * Ri]`
 - `D(Rb, Ri, S) = MemoryLocation[Rb + S * Ri + D]`
-## RIP-relative addressing
-- `lea` can directly address the rip register
-```asm
-lea rax, [rip] # Load the address of the next instruction into rax
-```
-- You can use mov to read directly from those locations
-```asm
-mov rax, [rip]
-```
-- Or even write (caveats apply):
-```asm
-mov [rip], rax
-```
 ### Writing Immediate values
-- You can write immediate values, but you MUST specify their size
 - write 32-bit 0x1337 to address 0x133337:
 ```asm
-mov rax, 0x133337
-mov DWORD PTR [rax], 0x1337
+movq %rax, 0x133337
+movl $0x1337, (%rax)
 ```
-- Might want DWORD instead of DWORD PTR
-## Other Memory Regions
-- Other regions might be mapped in memory!
+## Struct Alignment
+The following three rules must be adhered to in order for something to be properly aligned
+- Every field must be aligned to the size of it’s data type. This means it must start on an address that is
+a multiple of it size
+- The overall structure must be aligned to the size of it’s largest data type
+	- The overall structure must have a size that is a multiple of its largest data type
+![Screen Shot 2023-04-21 at 4.07.23 PM.png](../_resources/Screen%20Shot%202023-04-21%20at%204.07.23%20PM.png)
 # Control Flow
 - Change flow: `jmp LABEL`
 ```asm
@@ -154,9 +125,10 @@ STAY_LEET:
 ```
 - Note: jump is signed, meaning you can jump backwards
 - Think jmp as adding value to rip
-	- note: `eb fe` jumps to itself
 ## Conditional Jumps
-![Screen Shot 2022-11-20 at 12.30.17 AM.png](../_resources/Screen%20Shot%202022-11-20%20at%2012.30.17%20AM.png)
+![Screen Shot 2023-05-07 at 1.24.21 PM.png](../_resources/Screen%20Shot%202023-05-07%20at%201.24.21%20PM.png)
+
+- Note that jz = je and jne = jnz
 - Uses result of last operation
 - `rflags` register: has flags, such as carry flag, zero flag, overflow flag, signed flag, etc
 	- Update using `cmp` or `test`
@@ -165,13 +137,13 @@ STAY_LEET:
 - Common patters:
 ```asm
 cmp rax, rbx;
-jg MEMBORY;
-
-
 ja LABEL # unsigned rax > rbx
-cmp rax, rbx; jle LABEL # signed rax <= rbx
-test rax, rax; jnz LABEL # rax != 0
-cmp rax, rbx; je LABEL # rax == rbx
+cmp rax, rbx
+jle LABEL # signed rax <= rbx
+test rax, rax
+jnz LABEL # rax != 0
+cmp rax, rbx
+je LABEL # rax == rbx
 ```
 ## Looping!
 - We can implement a loop!
@@ -183,60 +155,14 @@ cmp rax, 10
 jb LOOP_HEADER
 ```
 ## Function calls!
-- Assebly call split into functions with `call` and ret`
+- Assembly call split into functions with `call` and ret
 	- call pushes `rip` and jumps away (enter function)
 	- ret pops `rip` and jumps to it (return)
-```asm
-mov rdi, 0
-call FUNC_CHECK_LEET
-mov rdi, 1
-call FUNC_CHECK_LEET
-call EXIT
-
-FUNC_CHECK_LEET:
-	test rdi, rdi
-	jnz LEET
-	mov ax, 0
-	ret
-	
-	LEET:
-		mov ax, 1337
-		ret
-	
-EXIT:
-	???
-```
 ## Calling Conventions
 - Agreements on argument passing
-	- x86: push arguments (in reverse order, e.g. you pop them in order from first to last), then call, return value in eax
-	- amd64: rdi, rsi, rdx, rcx, r8, r9, return value in rax
+	- x86-64: rdi, rsi, rdx, rcx, r8, r9, push in reverse order, return value in rax
 		- function promises to return `rbx, rbp, r12, r13, r14, 15` back to original state if modified, and technically rsp
-		- "callee-saved"
-# System Calls
-- Interacting with outside world, exist
-- System call: makes a call into the Operating System
-	- `syscall` triggers the system call specified by the value in rax; arguments in rdi, rsi, rdx, r10, r8, and r9
-	- return value rax
-```asm
-# Reading 100 bytes from stdin to the stack: n = read(0, buf, 100);
-mov rdi, 0 # stdin file descriptor
-mov rsi, rsp # Read the data onto the stack
-mov rdx, 100 # the number of bytes to read
-mov rax, 0 # system call number of read()
-syscall
-# read returns the number of bytes read vis rax, so we can easily write them out: write(1, buf, n);
-mov rdi, 1 # stdout file descriptor
-mov rsi, rsp # write data from the stack
-mov rdx, rax # number of bytes to write (same as read in)
-mov rax, 1 # system call number of write()
-syscall
-```
-- System call list: https://syscall.sh/
-- Getting constants:
-```python3
-from pwn import *
-int(constants.AF_INET)
-```
+		- "callee-saved" (vs the others are "caller-saved")
 ## "String" arguments
 - String is a bunch of contiguous bytes in memory, followed by a 0 byte
 ```asm
@@ -245,64 +171,10 @@ mov BYTE PTR [rsp+1], 'f'
 mov BYTE PTR [rsp+2], 'l'
 mov BYTE PTR [rsp+3], 'a'
 mov BYTE PTR [rsp+4], 'g'
-mov BYTE PTR [rsp+5], 0
+mov BYTE PTR [rsp+5], 0 # end of string
 
-mov rdi, rsp # read data onto the stack
+mov rdi, rsp # read string from the stack, pointing at first char
 mov rsi, 0 # open file read only
 mov rax, 2 # system call number of open()
 syscall
 ```
-## Constant arguments
-- Some system calls require archaic "constants"
-	- e.g. open() has a flags argument to determine how the file will be opened
-	- We can figure out the values of these arguments in C!
-```c
-#include <stdio.h>
-#include <fcntl.h>
-int main() {
-	printf("O_RDONLY is: %d\n", O_RDOLY);
-}
-```
-
-## Quitting program
-```asm
-mov rdi, 42 # return code
-mov rax, 60 # system call number of exit()
-syscall
-```
-
-# Building Programs
-- Put the file in an assembly file:
-```asm
-# .intel_syntax tells assembler we are using intel assembly
-# noprefix tells it that we will not prefix all register names with %
-.intel_syntax noprefix
-mov rdi, 42
-mov rax, 60
-syscall
-```
-- Assembling:
-```bash
-# nostdlib tells gcc to not include standard lib
-gcc -nostdlib -o quitter quitter.s
-```
-- It will complain about start location, can add this to top:
-```asm
-.global _start
-_start:
-# code
-```
-## Running program
-- Run like any other other
-- Can check return code with special `$?` variable
-## Reading assembly
-- `objdump -M intel -d quitter`
-- `objcopy --dump-section .text=quitter_binary_code quitter`
-## Debugging
-- Debuggers use a special debug instruction: `int3`
-	- When `int3` breakpoint instruction executes, the debugged program is stopped
-	- debugger itself can set breakpoints
-### Resources
-- `gdb` is your go-to debugging experience
-- `strace` lets you figure out how your program is interacting with the OS
-- `rappel` lets you explore the effects of instructions

@@ -1,0 +1,68 @@
+- Low level vs end user app
+	- Performance: almost always matters
+	- Reliability: it should always work
+# C vs C++
+- No classes or OOP
+	- (C still has objects, just no inheritance)
+- Structs cannot have static data members
+- no namespace control
+- No overloading
+	- ex. cos(double), cosf(float), cosl(long double) are named separately
+- No exception handling (library does exist)
+	- Failed return values
+- No "new" operator, no heap by default, but can use malloc/free to allocate heap manually
+- No I/O in C, instead using `#include <stdio.h>` and use library functions
+- C: `void *`: generic pointer
+## What can go wrong?
+- If not enough memory: C++ throws an exception, C's malloc returns a nullptr
+- After freeing a pointer, freeing it again or referencing it ever again, even to compare against a nullptr, is undefined
+- `void *`: no type-checking
+	- Instead do like `double *p = malloc(n * sizeof *p)`
+- malloc converts argument to unsigned, so don't pass any negative values
+- `malloc(0)` is undefined, either returning pointer or nullptr and failing
+- `free(nullptr)` or `free(0)` IS valid
+- `realloc(p, n)`: reallocate to change size, and can fail
+	- returns pointer to new storage area with copied memory, assume p is invalid and never touch again
+# High-level architecture of compiling a C program
+- Made up of several modules (compilation units)
+- `gcc -c CODE.c` creates `CODE.o`, and the code has gaps for functions that are unknown locations
+	- contains table with where to replace function locations
+	- Steps:
+		- C preprocessor. Affected by lines like #include <stdio.h> and macros with #define, and returns C code
+			- Macro: `#define MIN(x,y) ((x)<(y)?(x):(y))`
+			- use `gcc -E foo.c > foo.i` to run only preprocessor
+		- compiler `gcc -S foo.i`: generates `foo.s` machine code/assembly
+		- Then finally assembles into file
+			- ![Screen Shot 2023-05-18 at 9.46.09 PM.png](../../_resources/Screen%20Shot%202023-05-18%20at%209.46.09%20PM.png)
+- `gcc foo.o bar.o -o xyz`: links foo.o, bar.o, and the clibrary together
+## Other software to help program run
+- C library: code written by others so you don't have to deal with
+- OS kernel: running program manager
+- `time ./program`: prints out time
+	- real time: actual time to run
+	- user time: time actually running your code and library code
+	- system time: time system doing stuff on behalf of program
+- `strace ./program`
+	- Lists all system calls
+- `valgrind ./program`
+	- interprets program than actually running it, and looks for when your program does "suspcious" bad memory addresses
+	- slow and not 100% correct (approximates) because it is on raw binary, but doesn't require recompiler
+- `gdb ./program`
+	- debugger, "valgrind on steroids"
+- `top`: process monitor, usually sorts by cpu usage
+# gcc options
+- `-fstack-protector`: enable stack protection
+	- Tells gcc to put canaries into stack
+- `-fno-stack-protector`
+- `-mshstk`: enables intel CET (control flow enhancement technology)
+	- uses shadow stack: copy of stack that only contains addresses, and compares on ret
+	- Uses memory location locked down by hardware
+	- Requiers all jumps to jump to a special `nbranch` op code (nop)
+- `-O`: optimize, run faster BUT slower compilation, harder to debug compiled code, can cause different behavior (like undefined behavior)
+	- `0`: no debug
+	- `2`: default
+- `__builtin_unreachable`: add to code, telling compile to never call it in that case
+	- Example: `if (i < 0) __builtin_unreachable`, allowing better optimization
+- `-flto`: link-time optimization
+	- Optimization pass during linking (inlining, etc)
+	- Can also catch some mistakes (e.g. possibly dereferencing nullptr)

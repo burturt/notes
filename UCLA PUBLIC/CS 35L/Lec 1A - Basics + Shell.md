@@ -1,0 +1,54 @@
+- Reflection (introspection): program that is running that can change how it runs
+- Application Frameworks: set of libraries, modules, packages, etc + a development philosophy (and often tools) to help build apps efficiently
+- Collaborative development: git (orig linux kernel)
+	- Look at it as a user and internals
+### Topics:
+- file systems
+	- Data stored on secondary persistent storage
+- Scripting
+	- "Quick and dirty" programming
+	- different attitude: unpolished, quickly-written code, but maintainable
+- Building/distribution
+	- Developer --> user running code distribution chain
+- Version control ("configuration management")
+	- manage different versions, for devs and users
+- low level construction (fixing bugs)
+- client-server code
+	- programs that run on 2 computers at the same time
+#### Glossed-over topics
+- Programming data design
+- Integration (combining software together)
+- Configuration
+	- Main source of friction and causes lots of problems
+- Testing
+- Forensics
+	- figuring out what went wrong and why in a program
+## Suggestions:
+- Print out HWs
+# Basics
+- OS:
+	- kernel, core of operating system, exists in restricted kernel space
+		- Walls off the hardware from direct access
+	- application processes
+- Levels of program:
+	- Hardware --> (machine instructions --> register changes) --> kernel --> (system calls (look like function calls)) --> modules (C library usually + others) --> applications
+	- Apps can do almost everything in unrestricted area, with a little bit of kernel-restricted actions via C library
+	- Apps memory are restricted and partially isolated
+## Shell
+- Command language (scripting language)
+	- Designed to be run interactively but can be scriped in files
+	- shell "spawns" processes and has some control over it, waits until it has finished
+	- "shell" is supposed to be simple, like a shell, and sits between users and programs
+- Exiting commands:
+	- `control-D`: means end of file (if at start of line)
+	- `control-C`: interrupt the current process
+- `cat`: (concatenate) returns text you give it or reads files if given as argument
+- `ps`: (process status) show processes
+	- `ps -e`: lists *everything*
+- `less`: interactively control display of large amounts of data
+	- "read-only text editor"
+	- Control: cursor movement
+	- `/search term` return
+- `|` pipe: take output of before command and make it the input of the next command 
+- `od`: octal dump
+	- `-t` format display; c for character, x1 for hex 
