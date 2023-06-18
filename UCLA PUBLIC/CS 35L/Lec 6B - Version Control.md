@@ -27,11 +27,12 @@
 	- Get blame as of commit in file FILE
 ## Git bisect
 - binary search against commits to find commit that first introduced a bug
-```
+```bash
 git bisect start
 git bisect bad # mark currently checked out commit as bad
-git checkout v12
-git bisect good
+git bisect bad bad-tag
+git bisect good good-version-tag
+git bisect run ./test
 ```
 or
 - `git bisect start BADCOMMIT GOODCOMMIT`

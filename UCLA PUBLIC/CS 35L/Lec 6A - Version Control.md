@@ -43,6 +43,7 @@
 	- If cloning locally, uses hard links to link to files
 - `git checkout FILE`: Restore file from index
 - `git status`: gives status of project: branch (variant), sync status of upstream (but doesn't necessarily sync local copy of upstream), lists changes
+	- Also useful while in middle of merge, rebase, or bisect: show conflicts
 - `git log`: shows history of current system
 ```
 commit 6351be27c38642916e394cbf331ecc2cbb25f4fe

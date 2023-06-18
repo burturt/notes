@@ -1,0 +1,76 @@
+# More GDB commands
+- `detach`: detach from program, give up control
+- `exit`: exit program and gdb
+- `run`: underlying program runs, gdb waits
+- C-c: suspends the program, and returns to gdb prompt
+- `bt`: get a backtrace (show current function and arguments, and parent functions all the way to main)
+	- When program crashes, program is suspended and can get a backtrace
+	- When compiled with `-gX` like `-g3`, will show source code line
+- `p`: print expressions (source code level) like C
+	- e.g. `p x->y`
+		- Can execute arbitrary C code: `p x = 0` affects program execution
+	- `p/x`: print in hex
+	- `p $rax`: print value of rax register
+		- `p $rax = 19`
+	- `p x = getchar()`
+		- If failed, it will try to restore but side-effects can still remain
+- `info`
+	- `info registers` to print (important) registers
+	- `info break`: list breakpoints
+- `disas`: disassembles assembly of current function
+	- `disas FUNC`
+## Program execution history explorer
+- Examine super long history efficiently
+### Breakpoints
+- When execution gets to a certain line, pause execution
+- How do breakpoints get added?
+  - replace first byte of the instruction with like `int3`, and when it hits the breakpoint, after stopping with "crash", it restores the instruction
+- `b foo.c:2907` e.g. or like `b getchar`
+- `del NUM` delete breakpoint
+- `c`: continue after a breakpoint
+	- Can do `c NUM` to continue NUM times
+- `stepi`: executes a single instruction using hardware capabilities
+- `step`: steps over a single source code line
+	- issue: compilers don't always put instructions in same order as given, and execution might appear to go backwards
+- `next`: like `step` but steps over function calls
+- `fin`: finish current function
+- `u`/`until foo.c:2905`: execute until LOC but also stop if return
+- `rc`: reverse continue
+	- Run program backwards by undoing instructions until hitting breakpoints
+	- Only works if explicitly enabled at beginning
+- `watch VAR`: put breakpoint on variable, and whenever modified, stops execution
+	- hardware support has watch point support
+	- x86_64 has support for 4 watch locations, and will be really fast
+- `checkpoint`: save program state into number
+- `restart NUM` restart to checkpoint
+# Git internals
+- Differences between porcelin and plumbing:
+	- users don't see plumbing but it's really how it works
+	- Porcelin is just decoration
+- Users live in porcelain space, but we will see some plumbing and file system representation for plumbing
+## File representation
+- Getting `.git` folder: fast and efficient
+- Getting source files: slow
+- Folders:
+	- `branches`: used to list branches; no longer used
+	- `hooks`: scripts (and sample scripts) that run at delicate times like on commit
+		- `commit-msg` on commit msg
+		- `pre-commit` on files in commit
+		- `push-to-checkout`: before pushing
+	- `info`: random info
+		- `exclude` file: gitignore not under VCS
+	- `logs`: shows exactly what happened, metahistory (history of changes to repository)
+		- `reflog`: reminds what you were doing recently, last ~90 days, not shared
+	- `objects`: key-value object-oriented store, uses subdirectories, compressed using zlib
+- Files:
+	- `config`: this repo's specific config
+		- repository format, etc
+		- `bare`: repo that doesn't have source files and won't worry about tracking them
+		- `remote`: where we cloned from, where to fetch from
+		- `transfer`: force file system check on push
+		- `diff`: tells how diff to work
+		- Modify file directly OR using `git config OPTION VALUE`
+	- `description`: obsolete, not used by git itself but by other apps (now most use readme)
+	- `HEAD`: lists where we are right now
+	- `index`: data structure that keeps track of index
+	- `.gitignore

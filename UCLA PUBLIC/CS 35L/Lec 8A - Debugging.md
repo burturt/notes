@@ -97,4 +97,5 @@ assert(i < n); // abort + error if false
 ## GDB
 - `run ARGUMENTS`: run program with arguments ARGUMENTS
 - `attach PID`: attach and take over already running program, like a server
-	- Can only attack to one of your own processes
+	- Can only attach to one of your own processes
+	- OS will stop from attaching multiple gdb sessions to one process
