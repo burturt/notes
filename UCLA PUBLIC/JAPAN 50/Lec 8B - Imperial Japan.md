@@ -1,0 +1,116 @@
+- Japan becomes great imperial power in 1930s
+- Imperial Japan: WW2/Pacific War
+## Tokyo as Imperial Metropolis
+- Tokyo center in East Asia
+	- See newest arts, fasion, literature, music, etc
+	- People begin to realize Meiji imperial period is over
+		- Small shop world disappeared
+		- Nostalga for traditional Japan
+	- Japan becomes center for nationalist independence movements
+		- Despite Japan is depriving coutnries of independence, still exporting independence ideas
+- Imperial power:
+	- Japan building infastructure abroad, taking over natural resources
+- National Language
+	- Push to unify written and spoken language
+	- Now push to force national language in all imperial territories
+		- Korea and Taiwan now part of empire
+- Many disagreements about what to do with territories
+# Early Showa (1926-36)
+- 1925 Italian Fascist Party dictatorship (World)
+	- Hitler already gaining power, later gets position
+- 1925 Universal suffrage law (all males 25 and older)
+- 1925 Peace preservation law
+- 1927 Beginning of Chinese Civil War between Nationalists and Communists (China)
+	- Begins now, interrupted by WW2, resumes after end
+- 1927 Tokyo subway inaugurated
+- 1929 Beginning of Great Depression (World)
+	- Chaotic political stances: always trending towards stopping revolutions and supression
+- 1931 October Incident (unsuccessful military coup)
+	- Plot by alt-rights attempt to coup
+	- Perpetrators are left off scott-free, encourages future coup
+- 1931 Invasion of Manchuria (Mukden Incident)
+	- Army goes rogue, government follows army
+- 1932 Assassination of Prime Minister Inukai Tsuyoshi
+	- One of many assassinations that occurs
+- 1933 Hitler becomes Chancellor of Germany (World)
+- 1933: Japan leaves League of Nations
+- 1933-36 Spanish Civil War (World)
+- 1934-5 The Long March (China)
+- 1935 Scholar Minobe Tatsukichi censured by Diet
+- 1935 Beginning of "Election Purification" campaigns
+	- People are looked at in policies and sometimes banned to run for office
+	- Extension of 1926 Peace Protection Law
+- 1936 Rise of Social Masses Party (SMP)
+- 1936 2-26 Incident (attempted military coup)
+	- 1500 army troops try to take over government and assissnate positions
+	- stopped, executed perpetrators
+	- Only army can stop alt-right movement; becomes even more powerful
+## Japanese economy in 1930s
+- 1931-34 industrial output rises 82%
+- 1930-36: Japan exports double
+- Default spending to finance expansion of empire in manchuria
+- 1937: military budget accounts for 3/5 of government spending (1/3 in 1930)
+- State-controlled capitalism
+# Key Political figures
+- Showa emperor (Hirohito)
+- Konoe Fumimaro
+	- Prime minister 37-39, 40-41
+	- States that objections to japan imperialism is racist
+	- Protect asia from western imperialism
+	- Stepped down after disagreed with attacking pearl harbor
+- Tojo Hideki
+	- Prime minister 41-44
+	- Attacked Pearl Harbor
+## Early Showa (1937-45)
+- Period: "Ultra-nationalism", "authoritariasm",
+	- Constant attacks on anyone who contradicts the state: dress, hair perms, mythic past, victimhood
+- 1937 Promulgation of "Fundamentals of our National Polity"
+	- Forced children to memorize
+	- Promoted Japan as super amazing country, emperor is descendent of gods, etc
+		- Right-wing academics
+- 1937 Suppression of Labor Unions
+	- Peace Preservation applied to restrict
+- 1937 War with China. (Nanjing Massacre).
+- 1938 National Mobilization Law
+- 1940 Tsuda Sokichi Incident
+	- Conservative academic
+	- Claimed oldern emperors were made up in 1920s, which was normal for the time
+		- Blasphamy in 1940s
+	- Argued his point, did not really get in trouble
+	- Academic not following the state
+- 1940 Konoe Fumimaro (1891-1945) signs Tripartite Pact with Germany and Italy
+	- Beginning of axis power
+- 1940 Creation of "Imperial Rule Assistance Association"
+	- Everyone in Diet forced to join
+	- End of political parties and democratic system
+- 1941 All parties in Diet forced to join
+- 1941 Pearl Harbor (Start of Pacific War)
+- 1942 Initial success in war
+- 1945 End of War
+## Imperial Japan and its colonies
+- Ryukyu Islands (1870s-present)
+	- From Tokugawa period
+- Taiwan (1895-1945)
+- Korea (1910-1945)
+- Manchuria (1932-1945)
+- Parts of Mainland China (1937-1945)
+- South Pacific Mandate (1919-1945)
+- Parts of Southeast Asia (1942-45)
+	- Previous occupied by western powers
+- Celebrates ancient Empire (even though Emperor had little power for most of history)
+- Greater East Asia Co-Presperity Sphere
+	- Propaganda Concept that portrayed Japan as Benevolently leading Asia and defending it from western imperialism
+- Greater Asia Conference
+## Japanese Wartime Propaganda In Asia
+- Attempt to portray army as positive and fighting for best
+- Propaganda targetted towards Japan, Asia, and towards US American soldiers
+- US anti-Japanese wartime propaganda
+	- Tends to be racists
+### Japanese-American Internment Camps
+## End of the War
+- Bombing of Tokyo
+	- March 9-10, 1945
+- Atomic bombs
+	- 1945: Hiroshima, Nagasaki
+- Emperor announced surrender
+	- August 15, 1945

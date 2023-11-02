@@ -1,0 +1,123 @@
+## End of the War
+- Daily air raids by US bombers from Nov. 1944 to Aug. 1945
+- Bombing of Tokyo (March 9-10, 1945)
+	- Over 100,000 dead, one million homeless, 16 square miles destroyed
+	- Most destructive bombing in history
+- Battle of Okinawa (March-July 1945)
+	- Over 250,000 dead (incl. 150,000 civilians)
+		- Half of population
+- Atomic bombs
+	- August 6, 1945: Hiroshima
+		- 80,000 dead from blast (30% of population), many more from radiation
+	- August 9, 1945: Nagasaki
+		- 40,000-80,000 dead from blast
+- Emperor announces surrender (Aug. 15, 1945)
+- 40% of Japan's urban area destroyed, nine million homeless
+	- ~2.2 military deaths, ~0.2 milion civilian deaths
+## The Occupation
+- Establishment of United Nations
+	- San Francisco Conference, April 1945
+	- Technically japan under UN, but actually under US since only one powerful enough to regulate
+- Supreme Commander for the Allied Powers (SCAP)
+	- General Douglas MacArthur
+	- Name of military occupation
+	- demilitarize and democratize Japan
+- Military Tribunals
+	- Mainly run by US
+	- Some in Japanese colonies
+	- Many Japanese and non-Japanese tried, some executed, some temporary removed
+	- Emperor not charged with war crimes, but had to renounce divnity, etc
+- 1947 Constitution
+	- Emperor symbol of the state
+	- Renunciation of War and armed forces
+	- Rights of people: universal suffrage
+- Japan-US Security Treaty (1951-2)
+	- US leaves, continues occupation of okinawa until 1972
+## Japan in the immediate aftermath of war
+- 9 million homeless, extreme poverty
+- Economy collapsed: 75% of economy was war economy; destroyed
+	- Massive inflation
+- Average household spent 68% of income on food in 1946
+- Average height and weight of schoolchildren decreased until 1948
+- Barter economy, black markets, paralyzed rationing system
+- Prostitution system from 300,000 occupying troops
+	- Seen as a problem, tries to fix
+	- One of the only ways to make money
+- People in general uncertain about what the US would do to them
+- A lot of censorship
+	- Japanese gov censored during war, SCAP also censored atomic bomb and critique of american occupation
+	- Continuities: continued censorship
+## Postwar Government
+- Setup by SCAP/US occupation and in consultation with reminaing gov officials
+- Executive Branch
+	- Emperor (symbolic)
+	- Prime Minister
+		- Appointed by emperor as directed by diet
+	- Cabinet:
+		- Appointed by prime minister
+- Legislative Branch
+	- Diet
+		- House of Councilors (upper house)
+		- House of Representatives (lower house)
+- Judicial Branch
+	- Judges appointed by Emperor as directed by Diet
+## Early post-war Prime Ministers
+- purged = forbidden from being in gov for ~5 years
+- 1946-first election: newly formed political parties
+	- Liberal Party: Prime Minister Ichirò Hatoyama (purged)
+	- Progressive Party
+	- Japan Socialist Party
+- Yoshida Shigeru (1878-1967)
+	- Socialist Party: US forced allow labor unions to form
+		- Started to fracture later and get oppressed by US to stop communism
+	- Prime Minister 1946-7, 1948-54
+- Katayama Tetsu (1887-1978)
+	- PM 1947-8 (first election after Constitution)
+- Ichirò Hatovama (1883-1959)
+	- PM 1954-56
+	- Comes back after 1946 purged
+- Ishibashi Tanzan (1884-1973)
+	- PM 1956-7
+- Kishi Nobusuke (1896-1987)
+	- PM 1957-60
+	- Family of recent assassination
+### New 1947 Constitution:
+- Ideas similar to UN: nations have sovereignty by respecting others, not by invading other countries
+- Emperor no longer power, deriving position from will of the people
+- Article 9: Japan forever renounce war and can't maintain forces
+	- Japan still setup self-defence force
+## Reforms during occupation
+- Reintroduction of electoral politics and political parties
+- Education system restructured like US system (elementary, junior, high), purged of militaristic, authoritarian content
+- Language reform (writing system simplified and standardized)
+- Attempt (unsuccessful) to decentralize economy
+- Initial support of labor movements, later repressed
+
+- SCAP censorship
+## The Cold War and "reverse course"
+- 1949: Establishment of People's Republic of China (Communist)
+- 1950-53: Korean War
+- 1950: "Red Purge" of Communist Party
+	- Seen as enemy, thousands banned from public jobs
+- 1951: Japan-US security treaty
+	- Japan as US bulwark against communism in Asia
+- Censorship and repression by occupation forces.
+- Weakening of labor standards
+- Massive switch on good vs bad people in US goals
+## Postwar Economic Recovery
+- Korean War (1950-3)
+- Shipbuilding, iron and steel production, manufacturing (decline of agriculture)
+- Annual growth of 10% by 1955 (to 1974)
+- Automobile industry, electronics
+- Life expectancy
+	- 47 in 1935, 68 in 1960
+- Environmental Problems
+	- Pollution
+	- Minamata disease
+		- Caused by mercury poisoning from fertilizer in water in fish eaten
+## Postwar society
+- Initial "New Deal" progressive reforms abandoned with cold war
+- Incerased urbanization
+- Breaking down of traditional extended family
+- Rights of women
+- From military nationalism to culture exceptionalism

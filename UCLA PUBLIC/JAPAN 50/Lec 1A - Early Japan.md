@@ -1,0 +1,106 @@
+- Climate: temperate except okinawa
+	- Hokkaido is sometimes not teperate
+- Geography: intersection of 4 tectonic plates
+	- LOTS of earthquakes
+	- Short time when japan was connected by land bridges to Korea and to Hokkaido
+# Paleolithic
+(Pre-ceramic/"stone age")
+- 32000-13000 years ago
+- Very little known about this period:
+	- Most archelogical sites are now under water due to ice age ending
+	- First "evidence" (stone tool) was about 35000 years ago
+- Lived in rock shelters and caves (no evidence of building anything)
+- **Ground/polished** stone tools
+	- Unusual to Japan
+	- No evidence of decorated tools, no "culture" evidence
+- Hunting and gathering:
+	- Hunted large animals
+		- Nauman's elephant
+		- Giant deer
+		- Mammoth
+# Jomon
+- Roughly 12000 - 4000 BCE
+- Gradual transition
+- Culture: symbols, signs, shapes, patterns, etc
+	- "What does this design represent?"
+- **Appearance of Pottery**
+	- One of the most elaborate for its time
+	- Jomon means "rope pattern"
+		- Often (but not always) rolled a cord to make layered rope-like shapes in pots
+- Hunter-gatherer societes
+- Limited agriculture
+	- Small things, not much grown
+	- Did not really grow a lot despite having pots
+	- limited: soybeans
+- Not much structure or outside contact that we know of
+- Period ends with full-scale agriculture (wet-rice farming)
+## Jomon Tech
+- Pottery use:
+	- Food preservation, cooking
+	- Salt production: use for trade and preservation
+	- Trade item from coast to inland
+	- Ability to store food or items
+	- Allows for human culture to develop
+- Hunting
+	- Traps, used hunting tools in communities (specialization), arrows
+	- hunted boar, deer, fish
+		- Fishing: Needles, hooks, harpoons 
+- Settlements
+	- Multiple household buildings
+	- storage building
+	- sometimes communal buildings
+	- Pit houses
+- Population growth
+	- 22000 in 6000 to 260000 2500
+	- NOT linear growth
+## Pottery
+- Pottery as technology: functional use
+- Pottery as Representation: cultural meaning
+	- Decoration: people, animals, elements, symbols, etc
+	- Make people feel things: community, belonging, ancenstors, etc
+- Dogu: clay human figures
+	- Mostly female
+	- Various positions: praying, heart shaped, goggle, etc
+	- Maybe ritual use?
+	- Anthropologists will make assumptions, but we can never know for sure
+	- Sometimes broke off arm or leg
+# Yayoi
+- 900-400 BCE or earlier to 200 CE
+- Must have come from the mainland continent and mixed with Jomon to create new culture
+- Brought iron, bronze, cloth, wood, glass
+	- All originally imported
+- New farming technology
+	- wet-rice agriculture
+- Came from Korea and moved North
+## Yayoi tech
+- Plant cultivation
+	- Dry cultivation (millet, barlet, wheat, etc)
+	- Wet-rice agriculture
+- Pots: technically more advanced (can do more) but less design and variation compared to Jomon pots
+## Yayoi Society
+- Increasingly hirearchical
+- Evidence of warfare (weapons, fortifiactions, signs of violence in skeletal remains)
+- Emergence of political units
+- Contact with Korean peninsula, appearance in Chinese records
+- Tombs: lots of precious objects
+	- Swords, mirrors, etc
+	- From this, we assume more hirearchial structure
+- New materials: bronze
+	- Made ritual bells
+	- Not practical: can't ring
+	- Often buried away from settlement in large stashes
+	- Bronze Bells with hunting scenes: kings hunt the animals
+		- Symbolically represent authority
+- Also found symbols in tombs:
+	- Priestess buried in large burial jars
+		- Found bracelets across entire arm
+		- Mirror found made in China: 
+### China during this time:
+- Han Dynesty: very advanced society
+	- Gave item that stated recognized king to Japan
+	- Beginning of writing: inscriptions on items important from China
+		- Knew markings meant power and importance but couldn't understand
+	- Record of Kimiko
+# Tomb period
+- Writing and contact with Chinese Dynasties 
+	- Regular embassies going back and forth

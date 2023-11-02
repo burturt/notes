@@ -1,0 +1,192 @@
+Discuss (in 500-700 words) the various dimensions (political, social, technological, ideological, military, cultural, economic, etc) of the Meiji period establishment of Japan as a modern nation-state. Make sure you relate the different aspects to each other.
+
+# Meiji!
+- People are dead from this era, but we start getting family ties ("my great great grandfather was involved in the meiji period!")
+- 40 years where a lot happens
+## Iwakura Mission (1871-3)
+- Not the first: one during 1850s during tokugawa just before civil war, this is now after civil war
+- headed by Iwakura Tomomi (court aristocrat)
+	- Okubo Toshimichi (1830-1878)
+	- Kido Takayoshi (1833-1877)
+	- Ito Hirobumi (1841-1909)
+- Yokohama-San Francisco-Salt Lake City-Chicago-Washington-UK-continental Europe-different ports in Asia-Yokohama
+- Objectives:
+	- Renegotiate unequal treaties (not successful at this)
+	- Learn as much as possible about education systems, government, industry, banking, communications (very successful)
+- Results:
+	- Japan is "exotic"
+	- Realize that Europe all behave in similar ways:	
+		- Languages
+		- Speak the same
+		- Japan is outside of this
+	- Realize that they need to dress in western clothes to be taken seriously
+	- Politicians in each country are key to show that they are the model country and political system
+		- Aware that japan opened up and want to 
+- Exchange grew
+	- people live in foreign country since children and continued with sense of mission to Japan
+# Early-Mid Meiji Key reforms
+- Samurai loose status
+	- Some samurai promised to still be paid stipends, but privileges erode over the next decade until they are gone
+- Everyone part of great empire of japan
+- No more outcasts; everyone is a citizen with discrimination against those who were original not citizens, outcast families
+- Early-Mid Meiji (1868-1895) Key Reforms
+- 1869-76:
+- Abolition of four-class social system (1869-76)
+	- (Eventually Replaced by nobles and Commoners)
+- Abolition of domains and establishment of prefectures (1871)
+	- Domains abolished: national prefectures created, everything under the state
+		- No longer unequal power domains
+		- Translated titles into european titles (barrons, etc)
+			- Allowed domain lords, now large land owners, to keep status
+			- 
+- First national newspapers (1871)
+	- Nationalized communcation
+	- With national railways, allows sending newspaper content across the country quickly
+- National single currency act (1871)
+	- Everyone fully actually uses a common currency unlike before
+- First railways (1872)
+	- 1400 miles of railray by 1900
+	- Ecnomic: move goods across Japan
+	- Massive culture impact: suddenly everything is connected
+		- New feeling of belonging 
+	- 
+- Western dress made mandatory at official functions (1872)
+	- **SUPER IMPORTANT**
+	- Makes people look like a modern nation within and from outside
+- National elementary education (1872)
+	- Has everyone learning basics in elementary school
+		- Makes people learn that they are Japan subjects, which many didn't really know what was going on
+- National conscripted military (1872-3)
+	- National service
+	- Ability to conscript people is important to allow fighting war
+		- During tokugawa, samurai didn't want to be conscripted since they would lose their status
+	- Creating sense of common brotherhood, not hierarchial society
+- Creation of national land tax System (1873)
+	- Taxes uniform; allows creating budget and predict government revenue
+- Ban on Christianity Lifted (1873)
+	- Mostly foreign pressure, christianity as an external threat from portuguese no longer exists
+	- Tied to education now
+- 1874 First political associations formed
+	- People's Rights Movement, "Patriotic Public Party"
+- 1877 National army puts down Satsuma Rebellion
+	- First test of national conscription
+- 1879 Ryukyu annexed
+	- Resistance because part of Ching empire at time
+- 1884 First political parties (Jiyoto, Kaishinto, Teiseito)
+	- People in power trying to figure out who to ally with
+- 1885 European-Style cabinet created
+- 1889 Promulgation of Constitution
+	- Looked at constitutions of various countries in Europe/US
+- 1890 Imperial rescript on Education
+## Key Figures behind meiji reforms
+- "Meiji oligarchs"
+	- Above the government, coaching emperor on what to do
+### Okuma Shigenobu
+- Studied dutch learning
+- Monetary reform (1871)
+	- Minted single currency
+- National land Tax Reform (1873)
+	- country is still primarily agriculture
+- Foreign Minister/Minister of Finance
+- Founded several of the earliest political parties, and eventually Waseda University
+### Yamagata Aritomo
+- Saw prussia as model to militarize
+- Went to Europe to study military in 1869
+- Universal conscription in 1872
+- War minister in 1873
+- Japanese Army modeled on Germany, navy on brutain
+### Ito Hirobumi
+## Modern Economy
+- Meiji trying to transform government, nationalizing everything
+	- Needs a modern economy
+- **Railway Lines**
+- Specialized banks offering long-term credit
+	- Meiji wary of foreign credit
+- Industrialization
+- Mining
+- Zaibatsu and state monopolies
+	- Large conglomerates, partially part of government and monopolizes certain things like mining
+	- Privatized companies are lent money from government to keep them in debt and under control of government
+	- Jump start modern economy and industrial economy: japanese version of large companies
+		- key for colonial exploitation of resources
+- Oligarchs: long-term awareness of needing to get resources
+## National Newspapers
+- First established in 1871
+- Dissemination and control of information
+- Press laws issued in 1875, 1877
+- Public Meeting law (1880)
+	- Police supervision
+- Peace preservation laws (1887)
+	- Censorship
+- Censorship to prevent scheming against government
+## Fukuzawa Yukichi
+- Books:
+- Outline of a Theory of Civilization (1875)
+	- Influence by British liberalism
+	- Social darwinism
+		- people are inherently the same
+	- Three stages of civilization:	
+		- Primitive (Africa, australia)
+		- Semi-developed (turkey, china, japan)
+		- Civilized (Europe, US)
+	- Civilization and Enlightement 
+- Encouragement of learning
+	- Everyone may be equal, BUT not the same in conditions of inequality
+	- all differences between wise and foolist is a matter of education
+## Modern Education System
+- 1873 Ministry of Education establishe
+- Students sent to US and Europe
+- Foreign instructors brought to japan
+- National school system
+	- Elementary, middle, high
+	- Taught everyone is the same, with education anyone can be anybody
+		- Not reality
+- Tokyo Imperial University established (1877)
+- Imperial rescript on education (1890)
+### Aims of modern education system
+- Provide citizens with skills for modernization (literacy, numeracy, etc)
+- Instill sense of loyalty to country
+- Shape moral character
+- No unified togetherness sense: must be done through education
+## Popular rights and the First Political Parties
+- Jiyuto (Liberal Party, 1881)
+	- Itagaki Taisuke
+	- Liberal democracy under constitutional monarchy
+- Kaishinto (Progressive Party, 1882)
+	- Okuma Shigenobu
+	- Reduced monarch to be purely symbolic
+- Teiseito (Imperial rule party, 1882)
+	- Fukuchi Genichiro
+	- Our party will serve emperor's will
+		- Actual: the oligarchs wil rule in the emperor's name
+- Factional thing: those who get votes form liberal party
+## Meiji Constitution (1889)
+- Preamble: emperor delcared to respect and protect people
+- 1.4: Emperor is head of empire, combining himself rights to sovereignty and exercises them according to cnstitutions
+- 2.18: The conditions necessary for being a japanese subject shall be determined by law
+- Ideal structure:
+	- Emperor is head of state
+	- Legislature:
+		- House of Peers
+		- House of Representatives
+		- (elected by property owners, 1.1%)
+- In practice:
+	- Emperor head
+	- Genro: elder councilors, oligarchs "advise" as privy council
+	- Diet (Legislature)
+		- Can try to put pressure but often not successful
+	- Military is independent, under control of olicharch not legislature
+## Imperial rescript on education
+- Education serves imperial court
+- Still no modern unified language: very similar to Chinese
+## Sino-Japanese War
+- 1894-5
+- Fought over control of Korea
+	- With modern miltary, wins in a year
+- Treaty of Shimonoseki (treaty of Maguan) (1895)
+	- Ceding of claim over korea, territory of Taiwan, Pescador (Penghu) islands, and part of Liaodong peninsula
+	- Payment of indemnity and opening of seven ports to Japan
+	- Qing dynasty serverly weakened
+	- Imposes unequal treaty on China (end of Qing dynasty)
+- Japan now sees themselves as superior, dressed like western power and over Korea
+	- Portrays themselves as entering into the world stage

@@ -1,0 +1,114 @@
+# Summary of tokugawa period
+- Shogunate founded by Tokugawa Ieyasu in 1603
+- Capital city in Edo
+- System of alternate attendnace (sankin kotai)
+- Three types of vassal
+	- Allied daimyo (Fidai), Tokugawa branch families (Shinpan), outside daimyo (tozama)
+- Tension between central government (bakufu) and domains (han)
+	- Regulation, taxes, economic reluations
+- Control of borders: 1633 -- prohibition of traveling abroad; 1639-all foreigners except Dutch prohibited from entering Japan
+	- Foreigners restricted on what they can trade
+## Tokugawa Economy, Society, Culture
+- Cultivated land doubled; great increase in population; Growth of cities; market networks established to supply cities; rise of merchant class
+- Warrior class turned bureaucrat in times of peace. Tokugawa social hierarchy: warriors as class above peasants, merchants, craftsmen.
+- Printing (wood block printing) - broader access to knowledge - of Buddhism, of classical China, of classical and medieval Japan (both of which are now long gone), of the outside world
+	- Modern education and universal literacy beginnings
+- New forms of urban commoner culture and entertainment - print fiction, theater.
+- Golden age from late seventeenth century to mid-eighteenth
+- Economic and social crisis begins in 1730s
+## Late Tokugawa Ideology
+- printing and literacy allows knowledge to spread to many
+
+- Merchant ideas of utility and economic relations
+	- Neo-confucian concepts re-interpreted in economic terms
+	- ideal society:
+		- Ruled by small group of elites, people work the agriculture fields and make money for themselves and funds samurai stipends
+		- Tokugawa looked down on merchants as not actually doing anything, just directly turning a profit
+	- Economic problems: merchants scapegoated when problems occur since "we need to go back to golden age" of ideal society
+	- Some merchants do well, educated, etc, so they see themselves as a social group that contribute towards society
+		- warriors keep peace, farmers grow food, merchants trade to the benefit of individuals and society (no trade = suffering)
+- Dutch Learning and Western Science
+	- Dutch Learning: any knowledge that comes from europe (e.g. electricity, anatomy, medical knowledge)
+- "Studdy of ancient meaning"
+	- Challenge to Neo-Confucian Tokugawa orthodoxy
+	- Instead of relying on teachers and interpreitations, some go to the source with woodblock printing
+	- Why study China? Let's study japan
+	- public debate about what is important
+- Nativist learning, Shinto Revivalists
+- Sonno Joi
+	- Revere the sovereign and expel the barbarians
+- idealization of a strong samurai class: samurai are out of practice
+## Dutch Learning
+- Two main areas:
+	- Medicine (botany, chemistry, physics, zoology, etc)
+	- Astronomy (cartography, geography)
+- Sugita Genpaku report on an autopsy 1771
+- Science and Sensationalism
+	- Very closely connected: "look at this thing!"
+- "accounts of commerce and trade between the civilized and the barbarians"
+	- Explanations of other people, telescopes, microscopes, etc
+# Economic Problems
+- Financial crises brought on by famines
+- Kansei Reforms (1789-91)
+	- Lowering of rice prices, Rent control, Restrictions on merchant guilds, Freezing of foreign policy, Censorship, decreasing samurai pensions
+- Tokugawa shogunate budget deficit
+	- Currency devaluations
+- Samurai high status at odds with impoverished circumstances
+- Famine, peasant uprisings, urban riots (1830-40's)
+	- Major famines In 1732, 1782-5, 1836-8
+	- Shogunate constantly trying to play catch-up to fix economic situation, each reform less effective than the previous
+- Further shogunate and domain reforms in 1840's -50's
+	- Major educational and economic reforms
+	- Choshu and Satsuma more successful than shogunate
+		- Areas that are "backwards" don't have as many merchants and large cities, and are doing ok
+# Opening of japan to Trade
+- 1842 End of first Opium War (between Great Britain and Qing)
+	- Beginning of unequal treaties
+- 1846-8: Mexican-American War
+	- US acquires California, New Mexico
+	- Commodore perry second-in-command
+- 1848: Discovery of gold near Sacramento
+	- Beginning of California Gold Rush
+	- All of a sudden, Japan is next when going West
+- 1853-4 Convention of Kanagawa (Treaty with United States)
+	- (1855-Britain and France, 1857 Holland and Russia)
+- 1858 Commercial Treaty signed with United States
+	- Opening of ports causes inflation and more economic hardship
+	- Unequal treaties in Japan
+	- Shogunate no control over trade = no taxes
+		- Shogunate weakened a lot
+# End of the Tokugawa Shogunae
+- 1858 Shogunal succession dispute
+	- Resolved by Ii Naosuke (killed by samurai 1860)
+	- new treaty signed to keep power in Tokugawa
+- 1860s widespread unreset
+	- Movement to expel "barbarian" westerners
+- 1864-8 Wars between shogunate and Choshu/Satsuma
+	- US, French, Russia, etc aided sides in war
+	- Very messy wars between various powerful lords and foreign powers
+- 1868-9 Boshin War
+- 1868 Meiji Restoration
+# Early Meiji
+- 1868 Charter Oath
+	- Emperor is the emperor, will think about creating constituion
+	- Not sure what new government is going to be
+- 1869 Emperor moves to Tokyo (new name for Edo)
+- 1869 Hokkaido Development Commission established
+- 1871-6:
+	- Abolition of Han and establishment of prefectures
+	- Creation of national land tax System
+	- National conscripted military
+	- Abolition of four-class social system
+		- (Eventually Replaced by nobles and Commoners)
+	- Western dress made mandatory at official functions
+	- Ban on Christianity Lifted
+	- First national newspapers
+	- First railways
+- 1872: Ryukyu established as domain (officially annexed in 1879)
+- 1873: Iwakura Mission
+	- top meiji government goes on 2 year learning trip to US and Europe
+- 1874: First Political parties Formed
+- 1877: Satsuma Rebellion
+	- "real" end of Tokugawa period and beginning of meiji
+# Key Figures
+- Copy from recording later

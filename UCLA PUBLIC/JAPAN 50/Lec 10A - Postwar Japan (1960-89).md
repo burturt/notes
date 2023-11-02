@@ -1,0 +1,134 @@
+## Postwar chronology
+- 1960 Treaty of Mutual Cooperation and Security between Japan and US (revision of 1952 Security Treaty)
+	- Lots of unrest about this
+- *1961-1979 Park Chung-Hee rules Korea*
+- *1949-1975 Chang Kai Shek rules Taiwan (ROC)*
+- *1949-1976 Mao Zedong rules China (PRC)*
+- 1964 Tokyo Olympics
+	- Key date: Tokyo goes from enemy of US to up-and-coming economic powerhouse
+- 1965 Korea-Japan Treaty
+	- Normalized relations, try to reduce tension 
+- *1966-76 Cultural Revolution in China*
+	- People who are studying China must go to Japan or Taiwan due to revolution
+- 1969 Student Protests (against Vietnam War and University Policies)
+	- Anti-security protest continuities
+- 1972 Okinawa reverts to Japan
+- *1978 Beginning of China's Economic Reforms*
+- 1980s Japan's annual car production surpasses 10 million units
+- 1987 Per capita income overtakes the United States
+	- Reported 
+- *1987 End of martial law in Taiwan*
+- *1987 Sixth Republic established in Korea*
+	- *Beginning of democratic reforms*
+- *1988 Seoul Olympics*
+- 1989 Shöwa Emperor (Hirohito) dies. Beginning of Heisei era.
+- 1990 Japan becomes country with highest life expectancy in the world
+
+## 1959-60 Protests against US-Japan security treaty
+- Article 6: US would station forces and Japan provide military base
+- 10 year term, later renewed
+- Opposition to treaty within Diet
+- Up to 16 million people priotested in streets
+- Opposition suprising: managed to improve treaty of Japan
+	- e.g. US would have to consult Japan before moving troops
+- Forced ratification: prime minister used police to physically remove socialist party members to then ratify treaty
+	- Outrage
+## Postwar politics
+- Political parties
+	- Liberal Democratic Party (LDP) always wins with multiple factions inside party
+	- Other parties (smaller):
+		- Japan sociality party
+		- Democratic socialist party
+		- Japanese Communist party
+		- Clean government party
+- Ikeda Hayato
+	- 1960-64
+	- Repaired US-Japan relations
+	- Income doubling plan: pledge to double size of Japan economy by 1970, manages to do it 1967
+	- Set up universal health insurance and pension plan in 1961
+	- Presided over Tokyo Olympics 1964
+	- Sets standard of government and PM as technocratic
+## Postwar Economy
+- Ministry of International Trade and Industry (MITI): oversaw foreign trade.
+	- Capitalist economy but with strong coordination for long-term growth
+- Priority industries:
+	- Shipbuilding, steel production, cars, electronics, robotics, biotechnology
+- Enterprise groups of affiliated industries
+	- Continuation of zaibatsu companies
+	- Mitsui, Sumitomo, Mitsubishi, etc
+		- Bank/insurance company surrounded with other businesses ("horizonal" expansion)
+	- Toyota, Nissan, Sony, Toshiba, etc
+		- Industry (car making) that own start to end of production ("vertical" expansion)
+	- Main employers, companies mostly took care of workers
+	- Advanced levels of education in workforce
+- Steel production 89% of the US by 1974
+- Japan's annual car production surpasses 10 million units in 1980s
+- Life expectancy
+	- 47 in 1935, 68 in 1960, 78 in 1990
+- Massive growth from 1965 until 1990
+## Postwar social transofmration
+- Higher education boom
+	- Renewed emphasis of education postwar
+	- by 1990 95% get beyond ninth grade, <50% 1950s
+- Growth of cities and suburbs
+	- Particularly in greater Tokyo area
+	- Oftentimes planned with housing and train built
+	- Publicly financed apartment building
+- Decline of three-generation family
+	- Nuclear family becomes norm: mom/dad and kids
+	- Less arranged marriages
+- Postwar company culture
+	- Lifetime employment
+	- Men should be devoted to company, women devoted to home
+		- Women in workforce often extremely overqualified, providing cheap high-quality labor
+- "New Middle Class"
+	- Lived off of single income, women often at home (postwar development only)
+	- "Three treasures" - what people aspired to
+		- Buddhist originally
+		- 1950s: Monochrome TV, washing machine, refrigerator
+		- 1960s Color TV, AC, car
+- Divisions:
+	- Koreans still seen as resident aliens
+	- Burakumin screened out of job applications
+	- growth of new religions
+	- Trade unions lose power as companies looking after people, people seeing economic growth
+		- Urgency to join union dies
+## Postwar culture
+- TELEVSION
+	- Regular broadcasts begin 1950
+	- NHK established 1953
+	- 1958 1 million TV owners
+	- 10 million in 1962
+	- Huge increased after 1964 tokyo olympics
+- TV provides a strong sense of shared national experience
+- Growth of publishing industry
+	- Magazines, newspapers, books, manga
+- High culture/mass culture
+	- For average person, mass culture more important than high culture
+	- Film
+	- Literature, fiction
+	- Art
+	- HUGE number of translated language
+		- Shows prosperity of Japan
+## Olympics
+- 1964 Tokyo Olympics
+	- 1st Olympics in Asia
+	- First to be telecast internationally in partial color (to US and relay to Europe)
+		- Broadcast live
+- Inauguration of Tokyo-Osaka bullet train
+## Japanese mass media exports
+- many successful media franchises from japan
+	- e.g. Hello Kitty, astro boy
+- Anime spread internationally but not many knew it was japanese
+	- Note: most anime from this period is dead but helped set the foundation for the next set
+- Basis of "Japan is cool" created during this time
+## 1980s Japan: Age of Affluence
+- 1980s Japan's annual car production surpasses 10 million units (second to US)
+- 1979 sony releases first Walkman model
+- 1987 Per capita income overtakes the US
+- Travel abroad
+	- 3 million trips 1980
+	- ten million 1989 (40% women)
+- "Japan bashing" in US and Europe
+- Japan starts to become trendy/cool
+- Japan starts to become a popular area of study in North American and Europe

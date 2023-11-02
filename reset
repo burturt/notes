@@ -1,6 +1,0 @@
-TMP=$(mktemp -d)
-mv reset $TMP/
-mv README.md $TMP/
-mv _config.yml $TMP
-rm -r *
-mv $TMP/* .

@@ -1,0 +1,124 @@
+# Taisho (1912-1926)
+- Known as culture and democracy period
+- 1912-3: Taishó financial and political crisis.
+- 1914-18 World War I
+	- Good for economy, selling weapons, etc
+- 1915 Twenty-One Demands to China
+- 1917 Bolshevik revolution
+	- Fear that similar revolution will occur in Japan
+- 1918-1922 Japan attempts to control eastern Siberia
+- 1918 Rice riots
+- 1918 Hara Takashi government
+- 1919 Versailles Treaty (racial equality clause debate).
+- 1919-20 League of Nations formed
+- 1921-2 Washington Conference: Four Power Treaty (France, Great Britain, Japan, US)
+- 1921 Women gain right to attend political meetings (not vote)
+- 1923 Great Kant earthquake
+- 1923 Establishment of Soviet Union
+- 1925 Universal suffrage law (all males 25 and older)
+- 1925 Peace preservation law
+- 1925 Italian Fascist Party comes to Power
+## Taisho Political Crisis
+- Meiji Emperor died
+- 1912-3: Military overspending b/c independent from Diet approval
+	- Competition between military and domestic spending priorities
+- Seiyukai overthrows the cabinet
+	- Defeated prime minister founds another political party
+- Presense of two parties in diet made government more democratic, but position of the military was also strengthened (because to give power to Diet also meant giving power to military to agree)
+	- Prime mininster came from Diet, not appointed by Oligarch
+	- Policies debated in Diet, not oligarchs
+## Japanese Economy during WWI
+- 1914: Japan declares war on Germany
+	- Siezes German colonies in East Asia and Pacific
+- 1915 Twenty-One demands to China
+	- Japan obtains additional investment rights in Shandong peninsula
+	- Demands for severely unequal treaty agreements
+- Economic boom (demand for industrial products, less competition from Europe)
+	- Increased agricultural production
+	- Increased industrial production
+- Expensive attempt to halt Bolshevik Russia expansion in Eastern Siberia
+- 1918: Economic boom causes inflation faster than wages, widening inequality
+	- Rice riots
+### Hara Takashi (aka Hara Kei)
+- Leader of Seiyukai from 1904
+- Prime Minister 1918-21
+	- First commoner to serve
+- Assassinated in 1921 by right-wing fanatic
+## Japan in the World after WW1
+- 1919: Treaty of Versailles
+	- Japan insist, debate on racial equality clause
+	- Declared right for country to self-determination, but ideal not reality (colonialization)
+	- Japan trying to figure out what Japan is, civilized/uncivilized/military power
+- 1919: Brutal suppression of Korean independence movement
+	- Turn to "cultural rule" in Korea
+- 1919-20 Formation of League of Nations
+- 1921-2 Washington Conference: Four Power Treaty (France, Great Burtain, Japan, US)
+- Debates during this period: "How fast to become imperial nation?"
+## Taisho Society
+- Old middle class (families of tradesmen and merchants from Edo period, owh businesses) and new middle class (Educated salaried employees working for a company) in cities
+- Emerging urban social groups and categories
+	- Workers/laborers, educated students, working women, housewives
+- Immigrants from colonies
+	- 2500 Koreans in Japan 1910, 420,000 in 1930
+	- Tokyo becomes imperial center
+- Rural areas very hirearchical, widening gab between landlords and tenants
+## Taisho "Culture"
+- Urbanization, modern social classes
+	- Urban culture
+- High levels of literacy
+- Magazines and other printed works
+	- Aimed at specific social classes like young intellectuals, women, students, etc
+	- Circulation of ideas
+- Literature, Philosophy, Political radicalism
+- Feminist Liberation (sexual, financial, political)
+- Fashion
+	- Modern dress, "Moga" (Modern Girl)
+	- "Mobo" (Modern boys)
+- Literary Fiction
+- Cafe Culture
+- Jazz Internationalism
+- Modern Art
+- "Culture Homes" (Modern Homes)
+- 1925 **Radio culture begins**
+	- Real time broadcasts
+- First feelings of "are our youth being corrupted by culture?"
+	- Eventually leading to restrictions
+## Women's suffrage movement
+- 1925 get right of participation but not to vote
+- 1940 right to vote
+	- Slightly later than rest of world, but around same time as US/UK
+## Economy
+- 1918 wartime boom
+- Huge grpwth leads to inflation, to overpriced goods
+- stock market crashed 1920
+- Recovers through 1922-23, then earthquake
+### Great Kanto Earthquake
+- Sep 1, 1923
+- 3/4ths of Tokyo destoyed, over 140,000 dead (many missing)
+- Massive fires
+- Aftermath:
+	- ad-hoc community police tries to "protect" ruins
+		- Harrased anyone not speaking japanese
+		- Massacre of Koreans
+			- Partially in response to Korean independence movements because of Treaty of Versailles
+	- Prominent activists murdered by police
+	- Eventually realized this is not good, stopped
+		- Popular opinion moves very quickly
+	- National recovery
+	- International aid
+- Old buildings collpase, more modern builds stand
+	- Causes unhappiness: "why can't we go back to the old ways"
+	- Everyone wants selfish representation
+## Late Taisho Political Development
+- 1921 "Japan Federation of Labor" formed
+- 1922 Women no longer banned from political meetings
+	- Could now organize in unions
+	- Textiles 80% women, very powerful
+- 1922 Founding of Japan Communist Party
+- 1925 General Election Law
+	- Suffrage for all males of 25 and over
+	- Key moment: start of worry of Bolshevik revolution takeover
+- 1925 Peace Preservation Law
+	- Anyone who organizes a group to deny private property or "changing the national policy" can be arrested
+	- Extremely vague
+	- General move towards democracy yet trend towards authoritarism
