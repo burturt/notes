@@ -1,0 +1,35 @@
+- Identify the research question and why it is important
+	- Do women perform better than men in Congress?
+	- "sex-based selection": not equal chance to being elected to a position that should be fair and democratic
+- Briefly summarize the relevant literature surrounding the topic
+	- Men/women see running for office differently, both in self-selection of qualification and concern to raise financial support and win elections
+	- Many findings show that men and women performance in campaigns and elections are the same and discrimination is not an issue
+	- Some research findings contradict that there is a bias for voters
+	- Some surveys show that people still favor men over women as candidates
+	- Recent studies show there may be more hurdles to women, such as more competition and challengers, and parties themselves doing the discrimination
+	- Once in office, women often focus on "women's issues"
+	- Almost nothing says about performance once *in* office (this paper)
+- Explain the data and method used by the author and how it helps answer the research question
+	- Assumes candidate performance is tied to being a high-quality candidate and legislator
+	- Uses federal program spending to a MC's district as an indicator of performance
+		- Use data from Federal Assistance Award Data System for spending, attributing spending to the MC who was in the district in the prior year
+			- In order to compare male vs female in changing district borders, they called a district as a new one if the majority of the new district land was not part of a pre-existing district
+			- Filters out "low variation" spending, funding like social security that most districts get more evenly
+		- Model 1: Finds roughly 9% more spending when women than man is Rep with a high (0.9 r^2) correlation, and no significant similar correlation of the same or greater magnitude when looking at different parameters such as party, population, unemployed, income, tenure length, racial makeup, and urban.
+		- Model 2: Also finds the rate of which a district's spending increases year-to-year after a women succeeds a man increases (looks at 3 terms before and after)
+		- Model 3: Also finds similar findings when using states instead of districts
+		- Model 4: Looks at close man vs women races and causes a change immediately before and after a year. It shows *a* correlation, but limited data set does not give for a strong correlation
+	- Concedes: this does not show that it is sex-based selection
+		- Uses ideology as a measure of how much sex-based selection occurs (republicans are less tolerant in general)
+		- Continues in Table 2 by comparing the effect of district ideology or district + candidate ideology on % of federal spending increased, then on (3) compares the advantage being a female nonwidow and widow in general has on spending
+		- Uses widows because they don't go through the election process and have to think about qualifications
+	- Looks into some alternate explanations (none of which found any significant correlation):
+		- Electoral vulnerability, or when a MC has a close race
+		- partisanship: women are more likely to be democrats and liberals
+		- Committee assignments: women may get assigned to certain committees more than other committees
+		- Also found that spending is generally diverse
+	- Also uses bill sponsorship and cosponsorship as another indicator of performance, controlling for a lot of variables such as party, majority status, and how ideologically extreme the MC is
+		- Another study DID note that women's bills generally go further in the rpocess and are considered more "important" more often
+- Give a brief reaction- what did you think of this paper?  Were the results surprising, or what you
+expected?  Why?
+	- Personally, I think this paper does an excellent job of measuring something that may seem like a given, at least to me, in a quantifiable, scientific way. I don't find the results surprising, but the methods of which they went about arriving at the result was 

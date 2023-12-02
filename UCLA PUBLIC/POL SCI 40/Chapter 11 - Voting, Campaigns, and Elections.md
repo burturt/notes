@@ -1,0 +1,102 @@
+## Logic of Elections
+- Republic: citizens delegate power and government to a small number of citizens
+	- Size of US prevents direct democracy
+	- Need to trust others to do the right thing
+	- Risks individuals putting own interests ahead of public interest
+	- Elections help solve the delegation selection problem
+## Right to Vote
+- Originally had property qualifications, must be men and some had religious requirements
+- Moved to wider suffrage: "no taxation without representation" as many men contributed to rev war
+- Suffrage for women: because women were expected to vote for "family values"
+- African Americans/Young Americans: 26th amendment for young in relation to Vietnam War
+## Who Uses the right to vote?
+- Many don't actually vote
+	- Collective action problem: free riding from not voting yet benefit from others voting and one vote is not going to swing any election
+- Individual factors affecting turnout
+	- Age, race, education highest influence
+	- Deeper connection = more likely to vote
+	- People who vote must meet the costs but appreciate/understand the benefits
+- Institutional Factors
+	- Voter registration requirements/barrier to vote
+	- Social circumstances: seeing other vote or being directly asked
+		- Personal appeals
+- How do voters decide?
+	- Past performance and incumbency
+		- look at performance of incumbents, esp prez, like looking at economy
+	- Assessing issues and policy options
+		- Looking at own lives by looking at SS check sizes
+	- Single issue voters
+		- Voting on a single issue that is important
+- Voter Cues and Shortcuts
+	- Opinion leaders
+	- Personal criteria are used: honestly, etc
+	- Party labels: give some idea on how a candidate stands on an issue
+		- Performance voting (voting for/against in-office party based on performance) and issue voting (voting on how Rep/Dem differ predictably in issues)
+- The Power of Party Identification
+	- Party loyalty predicts elections, independents split
+	- Weaker party identification = more likely to vote for minor party candidate
+## Election Campaigns
+- Campaigns abuse fact that voters free ride on info 
+	- Must adapt to circumstances, changes a lot
+- Candidate: person who can portray themselves to the public as able and qualified for the job
+	- Parties nominate candidates through primaries
+- Message: answering "why vote for me"
+	- Chosen opportunistically
+	- Slogan is part of message, but more than just slogal
+- Connecting to voters: "I'm just like you!"
+	- sometimes works, sometimes doesn't
+- Getting attention
+	- **campaign gaffs**: political mistakes
+	- Candidates fight for attention due to early primaries
+	- Televised debates
+		- Challenge candidates to convey message under pressure
+		- Unavoidable for top candidates
+- Advertising and Attacks
+	- Effect of ads are small: must keep up advertising to keep any effect
+	- Many ads near election day
+	- Attempt to mislead by combining elements
+	- **Negative or Attack Campaigning:**
+		- Can be ugly but effective
+		- People hate it, but little pushback
+		- Target rationally ignorant, marginally involved voters
+		- Campaigns must quickly and effectively respond to such attacks
+	- Goal is to win a majority of votes, not every vote
+## Money in Campaigns
+- Orig controlled by newspapers and party organizations, but now television and online media
+- Costs continue to grow
+- Regulation:
+	- All funding is private
+	- Federal Election Campaign Act of 1971: required public reporting of funding sources and spending caps
+		- Cap later struck down if funds are 100% private
+	- "Soft money": money not regulated by FECA
+- Flow of campaign money:
+	- Costs continue to grpw
+	- Huge variation in campaign budgets
+	- Funds required in primaries to beat out other same-party candidates OR beating incubents
+		- Incubents more spend = less likely to win due to spending 			- feeling threatened
+- Difficult to connect funds to voting: is money given actually for campaign or because they vote the same way?
+- Funds spent:
+	- Huge chunk in advertising
+	- Other funds still important like debates and travel and staff overhead
+- Presidential Campaigning:
+	- Spend in "swing states" because of winner-take-all system
+## Logic of Elections Revised
+- Candidates can win plurality of popular vote but not electoral college
+- Electoral college
+
+# Research paper
+### 2010
+- Voter's well-being sense from college football wins = better chances for incubent
+- College football wins have zero influence: no one expects government to have any effect on this unlike natural disasters for example
+- First study President, Governor, and senate elections over about 40 years
+	- Wins in the days before election causes higher percentage for incubent, even when trying to compare turnout
+- Second survey:
+	- Increased approval in march madness when their team won, 
+## 2015
+- Asserts original research paper followed all convention but just was unlucky to happen to have result
+	- Disprove by showing results of other analysis
+- First looks at college football:
+	- Found same advantage result
+	- When Split ticket incubent Senate and gov, no advantage found
+- Inverse effect found in higher interest teams
+- NFL has no similar effect

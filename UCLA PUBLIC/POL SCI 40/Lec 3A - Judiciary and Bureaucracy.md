@@ -1,0 +1,160 @@
+- Midterm:
+    - 10 fill in the blank and 8 short answers
+    - EVERYTHING in-class discussions and slides
+        - ex short answers: What are the pro and cons of political campaigns on democracy?
+- In the courtroom, what is the judge's job?
+    - "In charge" of the court
+    - Interpret laws
+    - Interpret facts to make decisions
+- Federal courts:
+    - SC
+    - Circuit Court of Appeals
+    - District Courts
+- State courts
+    - Highest state court
+    - Appellate courts
+    - Trial courts
+- Trial Courts
+    - Evidence is introduced
+    - 2 lawyers, defendant
+    - Decision: guilty/not guilty or liable/not liable
+    - Jury
+        - Work by unanimous consent
+    - Objection
+- Appeals courts
+    - Panel of judges
+        - No jury
+    - Judges can pick cases
+        - No requirement that a judge must hear an appeal
+    - Facts of case have already been established, no new evidence
+    - Look at what the judge did in the trial court
+        - Is what the judge do violate state or federal law or the constitution?
+        - Verifying procedures were followed and ensuring equal chance
+    - Role: checking that the judge did their job correctly
+- How do judges get their jobs?
+    - All appointed by prez and confirmed by the Senate
+        - States usually mirror: gov appoints, confirmed by legislator
+        - Some judges are elected, usually lowest courts
+    - Serve for life
+    - Can be removed for high crimes & misdemeanors
+- Where does judicial power come from?
+    - Vesting clause
+        - does NOT have a herein granted
+    - Congress can setup lower courts
+        - Congress has full say over not SC
+    - Judicial powers extend to all cases
+    - Question: how many justices?
+- Marbury v Madison
+    - MIDTERM
+    - Marbury appointed to position by Prez John Adams
+        - John Adams made many appointments, but the commission for Marbury ended up not delivered in time
+            - Prez jefferson told Madison to not deliver the commission
+            - Congress and Prez antifederalists, court by Federalists
+                - Marshall, Chief Justice, does not want to super anger them and lose court legitimacy
+    - Marbury sues Madison
+    - Did marbury have a right to his commission?
+        - Once it was signed, YES
+    - If marbury had a right to his commission, was there a legal remedy for him to obtain it?
+        - Yes, there is some violation, so therefore there is a remedy
+    - If such remedy exists, could the SC legally issue it?
+        - NO:
+        - SC original jurisdiction:
+            - if state is a party
+            - Foreigners representing another country
+        - Otherwise, it will ONLY be an appeal court
+        - Marshall says Judiciary act of 1789 says SC can write writ of mandamus, therefore it is void and unconstitutional
+    - Marshall also took the power of judicial review for SC
+    - Court order: writ of mandamus
+- Federalist 78:
+    - SC doesn't have more power over the legislator, but the people have control via the constitution and the court enforces the constitution and therefore protect people's rights
+    - Judiciary is the least dangerous since they can't create, and only interpret things from the constitution
+        - They also have no means to enforce; they rely on the executive branch to enforce
+- Is Hamilton right about "least dangerous"?
+    - Assumptions:
+        - Impartial judges and not politically motivated
+        - Constitution is not really much of a limit: has been stretched like crazy but judges
+- Dangers of the court:
+    - Judges are not elected, and do not face reelection
+        - Judges can go against the population since they aren't accountable to anyone
+    - Power to interpret is super powerful
+    - Corruption
+    - Precedent is stuck in the past
+    - Hard for lower courts to make decisions if SC is constantly changing
+    - Public opinion changes a lot, and following nature of the times is not good
+    - Element of randomness to judges
+    - RBG: refused to retire
+- Should the ideological make up of the court reflect the will of voters? How to make more responsive?
+    - Can't vote on appointments even indirectly
+    - Could do direct appointment
+    - Term limits
+    - Limit Gerrymandering
+    - problem: no real clear answer to fix it
+
+## Bureaucracy
+
+- also unelected like the judiciary: appointed by prez or hired like normal
+- What is the federal bureaucracy?
+    - Large org composed of appointed officials whose authority is divided among several managers
+    - Bureaucratic departments make up the executive branch
+    - Executive Departments execute laws
+- Congress created the bureaucracy
+    - State, Treasury, War first
+- Inside Departments are Agencies
+    - e.g. secret service, coast card, ICE, TSA
+- How do Bureaucrats make policy?
+    - Congress tell them to through their establishing act/bill!
+        - Tells a secretary that they can make decisions
+    - Executive departments need more specific instructions
+        - For employees and private entities
+    - So bureaucrats issue states of policies and **regulations**
+- Leadership of the Executive branch
+    - Request funds from Congress
+    - Spend with any discretion the law allows
+    - Appointments of dept heads
+    - Appoint other upper level manager
+    - Control content of regulations
+        - regulatory review
+        - More partisan political appointees in policymaking positions
+        - Congress has Veto power over regulations
+    - Issue Executive Orders to people who work in exec branch about how to interpret and execute the law
+    - prosecutorial discretion in implementing of law
+		- Deferred action for childhoold arrivals, asylum seekers
+- Many laws can be implemented without partisan interpretations, but will they?
+	- Issue: partisan interpretation changes every 4-8 years due to flip flopping
+	- hard for companies and individuals to keep up with constantly changing laws
+- How should we maintain democratic control over law enforcement and the bureaucracy?
+	- Give Congress insentive to make more robust laws with less discretion
+	- Force transparency, but people may not already care
+	- More civil service exams
+	- APA: passing laws be a public project, informed citizens can voice up
+- One answer:
+	- Be isolated from democratic control!
+	- Independent agencies and regulatory commissions:
+		- Peace Corps
+		- Federal Reserve Board
+		- National Transportation Safety Board
+		- Nuclear Regulatory Commission
+	- What makes them isulated?
+		- Not appointed by partisan presidents
+		- Remain impartial to interpretation, shouldn't vary by political party
+		- Not stuff that should involve the party process
+		- Issue: experts in independent agency could actually not be competent
+			- No people's check, only Congress
+- Iron Triangle:
+	- Agencies, individual members of Congress, and special interest groups
+	- Why do they work together?
+		- Each member of Congress has an agenda, so each act differently
+			- Each member may have special connections or seats in committees able to exert influence
+		- NO people in the iron triangle
+	- What issues are they able to exert influence?
+		- Funding
+		- Amount of discretion an agency can get
+		- Interest groups that are affected make more noise
+		- Focus on nano-interests that concern only those interest groups and agencies
+		- People go back and forth between agencies and private companies
+			- Private interest groups and agencies may have huge ties
+			- Revolving Door
+- How much autonomy from the president and Congress should the Bureaucracy have? What are the dangers of too much/too little
+	- Experts will do better than elected members
+	- HOWEVER, no accountability causes issues
+	- Too much autonomy can be an issue

@@ -1,0 +1,19 @@
+- Examining judiciary of Constitution
+- It has already been proved that the judiciary is necessary, but we need to talk about the structure itself
+- Issues: choosing judges, tenure, and relationships between different courts
+	- First issue: already the same as officers in general
+	- Second: judges are lifetime only while they do their job correctly
+		- Lifetime provides a barrier from being removed by the representative body just for bring impartial
+		- Judicial will always be least dangerous of the branches because it cannot force decisions, only judgement, and cannot violate individual rights
+	- Independence is important so that it can prevent Congress from passing certain bills
+	- Some say power to void bills makes it stronger than legislative power: NOT TRUE!
+		- No law that contradicts the Consitution can be valid
+		- The courts are there to prevent the legislaters from exceeding their authority
+		- The people are really superior
+		- Since people are superior, the courts must stop a contradiction with the Consitution, the people's document
+	- Permanent positions are needed to allow independence of judges from the legislators
+		- The independence of judges is important when people oppose and suppress a minority group
+		- Judges must check "mischief" laws that are passed due to popular pressure
+			- All people should want to stop injustice
+		- Temp positions cannot resist pressure 
+		- Not many people qualify as a judge, so temp positions discourages high-paid lawyers from jumping to a judge 

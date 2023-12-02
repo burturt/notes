@@ -1,0 +1,31 @@
+- Local news: declining of local news
+- Growth of nationalization of elections
+- What is nationalization?
+	- Regular voter:
+		- What's happening in my city/state?
+		- Policies of the candidates
+		- History of candidates
+		- Commerce
+		- taxes
+		- practicality/candidate personality/sanity
+	- Nationalist Voter
+		- Democrat/Republican parties
+		- side factions of national parties
+		- Track record of the president of the party
+		- Track record of party senators
+	- Why is this bad?
+		- Not as informed about town/city voting
+- Trying to gather information:
+	- Issue: different places have different demographic
+	- Instead: looks at media markets instead:
+		- Some counties have local news that talk about out-of-state news rather than actual local news
+		- Map shows percent of DMA population is out-of-state
+	- Table 1:
+		- larger in-state share of DMA does have a correlation with increased Recall, Evaluate, and naming ideology of governor and senator
+	- Measure Nationalization:
+		- Split-ticket voting
+			- More split-ticket voting means less likely to just pick people from the same political party
+	- Table 4: main results
+		- Regression table
+		- slight correlation between in-state DMA share and split-ticket voting
+- What do you think of this research? Do you buy the argument and evidence? Does nationalization of US elections matter?

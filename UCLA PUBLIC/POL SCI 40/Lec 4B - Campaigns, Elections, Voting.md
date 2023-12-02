@@ -1,0 +1,157 @@
+- Every 2 years: House is up for election
+- Every 6 years: 1/3 senate in power
+- Constitution Senate:
+	- Up for election each 6 years
+	- Originally selected by state legislators, 17th changed to direct
+	- 2 per state
+- House constitution rules:
+	- every 2 years
+	- selected by largest house of state legislatore (popular vote)
+	- number of districts based on populatuion, not set
+	- Another rule not in constitution: elected from single-member district
+- Senate seats are fixed, but the house is not!
+	- reapportionment: Census causes number of districts to change
+	- Redistricting: changing the boundaries of district after census
+		- Issue: redistricting is subject to human self-interest, causing gerrymandering/red lining (planning city to split rich/poor)
+		- Most states have legislators draw districts 
+		- Some do non-partisan commissions
+		- some hybrid
+		- Issue: Legislators are picking their voters when it should be the other way
+		- Issue: Impossible to draw a "non-gerrymandered" map: it's a sliding scale
+		- Issue: Nowadays, very few seats are party contested due to gerrymandering "locking" in seats
+- Issue with gerrymandering:
+	- Primaries have no concept of locked in seats
+	- Very limited choice between parties in most districts
+- States get to decide!
+	- Only requirement: continuity of border, equal population, feet Voting Rights Act
+	- Can choose:
+		- Compactness
+		- Keeping together communities of interest
+		- Partisan gerrymadnering
+		- Incumbent protection: forcing incumbent out
+		- Maximizing Competition
+- Europe:
+	- Vote for political party you want to govern
+	- Coalition government: parties group together to run the government
+- Pro/Con for single-member districts:
+	- Pro:
+		- More clear who is your representative
+			- Personal connection
+		- Not direct party control (you aren't voting for a public)
+		- Personality, charisma, and personal qualities of candidates becomes more important
+		- Execute does not serve at the pleasure of parliament, cannot be easily bypass
+		- Individual elections are simpler
+	- Con:
+		- Discourages voting
+		- Not representative of the population
+		- Prevents 3rd party from running
+			- Risks hurting the party of the closest ideologies
+			- ex green party takes away votes from the democrats
+		- Primary elections become the main mdoe of candidate selections
+		- Overall elections are simpler in parliamentary systems
+		- Whole country does NOT have the say in parliamentary elections
+		- Candidates and parties devote more time and money capaigning in certain district and not others in single-member systems
+- Hisotry:
+	- Originally, nominations done in closed door meetings
+		- No primaries
+		- Parties wanted a candidate to win the general election, not necessarily a candidate that the people were enthusiastic
+		- Generals ran for office
+	- Reforms after 1968 Democratic convention convinced both parties to open the process up
+- Two stage process:
+	- Political Parties nominate presidential candidates AT NATIONAL PARTY CONVENIONS in August of presidential election years
+	- Ultimatey, the nominees will be chosen by convention delegates, most bound by primary votes
+		- Superdelegates used to exist Democrats: party leaders got a vote, but only exists if first vote doesn't cause a win
+	- Each party nominates a candidate for president at a national party convention
+	- only DELEAGTES cast a binding vote
+	- Nominee is the candidate who gets a majority vote
+- Who decides the nomination rules?
+	- State parties make delegate selection rules
+		- Also schedule date of primary
+			- Why does this matter/why fight?
+			- Iowa got first primary, but because they are first, they get more attention because of going first and seeing which candidates are leading
+				- Candidates may have already dropped out
+			- Bandwagon effect (voters, donors, media)
+			- Later primaries, the race is often OVER but not always (2008)
+- How are delegates chosen?
+	- Presidential primary
+		- State-sponsored election to select delegates to national nominating convention
+		- Votes determine delegates each candidate gets
+	- State party convention
+		- A closed meeting of selected state party members 
+		- Pre 1968 mostly
+	- Caucus
+		- Series of public meetings of local party groups where oridanry voters express prefereces for each presidential candidates
+	- Republicans vary by state
+	- Democrats use one rule: porportional allocation to candidate if you get at least 15% of the vote
+		- Leads to a longer primary season since primaries don't end quickly/hit win threshold
+- Primaries:
+	- Closed: only registered party members can vote
+	- Modified: mostly open with caveats
+	- Open: anyone can vote, but can only vote in one primary
+- How often do complicated rules affect the outcome?
+	- Not often!
+	- Usually clear pretty quickly
+		- Demoncrats usually are closer races
+- The invisible primary: who *actually* wins the nomination?
+	- Campaigning starts years before elections - this is the invisible primary
+	- The "best" representaitve of the party
+		- Party made of voters, interest groups, elites with a stake in the party, and decide who to support
+		- usually happens with funding, endorsements, and media coverage
+	- The party begins conversations during invidiuble primary
+		- Year before voting behins
+	- Usually, the candidate with the most support during the invisible primary wins
+		- NOTE: funding/endourcement is not the only measure of "winning" the invisible primary
+- Electoral College Rules
+	- Each states get number of electors equal to Reps + Senators
+		- Electors are NOT Reps or Senators themseolves
+		- Electors are chosen my parties + campaigns
+	- Electors meet in own states
+	- Cast 2 votes: one for prez and VP
+	- Person with majority of electoral votes becomes presdient
+	- If no majority, House of Pres (one vote per state delegation) selects president from among top three Electoral College vote-getters
+	- Faithless electors: electors are only bound to vote the same way as their state if the state legislates that
+- Pro/Con Electoral College
+	- Pro
+		- Campaigns must not ignore small states
+		- Enables residents
+		- Mob mentality: avoids this issue
+	- Con
+		- Small states overrepresented - bias towards rural areas
+		- Discourages vote for most
+		- Plurality doesn't always win
+		- Candidates focus mostly on swing states
+		- Faithless electors
+		- Citizen's votes not weighted equally
+		- Predetermined votes
+- Trust in elections: less confident over time
+- How do voters vote for president?
+	- Party ID
+	- The economy (Nature of the Times)
+- How do voters vote for Congress?
+	- Name recognition
+	- Incumbency
+	- Party ID
+- Do voters want moderates or extremists in Congress?
+	- Voters do NOT want extremists
+- What can campaigns do?
+	- Help at the margins (close seats)
+	- Can frame the issues important in the election (especially in presidential races or scandals)
+	- Helps even more in open seat races (no incumbents)
+	- Minimal effects hypothesis: Campaigns have little to do with the outcome of the election because:
+		- Both sides can campaign (negates other sides)
+		- Persuasion is hard, not many swing voters
+		- People forget campaign contacts
+- How can campaigns be beneficial to democracy?
+	- Encourage participation
+	- Can be harmful when money gets involved
+- Research Papers:
+	- Are voters rational?
+	- Do voters counsider irrational events when voting?
+		- used college football as no rational cause or response by elected
+	- Result: found slight increase when voting
+- Paper 2:
+	- False positive: Methods are good, but really unlucky in that it was random/caused by something else
+	- Challenges to show false positive:
+		- You only have the same data so can't rerun experiment
+		- Instead: "if this result is true, then certain things should be true"
+	- Ran tests and found that in fact false positive result

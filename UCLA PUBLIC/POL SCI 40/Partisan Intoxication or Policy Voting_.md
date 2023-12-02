@@ -1,0 +1,32 @@
+- Study addresses whether partisan intoxication (phychological attachments to a party influence the way a person votes) is a true phenomenon or if it is actually in line with their own personal policy preferences
+	- Demonstrates partisan intoxication = policy voting in many measurements
+	- People constantly state that "partisan intoxication" is a true phenomenon
+	- Intoxicated partisans are a small share, and most signs show that voters' decisions are influenced by policy and substance
+		- Example of partisan intoxication: coca-cola/pepsi preference across generations yet not correlated by tastes
+		- Goes over many other studies that partisan intoxication is a thing and then breaks them down and refutes them
+		- 2016 election, uses election and refutes argument but says there isn't much proof
+	- Southern Realignment:
+		- When Democrats aligned with north civil rights act/voting rights act, it forced a realignment
+		- Prez swung immediately, too longer to swing in non-prez elections
+		- Looked at the amount of voting change after an incubent retired as the southern democrat voters split between the new Democratic and Republican party ideals
+		- Found that the south generally moved to the republicans instead of sticking with the democrats
+	- Random generated candidate polls
+		- Found that more than a quarter of the time, candidates deviate by voting not their party
+		- Other analysis show that people vote by their partisan
+
+## In class:
+- Question: How do voters vote?
+	- Is there intoxicated partisanship or policy voters?
+- How could intoxicated partisanship be bad?
+	- Toxic loyalty to party --> lowered accountability
+	- No thinking: party dictating party policies
+- Argues multiple interpreitations for each evidence
+- What is the challenge measurement here?
+	- Hard to tell if someone actually voted by policy or if just by party?
+		- Hard to ask - not people realize they are doing it
+- Strategy 1: Retirement slump
+	- "Slump in vote" for people for that seat
+	- Just being in the south increased the slump because people are seeing that other party is better
+- Strategy 2: Random candidate voting poll
+	- More policy items = less likely to vote for own party
+- Trying to find evidence that policy voting is a real thing

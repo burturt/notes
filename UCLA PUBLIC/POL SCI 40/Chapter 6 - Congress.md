@@ -1,0 +1,408 @@
+### Congress in the Constitution
+- Results of Great Compromise:
+	- bicameralism:
+		- House popularly chosen; suspecible to rapid opinion changes and keep people in voting
+		- Senate resist transient shifts in public mood; voted in my states
+			- Act as stable counterweight to the House
+		- Rep 25 years, Senate 30 years minimum
+		- 2 year terms vs 6 year yerms
+		- Both must live in same state as place represented
+#### Powers of Congress
+- Necessary and proper clause:
+	- Elastic Clause, gives congress power to make laws necessary to situation
+- Foreign affairs
+	- Declare war, raise and finance/raise army/navy
+	- Senate Ratifies foreign treaties and confirms appointment of ambassadors
+- Senate confirms prez court nominations
+- Power balance: Only house can start finance bills
+- Congress checks on legislation:
+	- President can recommend laws, force congress into session, veto
+	- Congress using courts to attack exec branch recently
+		- After Watergate, House has office to file lawsuits
+#### Electoral System
+- Members of Congress and presidents are elected separately
+	- others: same vote
+- Voted in by plurality
+	- Plurality = most votes win, NOT majority
+	- some other places have **proportional representation**
+	- Legislators are elected from territorial units
+		- NOT parties
+#### Congressional Districts
+- orig 33k to one rep, now set max at 435
+- Seats change to adjust for population changes
+- Gerrymandering:
+	- Each state sets own district boundaries
+	- Wesberry v Sanders must have equal populations, Thornburg v Gingles districts may not dilute minority representations nor use race as consideration for drawinglines
+	- Gerrymandering uses drawing lines to gain or lose votes
+##### Racial Gerrymandering
+- Gingles decision used to try to design districts to make racial and ethic minorities the majority
+- Eventually court decided not to draw districts to benefit one race
+	- ex North Carolina crazy gerrymandered
+	- Constant fight of republicans
+#### Unequal Representation in the Senate
+- Each senators ha different number of people to represent
+- Not fair to some
+- Progressivism caused change to popular election
+	- state selection had been corrupt sometimes
+## Congress and Electoral Politics
+- Major goal of Congress: stay elected
+#### Condidate-Centered vs Party-Centered Electoral Politics
+- 1800s party-centered
+	- Voted based on party lines
+	- Around 1900: changes in loaw
+		- Regulating elections
+		- Secret ballot
+		- Primary elections
+		- Encouraged **ticket-splitting** - voting different parties for different offices
+- After New Deal worked, parties fractured in change in issues
+	- More candidate-centered electoral process emerged
+	- Incubants advantage from 1960s-1980s due to not having party natural majority
+- Recent return to party line voting:
+	- Increased corrlation to preisdential candidates for voting
+	- Increased Nationalization: difficult to find common ground between parties
+#### National Politics in Congressional Elections
+- midterm president party almost always loses seats
+	- number lost tied to economy
+	- reps tied to party politics - have a stake in party public image as well as president
+- House Serving Constituents:
+	- members of congress often responsive to constituencies requests
+	- **casework**: requests from constituents for information and help in dealing with government
+		- Lost social security check, lost veteran benefits, DMV ,etc
+- Vulnerable Senators:
+	- Senate less incumbent wins
+		- More news converage, more knowledge, more competition
+		- 6 year terms, 3x more likely to not be reelected
+	- Usually associated with controversial issues
+- Representation vs Responsibility:
+	- Candidate-centered electoral process before 1994 --> more individually responsive rather than collectively responsible
+		- Collective Action problems
+		- Causes targetting narrow programs for constituents without considering other impacts
+			- Because of this causing benefit at home but costs elsewhere, no reason to lose
+	- Logrolling is popular:
+		- Support each others unrelated projects
+		- Issue: minority party accuses logrolling (marjority party) for wastefulness and incompetence
+- Example:
+	- **earmarks**: individual budget items to benefit own constituents
+	- **"Pork barrel" legislation**: money spent from government specifically to benefit own constituents, and cause dubious worth projects to turn u
+	- Republicans campaigned against this, but ended up earmarking themselves
+## Who serves in Congress?
+- Most law or business colelge degree and occupations
+	- Very few blue-collar
+- High under-representation
+	- Women, racial minorities
+		- Increase recently with Clarence Thomas sexual assault claims ignored by white-male Congress and Trump's rhetoric/actions
+		- Increase also due to lower offices starting to be more diverse, trickling up to Congress
+## Basic Problems of Legislative Organization
+- Congress had to solve basic problems:
+#### Need for information
+- Congress needs reliable info to properly regulate/legislate
+- Solution: division of labor and specialization
+	- Committee and subcommitte systems
+	- Congress reps can specialize in certain areas and master it
+	- In return, experts get more influence in their specialized areas
+#### Coordination Problem
+- As country grew larger, harder to divide the increasing workload
+- Party leaders take over "Traffic control"
+	- Members sacrifice a measure of autonomy in returns for efficient 
+#### Resolving Conflicts
+- Majorities in both houses MUST agree for bill to pass
+- Requires successful politicking: getting differing goaled people to agree to take common course of action
+- Even ends consensus, must agree on the means
+- Regulation:
+	- All remarks are officially addressed to the Speaker of the House
+	- Prevent personal confrontations
+	- Members delegate building coalitions to party leaders
+		- Ready-made coalitions helped resolve some conflicts
+		- Cost: Loss of autonomy to the party and authority to leaders
+			- Lower Transactional Costs, higher Conformity Costs
+#### Collective Action
+- All want to be part of an effective legislature
+- However: all want to be re-elected or elected to a higher office
+	- Indvidiaul goals - tax breaks, special projcets for their constituents, maintaining idealogical purity by rejecting compromise
+	- Can lead to downfall of party or congress as a whole
+- Avoiding: Committees
+	- As lawmaking is centralized in parties, incentievs for specialization have weakened, and not to the collective benefit
+#### Transaction Costs:
+- No way around transaction costs, as they are literally the price of doing politics
+	- Coalition transaction costs (conflicts, compromises, favors) unavoidable
+- Alternative costs reduced:
+	- fixed rules to automate decisions
+	- **seniority rule**: give first choice to marjoty party member who have served longest
+		- Avoid competition effort going into getting position
+	- Follow precedent: strict adherence to precedent in assigning bills
+		- inevitably increases power of some members
+		- rules are never politically neutral
+#### Time Pressure
+- Pressure: one-year close of congress and two-year tenure of each Congress
+- Chief source of authority is over raisining and spending money
+	- If fail to enact budget, large sections of government shut down
+	- Recently harder to enact on schedule due to more complex and larger budgets
+- Bills must pass all hurdles within the two-year life of a Congress
+	- Otherwise must be re-introduced at next congress
+
+## Organizing Congress
+#### The parties
+- Decisions in the House and Senate are mostly made by majority vote:
+	- Enact bills, set rules, establish procedures, choose leaders, and decide how to organize houses
+	- Causes powerful incentive to create strong coalitions to get power
+- Political parties only form when it is recognized the benefit in working together
+	- Members must concede some power to party leaders
+- Development of Congressional Parties
+	- First senate started to form:
+		- Hamilton's Rederalists vs Jefferson's Republicans (modern day Democrats)
+	- when divided, party leadership merged with congressional larders
+	- **Speaker of the House** was elected by majority to be leader
+		- Could appoint committees, make rules, and manage legislative process on majority party's behalf
+	- Speaker of the House
+		- Centralized authority peaked uner Thomas Brackett "Czar" Reed
+			- 1889-90. 95-96, 97-98
+			- Exercised unlimited power of recognition
+			- Squashed minorities
+			- Worked b/c short career in house and little competition in majority Republican party
+		- Revolt
+			- Speaker Joseph Cannon offended progressive faction
+				- Allied with Democrats; voted to strip power to appoint committees and chairs
+				- Increased Transaction costs to reduce confirmity costs
+		- In sum, Congress is subject to **Conditional Party Government**, where degree of authority delegated to and exercised by party leaders varies with the extent of election-driven ideological consensus among members
+#### Increased Partisanship
+- Since 1950s increased "party unity" where party majorities took opposite positions
+- More reps vote with party than policies
+	- Since 1970s increased polarization
+	- Helped unify parties and strengthen party leaders
+- Party Organization
+	- Majority leader is led by the Speaker of the House
+		- Majority leader and the majority whip as chief assistants of Speaker
+	- Minority party similar led but no speaker as lead; minority leader is lead
+	- Party "whips" head up the whip organization (communication network connecting leaders with other members to solve coordination problems)
+	- Rules Committee is instrument of the majority party
+	- Party leaders are given permission to avoid free riding:
+		- Favors
+			- ex. leaders have voice in committee assignments
+			- Disloyal will have committee assignments removed
+		- Scheduling bill talk time
+	- Despite this, elections monitor performance
+		- Usually, majority party have structure to do stuff, minority party isn't as pwoerful
+- Parties in Senate:
+	- Smaller, so not much need to organize
+		- Under constitution, Vice President presides in Senate
+	- **President pro tempore** presides when Vice is absent
+		- Neither position has a true leadership role
+	- Power of senate leaders mostly based on individual skills 
+	- Generally business is conducted uner **unanimous consent agreement** negotiated
+		- More minority party influence
+- Other groups:
+	- Some ideological, demographics, economic concerns, etc
+	- Give better access to info and allies on topics of special concern that a party is not already pursuing
+#### The committee Systems
+- Committee systems are the second organizational pillar holding Congress's powers
+	- Sometimes used to frusterate, but ultimately controlled by majority party
+- Evolution:
+	- First Congress: everyone was part of committee, who elected temp committee to draft
+	- Debate line-by-line, eventually vote
+		- Issue: super slow
+	- Hose: more permanent committees formed, appointed rather than elected
+		- soon appointments became partisan affairs
+	- Senate slower to create committees:
+		- created **standing committees** - exist between sessions unless explicitly disbanded
+		- Seniority selected committee chairs: office awarded to majority-party member
+- Types of committees
+	- committees:
+		- fixed jurisdictions and stable membership
+	- committee ranking:
+		- money committies first
+		- Rules Committee in the house
+		- Least desirable: ethics
+- Assignments
+	- assignments are made by party committtes under control of senior party leaders
+	- Incentive to properly assign: correct committee = more work done = best chance to reelect
+	- Danger: committee stacked not fairly
+	- Subcommittees exist:
+		- specialization to help run larger committees
+	- **special committees and select committees** are appointed to deal with specific problem and then disband
+- Joint Committees
+	- Gather info and oversee executive agencies but do not report legislation
+	- Across both chambers
+	- Permanent
+	- **Conference committees** appointed to resolve differences between House and Senate bills
+- Committee Power
+	- Democratic Caucus 1974: no individual can chair more than one
+		- Committee members and caucus assumed control over committee rules, budgets, and subcommittee organizations
+		- Steering Committee now controls committee election chair
+	- Now more difficult to act collectively but more tools to do so
+	- Reverted 1995 to give chairs more control over subcommittees, but now had to report to Speaker, and 3 term limit as Chair
+	- in general, republicans maintain term limits with seniority, democrats follow seniority and no term limits
+- Jurisdiction
+	- Many adjustments made to reduce conflict of jurisdictions
+- The Money Committees
+	- legislative spending is a two-step process
+		- The committee with jurisdiction authorizes expenditures
+		- Appropriations Committee Appropriates the money
+			- writes a bill setting out sums, often doesn't match authorized amount
+	- Some expenditures are **entitlements**, which designate specific classes of people whoa re entitled to a legally defined benefit
+		- Social Security
+- Budget Reform
+	- Budget and Impoundment Control Act of 1974
+		- Subjected presidential impoundment authority to congressional control
+		- Set up Budget Committee in each chamber to oversee taxing and spending policies
+		- procedures and timetables for budget target setting
+		- Compel members to vote on explicit levels of taxes, expenditures, and deficits
+	- Result:
+		- sharp partisan conflict over budget priorities
+		- Budget deficits in 1980s-90s
+		- Congress majority parties just ignores rules themselves
+	- Agreements began in 1998 in economy boom
+		- new tax revenue meant no deficit
+		- Moved to additional boosts, but slowing economy in 2001
+			- Tax cuts by Bush
+			- increase of homeland security and Afghanistan wars, deficits returned
+			- More tax cuts in depression of 2008
+			- Even more constant by Republicans and pandemic
+#### Congressional Staff and Support Groups
+- Adding staff and research agencies to help
+	- Assistants to manage offices, draft bills, policies, press releases, etc
+	- Deeply involved in all legislative activities
+- Government Accountability Office (GAO)
+	- Audits and investigates federal programs and expenditures
+		- Waste, fraud, inefficiency finding
+- Congressional Reserach Service
+	- Access to reseraches for Congress
+- Congressional Budget Office
+	- provides economic expertise
+- Groups allow giving advice without biased interest groups
+## Makings Laws
+- Much easier to stop bills than to make them
+#### Introducing Legislation
+- Only members can submit legislation
+	- Proposals often start outside, but a member must start process
+	- Some carry author name to build support/collective action credit
+- "dead on arrival" bills to establish records
+#### Assignment to Committee
+- Assigned number and referred to a committee(s)
+	- Complex may have many committees
+	- Speaker makes decision in the House
+- Next:
+	- most bills die of neglect because nothing happens
+		- Bills introduced by favor but won't go anywhere
+		- Minority party bills buried to prevent embarrasing votes
+		- Just too many to deal with
+#### Hearings
+- subcommittee may hold hearings for everyone to testify in person or in writing about the issues and proposals
+- Committees can investigate almost anything
+	- Sometimes used against exec when majority rival party controls House/Senate
+- Provide a formal occasion for Congress to monitor administration of the laws and programs
+	- Appropriations subcommittees in the House to justify budget
+		- Usually reactive rather than proactive when problems occur
+#### Reporting a Bill
+- If subcommittee decides to act on a bill, it "marks it up" (edits line-by-line)
+	- Reports to committee
+	- Usually bills delegated to subcommittees for efficiency
+- Committee writes reports for bills befoer going to the floor
+#### Schedling Debate
+- Once committee agrees to report a bill, put on calendar
+	- House: noncontroversial bills are put on the Consent Calendar (public bills) or Private Calendar (bills concerning individuals) without debate and passed
+		- Suspension of the rules to make it fast
+	- House: Controversial are placed on Union Calendar (money) or House Calendar (public bills)
+		- committee asks Rules Committee for a rule: resolution that specifics when and how long debate occurs
+			- Amendments may be allowed from the floor (open rule), only some amendments (restricted rule), or no amendments (closed rule)
+				- Closed rule avoids prisoner's dilemmas with many differing proposal changes
+				- Used to control agenda
+			- May order amendment application
+		- Once rule committee assigns rule, majority vote on floor must agree
+	- Discharge petition: bring a bill to the floor without committee approval when signed by a majority of house members
+- Senate:
+	- No Rules Committee or rules limitation
+	- Majority leader can preempt amendments by "filling the amendment tree"
+		- Annoys minority party who has tools to obstruct
+		- Causes more unanimous consent agreements to arrange orderly consideration of legislation
+			- Similar to rules committee, except minority party always has a say
+	- Without unanimous consent agreement, no limit on talking or amendments offered
+		- **filibuster**: make endless speeches to prevent a vote
+		- Requires 3/5th vote to invoke **cloture** which allows max 30 hours before a vote must be taken
+		- Filibuster super common
+			- As a result, basically 60 senators required to pass any legislation
+			- Exception: budget resolution which is protected from filibuster
+	- If a single senator doesn't agree, unanimous consent agreement won't pass and nothing will happen
+		- Lower conformity costs at higher transaction costs in Senate
+#### Debate and Amendment
+- House:
+	- Debate is split equally between proponents and opponents
+		- usually 5 minutes each side
+		- Acts as the Committee of the Whole to avoid formal procedures
+			- Why? **quorum** (number required to be present to act) is 100 rather than 218 
+			- Member chosen by speaker holds the gavel
+			- Cannot vote in Committee
+	- Debates are for public consumption
+		- Rarely are votes changed
+		- Justify their votes to others through the media
+- Senate:
+	- Members free to spend as much time talking
+	- Amendments often suggests many
+		- Amendments need not be **germane** or relavent
+#### The Vote
+- Legislation goes through series of votes
+	- "killer" amendments may make bill unacceptable to majority
+	- Opponents may move to recommit the bill back to committee
+	- Members may try to strattle an issue by voting for killer amendments but still voting for the bill
+- When to vote?
+	- Opinions of constituents and advice of trusted colleagues had strongest influence
+	- Often rely on polling and input
+	- **explainable vote**: vote defended publicly if challenged
+- Most voting depends on how strong:
+	- intense minorities often prevail over apathetic majority
+	- trusted colleagues to guide voting because one person can't learn baout all votes
+		- Also turn to others like constitutents and party leaders
+- President:
+	- Some persuade members of their party to stick with the team
+	- Some cut deals with pivotal members
+	- Best deals from party leaders is to make legislative packages that party members are comfortable supporting
+- House:
+	- unrecorded voice votes may be cast, but at 20 members, a recorded roll-call vote is taken
+		- Press button for yea, nay, or present
+- Senators:
+	- Unrecorded voice cotes, but a recorded roll-call vote is taken if any senator requests it
+#### Reconciling Differences
+- Once passed, bill sent to other chamber
+	- If passed with no changes, sent to White House
+	- If changes: either shuffles around until agreement or one house drops their version more common
+	- Reconciliation: conference committee
+		- Party leaders appoint conference delegation that includes members of both parties
+			- Eacj chamber votes as a separate unit
+			- Bill is not out of conference until approval of both delegations
+				- Usually reconcile differences and add/subtract from legislations
+			- Once agreement, priviledged (immediate) vote taken
+		- Not many reconciliation conferences anymore due to party warfare
+#### To the President
+- President can sign, veto, or ignore (automatically becomes law in 10 days)
+	- exception: ignore is pocket veto if Congress adjourns
+	- Override with 2/3rds vote
+	- Veto power forces congress to listen to president
+#### Bias Against action
+- Far easier to kill bill than to pass one
+- Unorthodox Lawmaking:
+	- Majority party can find legislative agenda frustrated by the minority party
+	- Result: unorthodox processes
+		- House: complex special rules to minimize minority's influence
+			- Bypass committees
+			- Rewriting legislation in conference committee
+			- Combining bills to make "take all or get nothing"
+			- Resultions instead of formal budget
+		- Senate:
+			- filibuster, forcing 60 person vot
+			- Combat: filling amendment tree
+	- Requires heavy use of resources (time, energy, favors)
+		- High transaction costs
+		- **status quo bias**: only some measures can go unorthodox
+			- Legislation that fails can be introduced later
+## Evaluating Congress
+- Most americans approve of current arrangements
+	- usually like own reps and senators
+	- usually vote incubents despite negative views of government
+- Public disdain of Congress:
+	- Low repute of politicians
+	- Politics leave no one satisfied
+	- Pluralism: not required majority, just most votes
+		- Lets apathetic majority take over
+		- "special interests" win over general interests
+	- Still popular when bipartisan occurs
+- 9/11 spike in Congress approvals
+	- Most conflict than cooperationrfed

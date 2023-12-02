@@ -1,6 +1,6 @@
 # Solution
 - Immediately, I recognize the grid as a [Vigenere Cipher table](https://www.geeksforgeeks.org/vigenere-cipher/) table, but unlike a normal table, it is scrambled (see this footnote:[^1]). This means we get to decode this manually, oh yay!
-- But first, Vigenere cipher needs a key. With this short of a ciphertext, it's next-to-impossible to crack (all Vigenere cipher cracking methods rely on the fact that the keyword is repeated - if the key length is at least as long as the cipher text, it is actually impossible and is known as a [one-time pad cipher](https://www.cryptomuseum.com/crypto/otp/index.htm)).
+- But first, Vigenere cipher needs a key. With this short of a ciphertext, it's next-to-impossible to crack (all Vigenere cipher cracking methods rely on the fact that the keyword is repeated - if the key length is at least as long as the cipher text and is random, it is actually impossible and is known as a [one-time pad cipher](https://www.cryptomuseum.com/crypto/otp/index.htm)).
 - So, below the table, we see some Braille. Decoding manually results in the text `PORT #47980`
 - Using the hint of the CTF challenge `env.deadface.io`, connecting to the port using `nc env.deadface.io 47980` results in just the text `GOBLINS` being sent to us before closing the connection
 - Turns out, this is the key we need to decrypt the message! Quick crash-course on decrypting vigenere using a table:

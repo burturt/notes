@@ -1,0 +1,142 @@
+Congress:
+
+- What are members of congress (MCs) supposed to do according to the constitution?
+    - Make good laws (provide for the common defense - safe - and general welfare - be happy and live good lives)
+    - Oversee the executive branch
+        - War making
+        - Passing laws
+        - proper execution
+    - Represent wishes/interests of constituents
+        - President's accountability is not a high due to representing everyone
+        - Help out constituents on policy and just one-on-one issues
+- Motivations?
+    - Help district (funding, policies)
+    - Insider trading/Self-interest
+        - Using not-yet public information to plan stocks
+        - Money from lobby
+    - Higher asperations
+    - Group-interest
+- How to ensure MC pay attention to their constituents rather than self-interest?
+    - Choose people of good character
+        - Tell about themselves, look around background
+    - Strict anti-corruption rules
+    - Align personal interests with the interests of their constituents *by forcing them to go before the voters on a regular basis to keep their job*
+- The Re-election motive
+    - Must get re-elected to further any other goals
+    - Must act in ways that will get them re-elected
+- Mayhew: Congress; The Electoral Connection:
+    - Assume that members of Congress *only* want to be re-elected
+    - What other motivations not tied to re-election?
+        \- Long term benefits != short term results
+        \- Long term benefits more likely to be pursued by someone who is in a stable seat
+        \- Long term projects
+        \- Get a better-paying job
+        \- old/terminal/moving away
+        \- Party Standing
+        \- Pressure from constituents/party/family
+        \- <ins>All of these are really tied to re-election in some way</ins>
+    - Does this assumption hold for a district that is safe for one party?
+        - Even in party challengers can show up
+            **Median Voter Theorem (Downs)**
+    - Assume that Idology and issue positions are normally distributed in the population
+    - In a winner-take-all system, candidates will try to get one more vote than the other by moving center
+    - Goal is the win the "median voter"
+- Who is the median voter?
+    - What does that look like in a competitive district vs a safe one?
+    - In districts,
+- Attentive v. Inattentive Publics
+    - Attentive Publics: citizens who know about an issue and have firm preferences about how Congress should act
+    - Inattentive Publics: have neither firm policy preferences or knowledge of what Congress is doing
+    - Takeaway: MC should go for Attentive Publics and campaign for them rather than Inattentive Publics
+- So WHEN will a member of Congress pay attention to the "median voter" rather than Attentive Publics?
+    - When the inattentive public might notice:
+        - Voting on bills with a lot of media attention
+        - When voting on symbolic issues
+        - When their vote might be difficult to explain
+            - Raising Taxes
+    - Very competitive elections
+    - More well-known/general policies/popular support policies
+    - Directly affects voters (economy)
+    - Media topics: what's popular/trending
+- What about attentive publics? When do they win?
+    - Complex votes
+    - Not covered media votes
+    - Tax and regulatory bills more than spending bills
+    - Committee votes
+    - Procedural votes (procedures about how House/Senate operates)
+    - How hard a member works
+- So if legislators are primarily motivated by re-elect, how will MC behave?
+    - Expresses Constituency Preferences, not necessarily national preferences
+        - Complicate collective action: advocating for own goals
+            - "pork": attach provisions to random bills
+        - Doesn't consider effects on other area
+        - Not effective use of federal funding: huge spending only on one small group
+    - Pass legislation that contains particularized benefits
+    - Pass legislation that will not impose large, direct costs on constituents
+        - Costs are passed onto someone else
+        - Huge national deficit/debt
+        - Prevent necessary legislation (e.g. social security)
+    - Pass legislation that embodies a good "end" even if means are poorly tailored to achieve it
+        - e.g. paining green to help climate change
+    - Serve inattentive publics/median voter on high profile issues
+    - Serve inattentive publics/interest groups on low profile issues
+    - Express symbolic policy preferences, not necessarily follow through
+        - Make promise but not follow through
+        - Cancelling student debt
+        - Foreign policy
+    - **Not check and/or balance the executive branch**
+        - Issue: many, MANY presidents overreach power, but Congress doesn't have a huge incentive to check executive branch
+- Balancing the Presidency?
+    - Incentives?
+        - Prestige in institution for legislating
+        - particularized rewards for working on committees
+    - Fewer rewards for:
+        - Checking to see if laws are faithfully executed
+        - Researching to see if policies have desired results
+        - Narrowly tailoring laws to avoid giving discretion to the executive branch
+- "Regulatory Review"
+    - Confers **power of final interpretation** on the president
+    - Greater power when more room for interpretation
+    - Or when presidents interpret their power to interpret very broadly
+- Shared responsibilities:
+    - War
+    - Congress generally doesn't check
+- What has changed?
+    - General growth of Presidential prominence
+    - Precedents:
+        - Each of which established in a particular political movement, but becomes context-less beachhead for expansion of power
+    - Korea and Alternative sources of legitimacy (UN, NATO)
+    - Military tech and Cold War
+    - Secret agencies
+    - Congressional abdication of responsibility
+- Can/Will congress fight to get this power back?
+    - Not really, as long as constituents doesn't put pressure
+
+Journal Article:
+
+- Who gets elected to Congress?
+    - Politicians
+    - Lawyers
+    - College Educated
+    - White Men
+    - Christians
+    - Congress is NOT representative in terms of its makeup
+- Research question:
+    - Do women perform better than men?
+        - Why? is discussed in the analysis/explanation of results
+    - What is the theory behind this question? Why do the authors think women will outperform men in congress?
+        - Do women perform better because the public is more strict about?
+        - Self-selection causing overqualified?
+    - What is the challenge studying "better"?
+        - approval ratings is not really the same as better
+        - Instead, looked at federal spending in their represented area, and removed automatic spending, but looks at transportation, special projects, etc
+        - Also looked at number of bills sponsored/cosponsored and their success
+    - Table 1:
+        - In general, female on average gets 9% more funding for their own district than males
+        - 0.9 r^2
+    - Alternative Explanations
+        - Ideology
+        - Congressmen give money to women just to prove they aren't misogynistic
+        - Women feel unsafer about their seat
+        - Committees they are in
+            - Set by political parties: women get better committee assignments

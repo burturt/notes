@@ -1,0 +1,101 @@
+- What is public opinion?
+    - "Opinions held by private persons which government find it prudent to heed."
+    - "an aggregate of the individual views, attitudes, and beliefs about a particular topic, expressed by a significant proportion of a community"
+- Why do we take public opinion polls?
+    - To understand the mood and views of the country on major issues
+        - Direct asking people to know instead of guessing
+    - Because we don't have direct democracy!
+        - If direct democracy exists, votes aren't on the record
+    - Two party System (how many options do you have in an election? usually ~2)
+        - Not many options: more likely than not, neither will match perfectly
+- Example: Switzerland has direct democracy
+    - Not possible in US:
+        - Significantly more diverse
+        - More homogenous populations and opinions compare to the US
+        - voters aren't necessarily the most intelligent
+            - Alternative: smaller vote = more possible alternate priorities
+            - Special interests dominating Congress
+- How do we take a public opinion poll?
+    - Good Sample size: selection of a group of people that ACCURATELY represents a larger group of people/population
+    - Questions that are relevant to what you are trying to figure out
+        - Framing it well (causing biased answers)
+    - Platform (phone calls?)
+        - Response bias
+        - Focus groups: since people are paid to go in, they already have a large group
+            - Limit: money not much for rich
+        - In-person/setup
+            - Setup at the polls
+    - Working with media (ads on TV)
+    - Minimizing bias in questions, polling, population polled, etc
+    - Need a population: usually the population are residents of a municipality
+        - Sometimes we might want to get more specific (racial and ethnic group, gender, sexual orientation, partisanship)
+        - Voters v. non-voters: get general opinion or just opinion of voters
+            - Not everyone knows if they'll vote at midterms/allowed to vote
+            - People's decision to vote is not fixed
+    - We need a random sample:
+        - Equal chance for everyone in a population to be picked
+        - $120
+        - Send a person to the address (who? when?)
+    - Do it quickly: over too long, people's opinions have changed
+    - Non-compliance: disguising questions (conversation instead of "answering opinion poll")
+    - What are we going to ask?
+        - What factors to consider when asking questions, and what could mess with our result?
+            - order of asking questions
+            - answer options (1-5 or y/n or agree/disagree)
+            - Misinterpretation
+            - Giving context to frame problem
+            - social/historical context
+- Margin of error:
+    - Avoid large/overlapping margin of errors
+    - Margin of error = $z * \frac{\sigma}{\sqrt{n}}$
+    - $\sigma$ = standard deviation, z determined from confience interval, n = sample size
+- Can we ever really be sure of public opinion?
+    - What is the issue? How long has it been talked about?
+- Philip Converse 1964: The Nature of Belief System in Mass Publics
+    - talked to a bunch of people door-to-door
+    - Ideologues: people who rely on abstract ideas to measure policies
+    - Near-ideologues: trying to do the same thing but looser idea of the abstract idea
+    - Group Interest people: conflict between working people vs upper class, do not have a strict idea of what they want
+    - Nature of the Times: retrospective voting: "what happened while someone is in office?"
+        - Issue: blaming someone who doesn't have control
+    - Single issue voters: only a single policy that ties them to a party
+    - Dumb Dumbs: no policy significance
+    - Actual distribution (1956): 2.5, 9, 42, 24, 22.5
+        - Voters: 3.5, 12, 45, 22, 17.5
+        - order: Ideologues, near-ideologues, group interest, nature of the times, no issue content
+    - Change to now?
+        - More people group interest
+        - Increase in social media = less no issue content
+- 2016: why were polls off?
+    - Incentive to lie: didn't want to admit voting for trump
+    - People actually voting vs people responding: people thought that Hillary would win anyway
+        - Assumption of Victory
+    - Immediately before voting, things happened (and after polling)
+    - Democrats more likely to answer polls
+    - Gerrymandering
+    - Voter enthusiasm
+    - Political Charisma: targeting audience
+- Polarization yet people aren't ideological? How does that work?
+    - Median Voter Theorem
+    - Parties can find themselves shifting towards a party extreme
+        - party sorting
+        - Southern Realignment
+        - Sense of Loyalty
+        - More information/experience
+        - Opinion Leader framing: politicians introduce new arguments
+    - The electorate hasn't changed much, but primary electorates have!
+    - Party Sorting has increased too
+    - Choosing a nomination:
+        - Who's going to increase voter turnout?
+        - Who's going to get swing voters to vote for them?
+- Where does public opinion come from?
+    - Attitudes ("environment should be more green")
+    - Ideology (liberal-conservative spectrum)
+    - Partisanship (Democrat/Republican)
+    - Family, Social Circle
+    - Elite cues (X said Y on social media/debate)
+    - When politics may directly affect you (taxes)
+- How responsive should the government be to public opinion?
+    - Very responsive
+    - Challenge: what they want can change very quickly
+        - ex Vietnam War, Iraq War
