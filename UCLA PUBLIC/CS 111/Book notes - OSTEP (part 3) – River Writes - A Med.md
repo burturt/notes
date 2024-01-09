@@ -1,0 +1,464 @@
+
+### Chapter 37 - Hard Disk Drives
+
+- The Interface
+    - Sectors = address space
+    - One sector write is atomic (no other atomicity guarantees)
+    - Incomplete write = “torn write”
+    - Unwritten contract: Close sectors are faster to get to than farther ones, contiguous ones are the fastest
+    - A **platter** is a round thing
+    - It goes around a **spindle** at a number of **rotations per minute** (**RPM**)
+    - Each side is called a **surface**
+    - Data is stored on concentric circles called **tracks**
+    - Data is read by a **disk head** that’s attached to a **disk arm**
+    - To position around the spindle we have to spend time doing **rotational delay**
+    - To get to the right track we have to **seek**
+        - Acceleration
+        - Coasting
+        - Deceleration
+        - Setting <– this part takes a long time!
+    - Rotational Delay + Seek + Transfer = Read/Write Time
+    - We may employ **track skew** for consecutive sectors so that we have time to reposition. See page 437
+    - Outer tracks have more sectors than inner tracks because geometry: **multi-zoned** disk drives
+    - There’s a **cache** aka **track buffer**
+    - On writes, when do you acknowledge?
+        - In memory = write-back = immediate reporting
+        - Actually written = write-through
+- We can do some benchmarks. We care about **random** and **sequential** loads. Sequential is A LOOOOOOOOOOOT faster!!!!!!!
+- Need to schedule disk reads & writes. In this case, we DO usually know the length of each job, aka we have an oracle! So we CAN do SJF (Shortest Job First)
+- SSTF aka Shortest Seek Time First aka SSF aka Shortest Seek First
+    - Problems: OS doesn’t actually know the geometry that well
+    - However you can just do **Nearest-Block-First** (**NBF**)
+    - But there’s a starvation problem
+- **SCAN** - move back-and-forth across the disk doing requests in order across tracks
+- **F-SCAN** - freeze queue when doing requests in order to avoid starvation
+- **C-SCAN** - Circular SCAN - outer-to-inner then reset at outer in order to avoid unfairness since SCAN spends 2x as much time in the middle
+- However all of these avoid rotation………….
+- **SPTF** - **Shortest Positioning Time First** aka **SATF** - **Shortest Access Time First**
+    - The OS doesn’t actually…know…which is faster, rotational delay vs seek. So this is best implemented by the disk itself
+- OS usually picks several requests and issues them all to disk, then disk provides
+- I/O merging - 33, 8, 34 -> 8, 33 & 34
+- **Anticipatory disk scheduling** - **non-work-conserving** approach is better - don’t start everything immediately
+
+### Chapter 38 - Redundant Arrays of Inexpensive Disks (RAIDs)
+
+- We want disks to be: Faster (better performance), Larger (higher capacity), More Reliable (better…reliability)
+- RAIDs do these things **transparently** which makes it deployable!
+- For now we assume a disk is ENTIRELY working or ENTIRELY failed
+- Three ways to evaluate
+    - **Capacity**
+    - **Reliability** - how many disk faults?
+    - **Performance** - different types of workloads, Sequential Read, Sequential Write, Random Read, Random Write, Latency for Read & Write
+    - There’s a summary chart on page 463
+- RAID Level 0 - Striping
+    - No redundancy…not really RAID
+    - Need to decide **chunk size** - smaller = more parallelism between disks, at the cost of higher expected positioning time
+    - Best capacity
+    - Best performance
+    - Worst reliability
+- RAID Level 1 - Mirroring
+    - Two copies of everything
+    - Half peak capacity
+    - Can tolerate at least one failure, if we’re lucky, half of the disks can fail
+    - Performance: Same as one disk to read, worst-case of two writes so half-peak bandwidth to write
+    - Uh-oh, writes lack atomicity, what if only one of them is written?
+    - We need a **write-ahead log** to say what we were about to do
+    - Random reads - full bandwidth
+    - Sequential reads - half bandwidth (full bandwidth may be possible for large requests by doing them in “opposite” orders to the different drives)
+    - Writes - half bandwidth
+- RAID Level 4 - Parity bit, all of the redundancy is achieved through a parity bit on one drive
+    - Performance cost to compute the parity bit
+    - The one parity drive is a bottleneck
+    - We can lose ONE drive
+    - Do we have to add every single drive to re-compute? (additive method)
+    - No, we can use **subtractive parity** method - re-read previous value of block we’re going to write to, read parity block, then diff these with new value of block & write new block & new parity block. So 2 reads, 2 writes
+    - **Small-write problem** - 4 I/O transactions per transaction
+- RAID Level 5 - Rotating Parity
+    - Address the bottleneck by changing which drive has the parity block! It’s just better than RAID 4 lol
+- Other
+    - Sometimes put a **hot spare** to swap in in case of failure
+    - Also there’s more realistic **fault models** - we could have:
+        - Latent sector errors
+        - Block corruption
+    - Can build RAID as a software layer
+
+### Chapter 39 - Interlude: Files and Directories
+
+- How should the OS manage a persistent device? What APIs should be made available?
+- Two key abstractions: **Files**
+    - Low-level name = **inode number**
+- Directories
+    - Also has **inode number**
+    - Consist of tuples: (user-readable name, inode number)
+    - Live in **directory tree** aka **directory hierarchy**
+    - Root is…root
+- We have slashes as the **separator** for the **absolute pathname**
+- Use a period to say the **type** of the file but this is just a **convention** (unless you’re Windows)
+- Creating files
+    - Use `open` system call with `O_CREAT` flag
+    - This will return a `fd`, **file descriptor**
+    - A file descriptor is a **capability**, an “opaque handle that gives you the power to perform certain operations”
+    - Like a pointer to a file
+- Reading & writing files
+    - We can run `cat foo`
+    - Let’s run `strace` on that!
+    - `strace` is magical!
+    - Our `open` call gives `fd` of 3
+        - 0 is std input
+        - 1 is std output
+        - 2 is std error
+        - so we get 3
+    - What if we want to read, but not sequentially?
+    - `lseek` system call (note this has nothing to do with disk seeks)
+    - Part of the abstraction of an open file is its **offset** - set this either by reading, or by using `lseek`
+        - Starts at 0
+        - Kept in `struct file`
+        - They are are all entries in the **open file table**, which is a system-wide data structure
+    - Sometimes entries in open file table are shared
+        - When you call `fork`
+        - The **reference count** will be incremented
+        - `lseek` in one will change it for both
+        - Also `dup` (and `dup2` and `dup3`)
+        - These let you get another `fd` of the same file, which can be used interchangeably
+- When you call `write`, it’s not guarantee immediately, there’s a buffer
+    - So `fsync` lets you say do it now!
+    - Important for DBMS
+    - May need to `fsync` the parent directory too!
+- Renaming files
+    - Use `mv` program which calls `rename` system call
+    - `rename` is atomic wrt system crashes
+    - This is critical!
+    - So you can make `foo.txt.tmp` with changes, then switch it in over the live version
+- Getting information about files
+    - `stat`, `fstat` system calls
+    - Information is kept in an `inode`
+    - inodes are a metadata container data structure, we’ll talk about these A LOT in upcoming chapters
+- Removing files - use `rm` which calls `unlink`!
+    - Why `unlink`? we will see (it’s a mystery)
+- Now talk about directories
+    - `mkdir` is both the cli program & system call
+    - Directories always contain `.` (self) and `..` (parent)
+    - `ls` to read contents of directory - `opendir`, `readdir`, `closedir` system calls used
+    - `rmdir` to delete a directory, only valid if it’s empty (other than `.` and `..` of course)
+- Hard links
+    - System call is `link`, cli call is `ln`
+    - Turns out, when you create a file, you are doing TWO things!
+        - Creating inode
+        - Linking human-readable name to the inode & putting link into directory
+    - Creating an extra hard link is no different from the original link when you created the file
+    - This increments the **reference count**
+    - Reference count must go to 0 for it to be deleted
+    - So `unlink` == delete
+- Symbolic links (`ln -s`) aka **soft links**
+    - Neither file nor directory, a different type of entity altogether
+    - First when you do `ls -l` character is `-` for files, `d` for directory, `l` for symlinks
+    - Size of symlink depends on size of target pathname
+    - If we deleted the target we’d have a **dangling reference**
+- We use **permission bits** & `chmod` to deal with access
+- We could also use **access control lists** (AFS does this, we’ll talk about this later)
+- Be wary of **TOCTTOU** - Time of check to Time of Use - something changes between validation & access
+- How is a file system mounted? Some tool called `mkfs` (“make fs”) - attached at a **mount point**
+
+### Chapter 40 - File System Implementation
+
+- We’re going to make a very simple file system. Literally! **vsfs** - the **Very Simple File System**
+- Two key concepts:
+    - The **data structures** of the file system
+    - The **access methods** - `open`, `read`, `write`
+- Overall organization
+    - Divide the disk into **blocks** of equal size (though that’s not always realistic)
+    - We’ll have a **data region** of user data
+    - And a set of **inodes** containing our **metadata**
+    - We need to track free space! We COULD use a free list like we did with memory, but we won’t.
+    - Instead we’ll use bitmaps, which 1:1 map to blocks & just have `0` if a block is free or `1` if it’s in use
+    - **data bitmap** (could be small but we’ll pretend it takes up a full block)
+    - **inode bitmap** (same deal)
+    - And finally, we have a **Superblock**! This is metadata about the entire fs
+        - \# of inodes
+        - \# of data blocks
+        - where the inode table starts
+        - an identifier of the file system type (in this case, vsfs)
+    - See page 496 for the final diagram (it’s not that exciting)
+- The **inode** aka **index node** is referenced by the **i-number** (which is the **low-level name** of the file)
+- In vsfs, we can do math to compute location of inode when given i-number, see p. 497
+- inode contains allllllllll the metadata
+- In particular it has pointers to where the user data lives.
+- How many pointers? There could be a LOT of different locations.
+    - **Direct pointers** go directly to the data
+    - Then after the first (e.g.) 12 there’s a 13th that goes to a block that just contains more pointers, this is called an **indirect pointer**
+    - We can have **double indirect pointers**
+    - And **triple indirect pointers** (this supports up to 4TB)
+    - Another option is to use **extents** instead of pointers, which says how big a contiguous space the file has
+    - “Most files are small” so we optimize for this case
+- What if we did a linked-list instead? So each piece of the file points to the next. Indeed FAT (**file allocation table**) (old Windows FS before NTFS) did a linked-based approach.
+- Directories store i-number, record length, string length, and name. Length is stored so that we know how much space we get when we delete things.
+- Directories are stored in the same way files are
+- When managing free space, we may do **pre-allocation** policy when making new files to give contiguous blocks better
+- Reading a file from a disk requires a lot of disk I/O - see timeline p.503
+    - The longer the pathname (the more sub-directories in it), the more disk I/O needed
+- Writing to the disk is WAY, WAY, WAY worse - see timeline p. 505
+- We can aggressively cache for reads
+    - Originally, a **fixed-size cache**
+    - But **static partitioning** is wasteful, so now we do **dynamic partitioning**
+    - We can’t cache writes, but we CAN **buffer** them - sometimes we will avoid them altogether!
+    - Of course the performance tradeoff is durability
+
+### Chapter 41 - Locality and The Fast File System
+
+- Originally, it was just Superblock, Inodes, and Data
+- This was simple, but it sucked
+    - Lots of **fragmentation**
+    - Also the block size was big, and there was **internal fragmentation**
+- We needed to become **disk-aware**
+- The same API was kept - `open`, `read`, `write`, `close`, etc, but the implementation was improved
+- **Cylinder groups**
+    - A **cylinder** is a set of tracks on different surfaces that are equidistant from the spindle.
+    - A cylinder group is N consecutive cylinders, see p. 513 for a picture
+    - Today it’s **block groups** not cylinder groups
+    - Each cylinder group has a copy of the super block, its own inode bitmap, data bitmap, inodes, and user data
+- We want to “keep related stuff together” and by corollary, “keep unrelated stuff far apart”
+    - For directories, find groups with few allocated directories & many free inodes (so you can put lots of files there)
+    - For files, put them in the same group as the inode
+    - See p. 516 for illustration
+    - If common ancestor is 2 away, nothing is done though
+    - Large files are split up - you need to **amortize** the cost of needing to read across multiple blocks, so pick a big enough chunk size
+- To combat **internal fragmentation**, small files could be saved in **sub-blocks**
+- **Parametrization** - stagger the layout of consecutive blocks so that during rotations, you don’t accidentally skip sectors
+    - Today we don’t need this because we have a **track buffer** and we just remember the entire track as we read it
+- Support longer file names than 8 characters
+- Introduce symbolic link
+
+### Chapter 42 - Crash Consistency: FSCK and Journaling
+
+- FSCK, aka File System Checker
+- Journaling, aka **write-ahead logging**
+- Uh oh, we could have a **power loss** or **system crash**
+- We need to update three things:
+    - Data block
+    - inode
+    - Data bitmap
+- If just the data block is written, we lose data but the FS is still consistent. In every other case where one or two of these things (rather than 0 or 3) are updated, we have inconsistency which may include garbage data. Oh no!
+- Solution #1 - The File System Checker (FSCK)
+    - Also see [Oracle docs](https://docs.oracle.com/cd/E19455-01/805-7228/6j6q7uf0e/index.html)
+    - Problems: It’s slow
+    - Especially with RAIDs
+- Solution #2 - Journaling aka Write-ahead logging
+    - Say what you plan to do before you do it, and now you know how to fix it!
+    - Add a **journal** block next to the superblock
+    - Transaction Begin, log the transaction, then Transaction End
+    - **Physical logging** - log the exact contents
+    - **Logical logging** - log a more compact representation
+    - Steps for proper atomicity:
+        - Journal write
+        - Journal commit (the transaction end) (this must be less than one block so that it’s atomic)
+        - Checkpoint (actually write the stuff to disk now)
+        - Free -> Sometime later, mark this space free in superblock so we can reuse the space in the journal (**circular log**)
+    - Instead of begin -> end we can do a checksum!
+    - If crash before the commit, we discard
+    - Otherwise we **replay** the transaction that we recorded. Yay!
+- That was “Data journaling” and it’s expensive. Can we avoid writing the data twice?
+- Yes: **ordered journaling** aka **metadata journaling**
+    - Write the data
+    - Then Journal the metadata write
+    - Then journal commit
+    - Then checkpoint the metadata (i.e. write metadata contents to final FS locations)
+    - Later, free
+- Now, we know a pointer will never point to garbage
+- Tricky case: Block reuse - deletion is scary!!
+    - Create a “revoke” record type
+    - The system FIRST scans for revoke records during playback, and doesn’t playback anything that was later revoked
+- See timelines on pages 540 & 541
+- Alternatives
+    - Soft updates - do things VERY CAREFULLY so that this isn’t necessary in the first place - too much complexity though
+    - **Copy-on-write** - never overwrite files or directories in place, see Log-structured file systems
+    - **Backpointer-based consistency** - each block gets a pointer back to its inode, and if that doesn’t match we know it’s invalid
+
+### Chapter 43 - Log-structured File Systems
+
+- Motivation:
+    - System memories are growing, so write perf is more important to optimize for because we can just cache reads
+    - Sequential is doing great so we need to optimize for random write performance
+    - FFS does poorly on common workloads like creating a new file of size one block
+    - File systems are not RAID-aware
+- Solution: Buffer the entire segment, including the metadata (inode etc), then write it all at once to disk, sequentially. Yay!
+- A bunch must be buffered or it won’t be effective
+- How much is a bunch? You need to amortize the cost of positioning, see p. 550 for math…
+- Finding inodes is WAY MORE DIFFICULT in LFS than it was in vsfs.
+- We use an **inode map**! aka **imap**
+- So we write the data block, and the inode, and the updated piece of the inode map.
+- But…how do we know how to find the imap….?
+- Ahh, the **checkpoint region** (**CR**). This part must be in a fixed point, and we put it at the beginning of the disk. (Actually we have two in case of disk failure / incomplete writes / etc)
+- We will cache the entire inode map in memory
+- What about directories?
+    - These are the same as files
+    - We MIGHT have had the **recursive update problem** where each update of an inode changes its location on disk
+    - That means that each directory has to change to, and same for its parent etc
+    - However it’s the **imap** that holds the LOCATION of the inode information, while the directory just holds the name-to-number mapping information, so the imap is saving us big time
+- Okay but what about **garbage collection**?
+    - We generate a LOT of garbage
+    - We could pretend this is a feature! **versioning file system**
+    - But say we don’t want to do that
+    - We need to **clean** dead versions of stuff
+    - So for each block of data we need a **segment summary block** which is a bit of metadata saying:
+        - its inode number (aka which file it belongs to)
+        - its offset (aka which block of the file it belongs to)
+    - This way we can query, “ok does that inode actually agree??” Yes -> Live, keep. No -> Dead, garbage collect.
+    - See page 557 for a diagram
+    - Policy: When do you do this? Either periodically, during idle time, or when the disk is full
+    - Policy: Which blocks? Some authors say clean “cold” (inactive) segments sooner, and “hot” segments later
+- Crash Recovery and The Log
+    - The Checkpoint Region doesn’t get written to often
+    - So if you crash, you have to try and **roll forward** by reading through the next segments after what was last logged there
+- The technique of LFS never over-writing is also known as **shadow paging** or **copy-on-write**
+
+### Chapter 44 - Flash-based SSDs
+
+- ALL OF THE TERMS ARE BACKWARDS AND WRONG OMG
+- **Solid-state storage** - we’ll talk about **NAND-baed flash**
+- A **flash page** (a couple KB) is contained in a **flash block** aka an **erase block** (128 KB or 256 KB)
+- To write to a page, you have to erase an entire block! Woah!
+- If you write too often to a page, it will **wear out** - permanently! Woah!
+- **SLC** - Single-level cell - one bit per transistor - these are the most expensive and have the best performance
+- **MLC** - Multi-level cell - two bits per transistor
+- **TLC** - Triple-level cell - three bits per transistor
+- Chips are organized into **banks** aka **planes**
+- Operations:
+    - Read a page - takes 10s of microseconds
+    - Erase a block - takes a couple milliseconds - EXTREMELY SLOW!!!!!!!!!!
+    - Program a page - takes 100s of microseconds
+- States:
+    - INVALID
+    - ERASED - empty but programmable
+    - VALID - set and can be read
+- Concerns:
+    - Erasure is slow - we try to do LFS-like approach
+    - Wearing out - we try to do **wear leveling**
+    - Disturbance - when you read or program, you can accidentally flip bits in neighboring pages
+        - Read disturbs
+        - Program disturbs
+        - We try to do things in order within a flash block
+    - Reduce **write amplification** - the extra work we do per request given to us vs if we just did the request 1:1
+- Going from logical blocks to the read-erase-program is done by the **Flash Translation Layer** aka **FTL**
+- A bad idea: Direct mapping of logical blocks to flash blocks. This is a terrible idea! Don’t do this!
+- So instead we do a log-structured FTL - this is just like our LFS, except implemented by the storage device
+- We’ll have a **mapping table** where we store the physical address of each logical block in the system
+- The client uses **logical block addresses** and we translate to the **physical page** for erasing and then programming (or just programming if it’s already erased)
+- Some problems: We’ll have to **garbage collect**, also these tables can be big!
+    - Note: we try to keep the mapping table in memory for speed, but obviously it can’t JUST be in memory, because the SSD could lose power! We record some mapping information with each page in an **out-of-band** (**OOB**) area, we can do some logging/checkpointing approach stuff too
+    - Garbage collection is more complicated than it was in LFS due to our need to erase an entire block at a time; ideally the entire block is garbage, but probably we will have to re-store part of it
+- The mapping table is big!
+- So we do a **hybrid mapping** technique.
+    - We have some pages fully erased and know the **per-page** mapping for those: these are called **log blocks**
+    - These are stored in **log table**
+    - For the rest we just store **per-block** mappings in **data table**
+    - How do we go from per-page to per-block?
+    - We’ll have to merge together somehow - see page 577 for diagrams
+    - **Switch merge** - we totally overwrote a block. Yay easy! Record just the first page into the data table
+    - **Partial merge** - we overwrote part of a block. Put the new parts, copy the old parts, then record just the first page into the data table
+    - **Full merge** - we are sad and must pull together pages from all over
+    - Other people have suggested to cache only the only parts of the FTL in memory cos this is a lot of work
+- We also have to deal with **Wear leveling** - if some blocks are totally static, rotate them. This increases write amplification!
+- SSDs are a LOT LOT LOT more performant than HDDs for random reads & writes; for sequential workloads, the difference is lesser.
+- SSDs DO still have an advantage for sequential tasks over random, so it’s still relevant to try and do sequential stuff
+
+### Chapter 45 - Data Integrity and Protection
+
+- We’ll talk about **Latent-sector errors** (**LSEs**) and **Block corruption**
+- We can detect LSEs pretty well due to in-disk **error correcting codes** (**ECCs**) so we just need to have redundancy and then we’re ok
+- The problem is **silent failures**
+- See page 589 for some stats about LSEs
+- We can use checksums to detect silent failures
+- The more robust the checksum, the costlier the operation
+    - XOR - easy but not robust
+    - [Fletcher checksum](https://en.wikipedia.org/wiki/Fletcher%27s_checksum) - almost as strong as CRC
+    - [Cyclic Redundancy Check](https://en.wikipedia.org/wiki/Cyclic_redundancy_check) - divide the entire block by an agreed-upon value
+- Can put the checksums next to the messages (make the sectors actually 520 bytes instead of 512 bytes)
+- Or a block dedicated to checksums (but this requires an extra write)
+- To use a checksum, compute the value & compare it to the stored checksum
+- **Misdirected writes** - You wrote the right data in the wrong location
+    - Store the intended location (disk & block) along with the checksum
+- Lost writes
+    - Write verify or read-after-write - read back the data after you wrote it
+    - Or put a 2nd checksum, inside the inode - this way there’s TWO checksums that have to agree! Then you would only be wrong if BOTH writes were lost
+- When do you check the checksums? Schedule **disk scrubbing** - scan on nightly or weekly basis
+- Overheads
+    - Space
+        - On disk is tiny
+        - On memory can be noticeable to compute checksum, but you discard immediately
+    - Time
+        - Significant, but you schedule it
+
+### Chapter 48 - Distributed Systems
+
+- We focus on **failure** - we need it to appear to clients as if the server never fails
+- We also care about **performance** and **security**
+- One way of dealing with packet loss: Don’t! This is UDP/IP. We use **sockets** API to create a **communications endpoint** and send UDP **datagrams**
+- We do have a checksum though
+- To get reliability we add **ack**, with **timeout/retry**, and **sequence numbers**, and this is **TCP/IP**
+- See page 611 for diagram
+- Also TCP does tons of other things like congestion control etc
+- What can we do with this?
+- **Distributed shared memory** - lots of research done on this but not actually useful
+- **Remote Procedure Call** (**RPC**) - two parts
+- **Stub Generator** aka **protocol compiler**
+    - Client side:
+        - Create a message buffer
+        - Pack needed information into message buffer
+        - Send message to destination RPC server
+        - Wait for reply (usually synchronous –> blocking)
+        - Unpack return code & other arguments
+        - Return to the caller
+    - Server side:
+        - Unpack the message - **Unmarshaling** aka **Deserialization**
+        - Call into the actual function
+        - Pacakage the results
+        - Send the reply back to the client
+- **Run-Time Library**
+    - Need to locate a remote service - must know hostname or IP address & port number
+    - Build on TCP or UDP? Often UDP & build your own reliability
+- How to deal with timeouts on long-running procedure calls? ack when you first get the call, before you start evaluating, keep polling “are you still awake”
+- May have to deal with arguments larger than a single packet - **fragmentation** & **reassembly**
+- **Byte ordering** - the client and server may disagree on **little endian** vs **big endian** for how to represent values
+- Asynchronous or synchronous?
+
+### Chapter 49 - Sun’s Network File System (NFS)
+
+- Why use distributed file system? Share data across clients, centralized administration, security
+- On client side, we have the **client-side file system** with `open`, `close`, `read`, `write`, `mkdir`
+- Client can’t tell the difference between remote & local
+- **server-side file system** aka **file server** reads block & sends it to client
+- Both sides can use cache
+- NFS is an **open protocol** - not proprietary!
+- We will talk about NFSv2
+- The main goal is to have simple and fast server crash recovery
+- Therefore, we will be totally **stateless**!!
+- File descriptors are **stateful** so we cannot have those! Instead we will have…
+- A **file handle**:
+    - Volume identifier - which file system
+    - Inode number - which file
+    - Generation number - gets incremented so that a client with an hold file handle won’t accidentally access new file
+- Get the root file handle via the `mount` protocol - omitted from discussion
+- To get a file handle, you need the parent directory’s file handle, so you have to do a lot of calls if it’s a long path
+- `LOOKUP` - get file handle
+- `GETATTR` - get metadata
+- See page 626 for full protocol
+- The client tracks all state information, the server tracks nothing
+- See page 628 for a timeline of some requests
+- All requests are **idempotent** i.e. they can be retried infinitely many times, so server failures are no problem!
+    - Failure type 1 - Request is just gg
+    - Failure type 2 - Server was down
+    - Failure type 3 - Request got there, but the ack got lost
+    - All are fine to retry!
+    - `mkdir` will reply with “directory already exists” in the third case but that’s fine
+- Caching is useful but leads to **cache consistency problem**
+    - Update visibility - when do other clients know about updates?
+        - Closing a file commits your changes
+    - Stale cache
+        - Before using cache, send a GETATTR to make sure cache isn’t invalid
+        - But this floods server
+        - So we add an **attribute cache** with a timeout (say 3 seconds)
+        - But this adds some weirdness…
+- What about server-side write buffering?
+    - You CANNOT!!!! What if you send an ack that you wrote, and then you crash?
+    - One trick is to use battery-backed memory so you’re not scared of losing the data
+    - Or use a file system designed to write to disk extremely quickly

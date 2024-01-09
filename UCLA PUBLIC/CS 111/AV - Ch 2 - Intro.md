@@ -1,0 +1,6 @@
+- Von Neumann model: processor fetches instruction from memory, decodes it, then executes it
+- role of OS:
+	- Resource manager: managing physical resources and virtualizing them (cpu multithreading, memory)
+	- Virtualized memory - virtual address space
+- Multiprogramming
+	- load and switch between jobs rapidly

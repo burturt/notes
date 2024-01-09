@@ -1,0 +1,36 @@
+## Key Metrics
+- Fairness
+- Waiting time
+	- Total time waiting
+- Reponse time
+	- Time until first execution of process
+- CPU utilization
+- Throughput
+## Common approaches
+- First come first serve
+	- Easy to implement
+	- Minimze context switching
+	- Increased waiting time
+	- Does not work well with timed sharing systems (e.g. listening to music in the background)
+	- Unfair scheduling
+- Shortest job first
+	- Increased throughput
+	- Minimize average waiting time
+	- Minimze context switching
+	- Impossible to predict future
+	- Starvation for long processes
+	- Not preemptive
+- Shortest remaining time first/shortest time to completion
+ 	- Increased throughput
+	- Minimize average waiting time
+	- More context switching than SJF
+	- Impossible to predict future
+	- Starvation for long processes
+	- Preemptive
+- Round Robin
+	- Divide time into time slices, and cycle between processes depending on set quantum length (QL)
+	- Fair/minimize starvation
+	- Low average response time
+	- Does not require burst time estimation/guessing
+	- Performance dependent on QL
+	- No sense of priority between tasks

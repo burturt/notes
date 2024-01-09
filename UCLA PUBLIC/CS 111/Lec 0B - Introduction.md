@@ -1,0 +1,36 @@
+## intro: dd command
+- k = 10^3 = 2^10
+- M = 10^6 = 2^20
+- G = 10^9 = 2^30
+- T = 10^12 = 2^40
+- `dd obs=1M seek=7T of=big`
+	- obs: output block size of 1 MiB = 2^20 bytes
+	- seek: skip ahead 7 * 2^40 blocks, or 7 * 2^40* 2^20 bytes before writing data from stdin
+	- of: output file
+- `cat` this large file: takes a very long time
+- `grep` the file: almost instant
+- `truss` - `strace` alternative
+	- What is the `strace` unable to open /dev/log?
+	- `llseek(3, ###, SEEK_DATA)`: returns next location with data
+## Vocab
+- operating: "it works"
+- system:
+	- 1928 oxford english dictionary: 1. Organized or connected group of objects; 2. A set of **principles**, etc., a scheme, or method
+	- Etomology: from ancient greekm σύστημα, meaning government, flock of birds
+	- Text: system has a boundary surrounded by an enviornment, with the boundary called an interface, consisting of components with connected components that can nest
+- operating system:
+	- American Heritage Dictionary: software designed to control hardware of a specific DP (data processing) system, in order to allow users and apps to make user of it
+		- old days: computers came with OS good for specific things
+		- now: multipurpose, portable, not specific
+	- Encarta 2007: master control program of a computer
+- Policy vs mechanism:
+	- Policy is big picture **what we want** out of OS
+	- Mechanism is implementation details on **how to get it**
+	- example: policy is avoid unstable speed, mechanism is traffic tickets, police, surveillance, justice system
+	- example: permissions: policy is to prevent unauthorized modification to data, mechanism is file permissions
+	- example: policy each program that wants to run eventually does run, mechanism is fair scheduler
+	- AI examples:
+		- Don't let Ai destroy civilaztion/humans, etc - doomsayers
+		- Don't let Ai promote discrimination, surveillance, inequity - reformers
+		- Don't let terrorists/russia/etc use better AI than the "good guys" - warriors
+		- 

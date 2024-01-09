@@ -1,0 +1,2 @@
+- Direct Memory Access / DMA device:
+	- DMA engine orchestrtates transfers between devices and main memory without much CPU usage

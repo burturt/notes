@@ -1,0 +1,73 @@
+# Traditional file system design
+- Model storage as linear series of 8KB blocks
+	- Can partition drive: each partition has start location and size
+		- Can still have unused space between partitions, and in theory, overlapping partitions
+	- Partitions: `/`, `/home`, swap partition, other stuff, etc
+- file systems + mount tables above
+- inodes describes a file
+## Problems:
+- Bad block table (store in table, but table could go bad)
+	- Disk/flash controller will handle bad blocks automatically
+- Bad drive
+	- Entire drive fails
+	- Typical: redundancy w/ multiple drives
+- Network drives
+	- Can just disconnect
+- Encryption (per block)
+	- Added privacy
+	- Only need to erase key on erase, not all data
+- Deletion: not actually deletion
+	- By default, OS just ignores file location
+	- Can use `shred file` to delete completely
+		- Need to keep overwrite: since drive is continuous but data is discrete, extra space between tracks could still exist if written just once, so overwrite multiple times
+## Sample file system:
+### RT-11: basic
+- Internal fragmentation:
+	- One file per block, which means if less than block size, wasted space
+- External fragmentation:
+	- No continous space large enough for file even if total empty space > file size
+- How do you keep track of the files?
+	- File table: string of 10 chars, 2 sector, 4 bytes file size
+	- Store in first ~10 sectors
+	- Files are continuous 
+	- RT-11: works well with real time OS
+- Issue:
+	- Fixed size file table
+	- expensive to grow files - preallocation required
+	- No free space record: just "where a file isn't"
+	- No redundancy
+	- No folders
+### FAT (File Allocation Table)
+- Late 1970s
+- Goal: zero external fragmentation
+- Section organization:
+	- Boot sector (used for boot info)
+	- Superblock: metadata about file system
+		- version #, size, # used blocks, 
+	- File Allocation Table
+		- Array of block numbers:
+			- indexed by block #, orig 16 bits
+			- Value is the `next` field for files
+			- FAT[3] = 47 means block 3's next block with data is 47
+				- 0 = EOF
+				- 2^16 - 1= free block (not used by anything)
+- Max page: 2^16-1 (65534) * 2^12
+- Directory: a file that contains a series of directory entries (dirent)
+	- FAT directory entries: 11 byte name, 4 byte size, 2 byte 1st block, 1 byte file type field (file or directory)
+- Downside:
+	- Want blocks allocated contiguously, but over time gets fragmented
+	- Do defragmentation: move file blocks around
+	- Issue: implement `mv d/a e/b` atomicly (without losing or corrupting data)
+	- not designed for lseek type reading
+### Address problem: Inodes (1970s)
+- Inode: data structure that describes a file, orig fixed size
+	- Inode table: fixed size entry, each contains data about a file
+		- Size, time stamps (last **m**odified, last **a**ccess, last inode **c**hange), permissions
+		- Contains 10 (actually 12) block numbers for file, and if more, 11th (13th) block is a point to indirect block, which can contain 2048 block #s
+			- If still not enough, next one (14th) points to an indirect block that contains only pointers to indirect blocks that contain block numbers
+			- (15th) indirect block contains triple-indirect block: number of next block --> indirect block[] --> indirect block[] --> indirect block[] --> block
+- Note: files can have holes
+	- if `0` block, still counts as containing data of just `0`s, but doesn't actually take space on drive
+	- Files that have very few data blocks and lots of `0`, called sparse file
+	- `lseek(fd, S*8192, SEEK_DATA)`: SEEK_SET to seek to that pos, SEEK_DATA to seek until data, SEEK_HOLE to seek until hole 
+	- 
