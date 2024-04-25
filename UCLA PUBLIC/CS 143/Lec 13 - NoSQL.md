@@ -1,0 +1,17 @@
+- **CAP Theorem**:
+	- Consistency (every read receives most recent write), availability, and partition tolerance (if messages lost or delayed by network) can't all be satisfied in distributed system when a network partition or failure occurs
+	- Partition tolerance must always be true
+- Key-value, columnar (each row can have different number of columns, adding columns is simple), document store, graph
+- Columnar:
+	- Each row key has keyspace of key-value pairs of columns
+	- unnormalized for fast lookups
+	- usable as Data Warehouse
+	- Rows are strictly ordered
+	- No joins - it's not relational
+- MongoDB:
+	- Each record is a document, stored in BSON
+	- Records organized into collections, which are organized into databases
+	- Use `db.coolection.find()`
+	- Lots of redundancy, no normalization
+	- No joins
+	- No schema (BSON blobs)
