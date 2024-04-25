@@ -120,11 +120,11 @@ a multiple of it size
 # Control Flow
 - Change flow: `jmp LABEL`
 ```asm
-	mov cx, 1337
+	movw $1337, %cx
 	jmp STAY_LEET
-	mov cx, 0
+	movw $0, %cx
 STAY_LEET:
-	push rcx
+	push %rcx
 ```
 - Note: jump is signed, meaning you can jump backwards
 - Think jmp as adding value to rip
