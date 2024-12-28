@@ -1,0 +1,13 @@
+- `JSON.stringify()`, `JSON.parse()`
+- Regex: `/ab+c/`, `"test".search()`, returns idx of first match or -1, use `/ab+c/.test(str)`, `re.exec(str)` call multiple times to get same, `str.match` + `/g` returns array, can use `str.replace`
+- Classes: `Class.prototype.attr = "val"` to add to all instances
+- this: in class is normal, in event listener is whatever the event was bound to, or globally to window. this not scoped in arrow functions
+- binding: `this.f = this.f.bind(this);`
+	- `addEventListener("click", () => {});`
+	- Be careful: only bind once element is rendered (run in onLoad event)
+	- event.currentTarget HTML element, event.type
+- `export name` or `export default` for modules
+- `??`: coalesces (return second if undefined)
+- `obj.attr?.instructor`, if not found, return undefined whole call instead of erroring
+
+- `&lt; < &gt; > &quot; " &nbsp; &amp; &`

@@ -1,0 +1,33 @@
+- **Memcache**: cache on a node
+	- Stores stuff temporarily for quick lookup
+	- Only handles strings for keys and values
+- Web app (LAMP linux apache mysql php)
+	- Single node architecture
+	- Scale out front end: apache/php on front servers, separate mysql to single server or sharded
+		- Don't worry about consistency or distributed transactions
+		- If sharded, must rebalance mysql due to constant reads/writes w/ locking and blocking, causing system to grind to a hault
+- **look-aside caching**
+	- Get key from cache, and if not, client gets from db then forwards to cache
+	- Pros: Separation of concerns, cache does not forward requests, client handles all failures
+	- Cons: More network I/O, Stale cache, Clients manage calling DB and handling updates
+- **look-through caching**
+	- Cache acts as middleware/proxy to/from db
+- Facebook: Cache can be somewhat stale and still be ok
+	- Update cache on each db write: race condition issues w/ out of order cache updates
+	- **Invalidate key on write**, have cache refetch: performance tradeoff (esp for high write) for consistency
+		- Perf improvements: after writing to db, broadcast cache update to all caches but causes caches to fill up faster/high network io
+## Cache inconsistency issues:
+- Facebook used **Primary-backup replication** between data centers/self-contained replicas
+	- Each replica: sharded frontend with associated memcache, sharded db
+	- Within primary, replicated to increase capacity
+	- Issue: possible for cache node to become overloaded with read requests due to hotspots
+	- Soln: create shared pool of cache nodes with higher specs for hotspot keys, non-hot keys remain in local cluster cache
+- What happens when creating new cluster?
+	- Temporary performance hit: All caches are empty, so all cache misses
+	- Soln: If frontend has miss, retries in MC in a different cluster
+- What happens if memcached fails?
+	- **Gutter servers**: remain idle, stale, but guarantee availability
+		- Only updated when clients contact b/c MC nodes down
+- **thundering herd**: hotspot key invalidation leads to massive increase in DB read requests
+	- Fix: **lease**: like a lock on a value in a cache, and while held by one server, other servers get a BLOCK until lease released
+-  

@@ -1,0 +1,110 @@
+- **Total order delivery**: if m1 delivered before m2 on one node, then m1 must be delivered before m2 on all nodes
+	- When total order **not enough**: can't determine **best order of writes**.
+	- TO is property of ONE run, not all (non-deterministic)
+- We want determinism: between runs, messages are delivered consistently
+	- Ways can fail:
+		- **Read your writes**: write X to R1, but read from R2 and not seeing own writes
+			- Soln: replicate write w/ synchronous replication
+		- **FIFO consistency**: If a happens before b on node n, then a happens before b on all nodes
+			- Pipeline Random Access Memory
+		- **Causal Consistency**: Writes that are related using happens-before (potentially causally related) must be seen in the same (causal) order by all processes
+		- **Strong consistency**: distributed systems acts identically to a single system
+- Why not always strong consistency?
+	- Requires strong replication and data network I/O and TIME
+	- Needs lots of ACKs
+	- May be ok reading stale data if latency is more critical
+- **Eventual Consistency**: if no new updates are made to a given data items, *eventually* all accesses to that item will return last updated (correct) value
+	- Used a lot in NoSQL/Big Data Stores
+# GFS
+- Google File System
+	- Used for storing MapReduce items
+- GFS features:
+	- **Performance**: throughput over latency
+	- **Scalability**: can add/drop nodes automatically
+	- **Reliability**: can trust data to be more or less consistency
+	- **Availability**: high uptime, little downtime
+- **Design Principles**:
+	- Component failure is the norm, not an exception
+	- Files considered huge, using larger block size
+		- Smaller files very inefficient: scattered around physical disk causes lots of random access
+	- Data is usually appended rather than replaced
+	- API must be consistent between FS and apps
+- **Assumptions**:
+	- Cheap, commodity hardware
+	- Lots of large files
+	- Two modes of reading: large stream, small random
+	- Many large sequential writes that append to file are efficient. Randon writes do not need to be
+	- System must handle concurrent clients writing to same file (appending usually)
+	- High bandwidth is more important than latency
+- **One master node**: coordinate access to data and **chunkserver that host copies**
+	- default 3 replicas per chunk
+	- Chunks identified by unique handle, assigned by master
+	- Master does not store data, stores metadata that maps filenames to chunks associated with it, and where replicas are located in systems
+		- Also coordinates migration and replication of chunks
+- **Single point of failure for maste**r:
+	- Master has full picture of state, **no issues with consistenc**y between multiple masters
+	- Single master can bottleneck, but since no data is read/write on master, less likely
+### Stages to get file
+![Screenshot 2024-10-26 at 10.22.28 PM.png](../../_resources/Screenshot%202024-10-26%20at%2010.22.28%20PM.png)
+- Client to master: converts filename and byte offset into chunk index in file (file split into many chunks) (fixed chunk sized), Request to master with filename and chunk index
+	- Master returns chunk handle and locations of replicas holding chunks
+	- May read ahead: provide handlers and locations of chunks immediately after
+	- Client caches locations
+- Client to chunkserver: asks for chjunk handle and byte range from chunkserver
+### Stages to mutate file
+- **Data mutation**:
+	- Client must request all locations
+	- Master grants *mutation lease* to replica
+	- this replica, primary replica, determines the order in which the mutations are executed on each replica
+	- Client sends data to all nodes, gets ACK
+	- Client sends write request to primary replica
+	- Primary replica decides order of mutations, then forwards write request and order to secondaries
+	- ![Screenshot 2024-10-26 at 10.28.54 PM.png](../../_resources/Screenshot%202024-10-26%20at%2010.28.54%20PM.png)
+- **Atomic Appends**:
+	- NO LOCKS
+	- Primary replica assigns **offset** within last chunk of file
+	- Each client gets a **different offset which serializes the writes**
+	- Primary applies append on **its copy**
+	- Primary forwards append requests and byte offset to secondaries
+	- Secondaries ack back to primary
+	- Primary confirms completion of operation to client
+	- Guarantees write is atomic and consistent
+		- If failure, retry made, **may get duplicate or inconsistent data**
+		- GFS: data is written **at least once**, though can be detected
+### Other considerations
+- Chunk size matters. Large chunk size of 64MB:
+	- Fewer requests to master
+	- Less metadata, and may fit in memory
+	- **Persistent** TCP connection for each operation on each part (TCP connection setup is expensive)
+	- Reduces number of requests made to master
+### Fault Tolerance
+- Chunkserver goes offline:
+	- Sends heartbeats from master
+	- If no heartbeat, then master re-replicate chunks to another node
+- **Master goes offline**:
+	- If metadata lost, can be recovered:
+		- When master comes back online, message is sent to chunkservers and respond with full index of chunks
+		- Writes are always logged on master before writing
+		- Use snapshots or edit log to save state every so often in case it goes down and becomes inconsistent
+- **High Availability**: system is operational and accessible for as long as possible. Guaranteed with:
+	- **Faster Recovery**: CS and M should boot and sync quickly
+	- **Chunk replication**: if replica offline, can pick new CS. No wait
+	- **Master replication**: operation (edit) log, replicated separately across nodes and replayed at boot
+# HDFS
+- Hadoop Distributed File System
+- Used by Hadoop, including MapReduce
+- Architecture:
+	- **NameNode**: each **block** is 128MB, stores metadata
+		- **SecondaryNameNode**: takes **snapshots of operation log (EditLog)** and system state to reduce time needed to restore after failure. NOT replicated backup of NameNode!
+			- Allows High Availability
+	- DataNodes are CS: store actual data in blocks. 3 time replication
+	- Client is user/app that interacts with HDFS
+	- **Interaction same as GFS**
+![Screenshot 2024-11-04 at 1.55.52 AM.png](../../_resources/Screenshot%202024-11-04%20at%201.55.52%20AM.png)
+
+- **Difference**: HDFS, **NameNode knows exact data location on node's disk**, GFS master only knows **which node data** is located on, nodes manage storage locally
+	- DataNodes send "**block reports**" back to NameNode to update which blocks it contains and where
+	- NameNodes manages individual block locations, including location in node's fs it is located
+- Difference: GFS has append, HDFS does NOT have append!
+	- Makes it a lot less complex
+- HDFS: used for blob data/batch processing, write once, read many. GFS: used for saving stream data: write many many times

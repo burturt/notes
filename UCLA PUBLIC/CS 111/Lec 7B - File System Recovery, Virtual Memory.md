@@ -110,7 +110,7 @@
 	- Kernel reads secondary storage address (ssa) page into RAM, and must find spot:
 		- Question: which page are we evicting from RAM?
 		- Pick page to evict
-		- Write page from victum page page num into swapmap(p, va)
+		- Write page from victim page page num into swapmap(p, va)
 		- Write secondary data in swap map
 		- Read a page from ssa into RAM
 - Want to minimize Page faults

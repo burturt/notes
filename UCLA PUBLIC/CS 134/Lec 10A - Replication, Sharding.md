@@ -1,0 +1,23 @@
+- Full replication: every node has a copy of every piece of data
+	- Issue: all data must fit on one node
+	- Lots of network I/O involved since all data replicated to all other nodes
+- Solely Sharded/Partitioned: Split data onto N shards, each node has copy of one shard. No replication
+	- Provide load balancing if sharded well
+	- No fault tolerance
+- Hybrid approach: replicate shards
+	- Increased capacity: store more data in system than can fit in one node
+	- Increased throughput: handle more requests than single node
+	- Fault tolerance
+- Hybrid approach: RAID/primary backup replication for each key
+### Challenges
+- Picking shard to put data on:
+	- Random: spread data evenly, but hard to find data, and distributed index defeats point
+	- Single node: easy to find, even distributed, but no fault tolerance/single point of failure
+	- Divide keyspace into equally-sized chunks (can be equal across domain of key values or distributed of keys), but poor load balancing/hard to get key distribution
+- Finding key
+- Key skew issue (more popular keys)
+- What if a node fills up? e.g. bad key splitting or nodes have differing storage sizes
+- What if a shard hosting node fails?
+- How do we handle hotspots? (keys that are very popular)
+### Dividing keys across keyspace
+- Hashing!

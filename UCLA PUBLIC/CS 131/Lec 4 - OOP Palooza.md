@@ -1,0 +1,64 @@
+- OOP: Based on objects with self-contained entities, communicating using methods sent via well-defined public interfaces (public methods)
+	- Object contains hidden implementation (code) and internal state (data)
+- Components:
+	- **Classes**: blueprint to create objects, and basis to define other classes
+		- Interface (public methods), fields (member variables), private methods, method implementations, 
+	- **Objects**: distinct value, created from class blueprint, containing own copy of fields and methods
+		- Most static languages don't allow editing classes, but dynamically typed do
+	- **Encapsulation** and Access Modifiers
+		- Bundle together public interfaces, data, and code into object, and hide data/implementation details from clients, forcing use of public interface
+		- Pros: Simpler programs (only coupled via public interfaces, not internal methods), Easier improvements w/o impacting other components, Better Modularity
+		- Access Modifiers:
+			- Public: method/data can be accessed by any part of program
+			- Protected: May be accessed by class and all subclasses
+			- Private: only accessed within own class
+		- Python access: `_` for protected, `__` for private
+		- Best practices: hide implementation details, make all fields/constants/helper methods private, no getters/setters for fields specific to implementation, and constructors should completely initialize objects
+	- **This/Self**
+		- Refers to own object
+	- **Properties**, accessors, and Mutators
+		- Expose field via accessors (getter) and mutator (setters)
+		- Python `@property` above `def age(self)` defines accessor when doing `obj.property` using function name call instead of local variable
+		- Python `@age.setter` above `def age(self, age)`
+		- Property: exposing state of class even if requires computation, use traditional methods (e.g. `get_age()`) to expose behaviors or expose state with heavy computation
+## Inheritance
+- Interface inheritance: interface defines group of related function declarations that classes implements
+	- Class implements interface by providing code for all functions, e.g. `Comparable` with .compareTo(), allows multiple interface inheritance
+	- Allows multiple types for a class
+	- Use with "can-support" or different classes with related behaviors but not related to same base class
+- Implementation inheritance: reusing base class method implementations
+	- Derived class inherits method implementations from base class
+- Subclassing inheritance: base class provides public interface *and* implementations
+	- Use with is-a relationship, expect subclass to share entire public interface of superclass AND mantain semantics of super's variables, or factor out common implementations from subclass into superclass
+
+	- **Composition**: make original class a member variable of new class
+	- **Delegation**: call original class methods from methods of new class
+- Implementation Inheritance
+	- Derived inherits method implementations, but **NOT** public interface
+	- Only subclass public methods are public; superclass public methods are made private
+	- Discouraged
+## Inheritance mechanics
+- Construction:
+	- When instantiate, derived class constructor called
+	- 2 things: calls superclass constructor, and initializes own parts of derived object
+- Destruction:
+	- Derived destructor runs code first then calls destructor of superclass
+- Finalization
+	- Some languages require explicit call to base class
+- Multiple inheritance:
+	- Issue, if A and B inherit from X, what if Y inherits both A and B? would this make 2 copies of X
+- **Abstract methods and class**
+	- Define interface without an implementation
+	- Use when no valid default implementation, use abdstract class if shared common implementations
+- Inheritance:
+	- When making derived classes, subtype/supertypes created automatically
+	- derived class not subtype of base class if privately inherited
+## Polymorphism
+- **Subtype polymorphism**: ability to substitute object of subtype anywhere supertype is expected
+	- static languages only
+- **Dynamic dispatch**: determining on run-time which method is called
+	- statically typed: Add pointer in each object to vtable
+		- vtable list of function pointers pointing to proper method implementation
+		- non-virtual functions use standard function calls, static dispatch for class/static functions
+	- Dynamically typed: vtable in every object
+- **Liskov Substitution Principle**: If subclass adheres to interface and semantics of base class, subclass polymorphism is possible

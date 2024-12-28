@@ -1,0 +1,39 @@
+
+# Raft
+- 2014 by Diego Ongaro and John Ousterhout
+- Each node has a state machine and a log
+	- state machine is made fault-tolerant, could be value or hash table
+- Each state machine takes as input commands from log, e.g. SET 3, CLEAR, SET 0, ADD 1
+- Consensus algorithm used to agree on commands in log
+- Nodes are one of 3 states:
+	- Follower: receives messages from a leader, responds to leader, and votes for new one
+	- Candidate: node that self-nominates as leader if did not hear from leader after timeout. Votes for itself and canvasses for votes from other nodes
+	- Leader: node responsible for communication with clients and maintaining master ordering of operations
+## Algorithm:
+- All nodes start in follower state
+- Leader Election: after random timeout, requests votes
+	- If majority vote, becomes leader
+	- Election timeout: time to wait before candidate
+		- If times out, then elects itself to become candidate
+		- Asks for votes from all other nodes
+			- If receives majority vote before self election timeout, then become leader
+			- If not, try again
+		- Nodes only vote for one node each "term"
+	- Once leader elected, leader sends heartbeat
+- Making changes/Log replication:
+	- All changes go through leader
+	- leader adds changes to uncommitted log
+	- Forwards change to all other nodes during heartbeat
+	- Once majority, leader commits on leader node
+- Notes: will raft always terminate?
+	- No - if network partition too small, never get majority
+- Even number of nodes -> require majority still, can get ties
+- Raft uses:
+	- CockroachDB
+	- MongoDB
+	- Kafka
+	- Kubernetes
+	- etcd
+	- RabbitMQ
+	- 
+- "reliable, replicated, redundant and fault tolerant"
